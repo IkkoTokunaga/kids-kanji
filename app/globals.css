@@ -258,16 +258,9 @@ body {
   min-height: 0;
 }
 
-/* 描画キャンバス：マウス環境では誤スクロール抑制 */
+/* 描画キャンバス：誤スクロール抑制 */
 canvas.kanji-practice-canvas {
   touch-action: none;
-}
-
-/* スマホ系（ホバーなし＋太いポインタ）：縦パンをブラウザに渡しキャンバス上からも下へスクロール可能に */
-@media (hover: none) and (pointer: coarse) {
-  canvas.kanji-practice-canvas {
-    touch-action: pan-y;
-  }
 }
 
 /* ヘッダー内：読みの下の例文（別カードにせず 1 ブロックに統合） */
@@ -446,8 +439,8 @@ canvas.kanji-practice-canvas {
   }
 
   .kanji-grid__cell {
-    width: 80%;
-    max-width: 20rem;
+    width: 72%;
+    max-width: 18rem;
     margin-inline: auto;
   }
 

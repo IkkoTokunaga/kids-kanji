@@ -174,10 +174,7 @@ function useDrawingCanvas(enabled: boolean) {
   const onPointerDown = useCallback(
     (e: React.PointerEvent<HTMLCanvasElement>) => {
       if (!enabled) return;
-      // 指タッチのみキャプチャしない → キャンバス上からも縦スクロールしやすい
-      if (e.pointerType !== "touch") {
-        e.currentTarget.setPointerCapture(e.pointerId);
-      }
+      e.currentTarget.setPointerCapture(e.pointerId);
       drawingRef.current = true;
       const canvas = canvasRef.current;
       if (!canvas) return;
@@ -250,7 +247,6 @@ function useDrawingCanvas(enabled: boolean) {
       onPointerMove,
       onPointerUp: endStroke,
       onPointerLeave: endStroke,
-      onPointerCancel: endStroke,
     },
     clearCanvas,
   };
@@ -511,10 +507,6 @@ export default function KanjiPractice({
                   trace.handlers.onPointerLeave();
                   bump();
                 }}
-                onPointerCancel={() => {
-                  trace.handlers.onPointerCancel();
-                  bump();
-                }}
               />
             </div>
           </section>
@@ -541,10 +533,6 @@ export default function KanjiPractice({
               }}
               onPointerLeave={() => {
                 free.handlers.onPointerLeave();
-                bump();
-              }}
-              onPointerCancel={() => {
-                free.handlers.onPointerCancel();
                 bump();
               }}
             />
