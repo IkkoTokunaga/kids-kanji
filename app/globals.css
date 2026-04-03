@@ -352,16 +352,20 @@ body {
 }
 
 .kanji-home__kun {
-  font-size: 0.78rem;
+  font-size: 0.68rem;
   font-weight: 600;
   color: var(--accent);
-  line-height: 1.2;
+  line-height: 1.25;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .kanji-home__on {
-  font-size: 0.68rem;
+  font-size: 0.62rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   color: #4a5070;
-  line-height: 1.2;
+  line-height: 1.25;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }

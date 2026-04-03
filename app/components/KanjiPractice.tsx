@@ -119,7 +119,14 @@ export default function KanjiPractice({
     setIndex(clampKanjiIndex(initialIndex));
   }, [initialIndex]);
 
-  const { char, kunYomi, onYomi } = KANJI_ITEMS[index];
+  const safeIndex = clampKanjiIndex(index);
+  const item =
+    KANJI_ITEMS.length > 0
+      ? (KANJI_ITEMS[safeIndex] ?? KANJI_ITEMS[0])
+      : null;
+  const char = item?.char ?? "\uFF1F";
+  const kunYomi = item?.kunYomi ?? "";
+  const onYomi = item?.onYomi ?? "";
   const modelSize = useMemo(
     () => ({ fontSize: "min(110cqw, 42vmin, 16rem)", lineHeight: 1 }),
     []
@@ -180,7 +187,7 @@ export default function KanjiPractice({
   const bump = useCallback(() => tick((t) => t + 1), []);
 
   const handleNext = () => {
-    if (!canAdvance) return;
+    if (!canAdvance || KANJI_ITEMS.length === 0) return;
     setIndex((i) => (i + 1) % KANJI_ITEMS.length);
   };
 
@@ -260,6 +267,21 @@ export default function KanjiPractice({
     background: "transparent",
     borderRadius: 8,
   };
+
+  if (KANJI_ITEMS.length === 0) {
+    return (
+      <main className="kanji-chrome">
+        <header className="kanji-header">
+          <Link href="/" className="kanji-header__back">
+            いちらんへ
+          </Link>
+        </header>
+        <p className="kanji-header__lead">
+          かんじのデータをよみこめませんでした。かんりしゃにきいてください。
+        </p>
+      </main>
+    );
+  }
 
   return (
     <main className="kanji-chrome">

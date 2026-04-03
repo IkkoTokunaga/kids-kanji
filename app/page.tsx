@@ -7,7 +7,8 @@ export default function HomePage() {
       <header className="kanji-home__header">
         <h1 className="kanji-home__title">かんじ いちらん</h1>
         <p className="kanji-home__intro">
-          やりたいかんじをえらぶか、したのボタンでいっぽんめからはじめられるよ。
+          しょうがっこう いちねん・にねんのはっていかんじ（240じ）。
+          えらんでれんしゅうするか、したのボタンでさいしょからはじめられるよ。
         </p>
         <Link
           href="/practice?start=0"
@@ -19,7 +20,7 @@ export default function HomePage() {
 
       <ul className="kanji-home__grid" role="list">
         {KANJI_ITEMS.map((item, i) => (
-          <li key={item.char} className="kanji-home__cell">
+          <li key={`${i}-${item.char}`} className="kanji-home__cell">
             <Link
               href={`/practice?start=${i}`}
               className="kanji-home__card"

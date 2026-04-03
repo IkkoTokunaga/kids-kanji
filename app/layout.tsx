@@ -11,7 +11,7 @@ const noto = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: "かんじのれんしゅう",
-  description: "てほん・なぞり・じゆうかくのれんしゅう",
+  description: "しょう1・2ねん はっていかんじ240じ てほん・なぞり・じゆうかく",
 };
 
 export default function RootLayout({

@@ -1,0 +1,1202 @@
+[
+  {
+    "char": "一",
+    "kunYomi": "いち・ひと",
+    "onYomi": "イチ"
+  },
+  {
+    "char": "右",
+    "kunYomi": "みぎ",
+    "onYomi": "ウ・ユウ"
+  },
+  {
+    "char": "雨",
+    "kunYomi": "あめ・あま",
+    "onYomi": "ウ"
+  },
+  {
+    "char": "円",
+    "kunYomi": "まる",
+    "onYomi": "エン"
+  },
+  {
+    "char": "王",
+    "kunYomi": "おう",
+    "onYomi": "オウ"
+  },
+  {
+    "char": "音",
+    "kunYomi": "おと・ね",
+    "onYomi": "オン・イン"
+  },
+  {
+    "char": "下",
+    "kunYomi": "した・しも・さがる",
+    "onYomi": "カ・ゲ"
+  },
+  {
+    "char": "火",
+    "kunYomi": "ひ",
+    "onYomi": "カ"
+  },
+  {
+    "char": "花",
+    "kunYomi": "はな",
+    "onYomi": "カ"
+  },
+  {
+    "char": "貝",
+    "kunYomi": "かい",
+    "onYomi": "バイ"
+  },
+  {
+    "char": "学",
+    "kunYomi": "まなぶ",
+    "onYomi": "ガク"
+  },
+  {
+    "char": "気",
+    "kunYomi": "き",
+    "onYomi": "キ・ケ"
+  },
+  {
+    "char": "九",
+    "kunYomi": "ここのつ",
+    "onYomi": "キュウ・ク"
+  },
+  {
+    "char": "休",
+    "kunYomi": "やすむ",
+    "onYomi": "キュウ"
+  },
+  {
+    "char": "玉",
+    "kunYomi": "たま",
+    "onYomi": "ギョク"
+  },
+  {
+    "char": "金",
+    "kunYomi": "かね・かな",
+    "onYomi": "キン・コン"
+  },
+  {
+    "char": "空",
+    "kunYomi": "そら・あく・から",
+    "onYomi": "クウ"
+  },
+  {
+    "char": "月",
+    "kunYomi": "つき",
+    "onYomi": "ゲツ・ガツ"
+  },
+  {
+    "char": "犬",
+    "kunYomi": "いぬ",
+    "onYomi": "ケン"
+  },
+  {
+    "char": "見",
+    "kunYomi": "みる",
+    "onYomi": "ケン"
+  },
+  {
+    "char": "五",
+    "kunYomi": "いつつ",
+    "onYomi": "ゴ"
+  },
+  {
+    "char": "口",
+    "kunYomi": "くち",
+    "onYomi": "コウ・ク"
+  },
+  {
+    "char": "校",
+    "kunYomi": "がっこう（のかんじ）",
+    "onYomi": "コウ"
+  },
+  {
+    "char": "左",
+    "kunYomi": "ひだり",
+    "onYomi": "サ"
+  },
+  {
+    "char": "三",
+    "kunYomi": "みっつ",
+    "onYomi": "サン"
+  },
+  {
+    "char": "山",
+    "kunYomi": "やま",
+    "onYomi": "サン・セン"
+  },
+  {
+    "char": "子",
+    "kunYomi": "こ",
+    "onYomi": "シ・ス"
+  },
+  {
+    "char": "四",
+    "kunYomi": "よん・よっつ",
+    "onYomi": "シ"
+  },
+  {
+    "char": "糸",
+    "kunYomi": "いと",
+    "onYomi": "シ"
+  },
+  {
+    "char": "字",
+    "kunYomi": "あざ",
+    "onYomi": "ジ"
+  },
+  {
+    "char": "耳",
+    "kunYomi": "みみ",
+    "onYomi": "ジ"
+  },
+  {
+    "char": "七",
+    "kunYomi": "なな・ななつ",
+    "onYomi": "シチ"
+  },
+  {
+    "char": "車",
+    "kunYomi": "くるま",
+    "onYomi": "シャ"
+  },
+  {
+    "char": "手",
+    "kunYomi": "て",
+    "onYomi": "シュ"
+  },
+  {
+    "char": "十",
+    "kunYomi": "とお",
+    "onYomi": "ジュウ"
+  },
+  {
+    "char": "出",
+    "kunYomi": "でる・だす",
+    "onYomi": "シュツ"
+  },
+  {
+    "char": "女",
+    "kunYomi": "おんな",
+    "onYomi": "ジョ・ニョウ"
+  },
+  {
+    "char": "小",
+    "kunYomi": "ちいさい・お",
+    "onYomi": "ショウ"
+  },
+  {
+    "char": "上",
+    "kunYomi": "うえ・あがる",
+    "onYomi": "ジョウ"
+  },
+  {
+    "char": "森",
+    "kunYomi": "もり",
+    "onYomi": "シン"
+  },
+  {
+    "char": "人",
+    "kunYomi": "ひと",
+    "onYomi": "ジン・ニン"
+  },
+  {
+    "char": "水",
+    "kunYomi": "みず",
+    "onYomi": "スイ"
+  },
+  {
+    "char": "正",
+    "kunYomi": "ただしい",
+    "onYomi": "セイ・ショウ"
+  },
+  {
+    "char": "生",
+    "kunYomi": "いきる・うまれる",
+    "onYomi": "セイ・ショウ"
+  },
+  {
+    "char": "青",
+    "kunYomi": "あおい",
+    "onYomi": "セイ・ショウ"
+  },
+  {
+    "char": "夕",
+    "kunYomi": "ゆう",
+    "onYomi": "セキ"
+  },
+  {
+    "char": "石",
+    "kunYomi": "いし",
+    "onYomi": "セキ・シャク"
+  },
+  {
+    "char": "赤",
+    "kunYomi": "あか",
+    "onYomi": "セキ"
+  },
+  {
+    "char": "千",
+    "kunYomi": "ち",
+    "onYomi": "セン"
+  },
+  {
+    "char": "川",
+    "kunYomi": "かわ",
+    "onYomi": "セン"
+  },
+  {
+    "char": "先",
+    "kunYomi": "さき",
+    "onYomi": "セン"
+  },
+  {
+    "char": "早",
+    "kunYomi": "はやい",
+    "onYomi": "ソウ・サッ"
+  },
+  {
+    "char": "草",
+    "kunYomi": "くさ",
+    "onYomi": "ソウ"
+  },
+  {
+    "char": "足",
+    "kunYomi": "あ・たりる",
+    "onYomi": "ソク"
+  },
+  {
+    "char": "村",
+    "kunYomi": "むら",
+    "onYomi": "ソン"
+  },
+  {
+    "char": "大",
+    "kunYomi": "おお・だい",
+    "onYomi": "タイ・ダイ"
+  },
+  {
+    "char": "男",
+    "kunYomi": "おとこ",
+    "onYomi": "ダン"
+  },
+  {
+    "char": "竹",
+    "kunYomi": "たけ",
+    "onYomi": "チク"
+  },
+  {
+    "char": "中",
+    "kunYomi": "なか",
+    "onYomi": "チュウ"
+  },
+  {
+    "char": "虫",
+    "kunYomi": "むし",
+    "onYomi": "チュウ"
+  },
+  {
+    "char": "町",
+    "kunYomi": "まち",
+    "onYomi": "チョウ"
+  },
+  {
+    "char": "天",
+    "kunYomi": "あめ（あまつ）",
+    "onYomi": "テン"
+  },
+  {
+    "char": "田",
+    "kunYomi": "た",
+    "onYomi": "デン"
+  },
+  {
+    "char": "土",
+    "kunYomi": "つち",
+    "onYomi": "ト・ド"
+  },
+  {
+    "char": "二",
+    "kunYomi": "ふた・ふたつ",
+    "onYomi": "ニ"
+  },
+  {
+    "char": "日",
+    "kunYomi": "ひ・か",
+    "onYomi": "ニチ・ジツ"
+  },
+  {
+    "char": "入",
+    "kunYomi": "はいる・いれる",
+    "onYomi": "ニュウ"
+  },
+  {
+    "char": "年",
+    "kunYomi": "とし",
+    "onYomi": "ネン"
+  },
+  {
+    "char": "白",
+    "kunYomi": "しろ・しろい",
+    "onYomi": "ハク・ビャク"
+  },
+  {
+    "char": "八",
+    "kunYomi": "やっつ",
+    "onYomi": "ハチ"
+  },
+  {
+    "char": "百",
+    "kunYomi": "ひゃく",
+    "onYomi": "ヒャク"
+  },
+  {
+    "char": "文",
+    "kunYomi": "ふみ",
+    "onYomi": "ブン・モン"
+  },
+  {
+    "char": "木",
+    "kunYomi": "き",
+    "onYomi": "ボク・モク"
+  },
+  {
+    "char": "本",
+    "kunYomi": "もと",
+    "onYomi": "ホン"
+  },
+  {
+    "char": "名",
+    "kunYomi": "な",
+    "onYomi": "メイ"
+  },
+  {
+    "char": "目",
+    "kunYomi": "め",
+    "onYomi": "モク"
+  },
+  {
+    "char": "立",
+    "kunYomi": "たつ",
+    "onYomi": "リツ"
+  },
+  {
+    "char": "力",
+    "kunYomi": "ちから",
+    "onYomi": "リョク・リキ"
+  },
+  {
+    "char": "林",
+    "kunYomi": "はやし",
+    "onYomi": "リン"
+  },
+  {
+    "char": "六",
+    "kunYomi": "むっつ",
+    "onYomi": "ロク"
+  },
+  {
+    "char": "引",
+    "kunYomi": "ひく",
+    "onYomi": "イン"
+  },
+  {
+    "char": "羽",
+    "kunYomi": "はね",
+    "onYomi": "ウ"
+  },
+  {
+    "char": "雲",
+    "kunYomi": "くも",
+    "onYomi": "ウン"
+  },
+  {
+    "char": "園",
+    "kunYomi": "その",
+    "onYomi": "エン"
+  },
+  {
+    "char": "遠",
+    "kunYomi": "とおい",
+    "onYomi": "エン・オン"
+  },
+  {
+    "char": "何",
+    "kunYomi": "なに・なん",
+    "onYomi": "カ"
+  },
+  {
+    "char": "科",
+    "kunYomi": "しな（かもく）",
+    "onYomi": "カ"
+  },
+  {
+    "char": "夏",
+    "kunYomi": "なつ",
+    "onYomi": "カ・ゲ"
+  },
+  {
+    "char": "家",
+    "kunYomi": "いえ",
+    "onYomi": "カ・ケ"
+  },
+  {
+    "char": "歌",
+    "kunYomi": "うた",
+    "onYomi": "カ"
+  },
+  {
+    "char": "画",
+    "kunYomi": "え・かく",
+    "onYomi": "ガ・カク"
+  },
+  {
+    "char": "回",
+    "kunYomi": "まわる・かい",
+    "onYomi": "カイ・エ"
+  },
+  {
+    "char": "会",
+    "kunYomi": "あう",
+    "onYomi": "カイ・エ"
+  },
+  {
+    "char": "海",
+    "kunYomi": "うみ",
+    "onYomi": "カイ"
+  },
+  {
+    "char": "絵",
+    "kunYomi": "え",
+    "onYomi": "カイ・エ"
+  },
+  {
+    "char": "外",
+    "kunYomi": "そと・ほか",
+    "onYomi": "ガイ・ゲ"
+  },
+  {
+    "char": "角",
+    "kunYomi": "かど・つの",
+    "onYomi": "カク"
+  },
+  {
+    "char": "楽",
+    "kunYomi": "たのしい・らく",
+    "onYomi": "ガク・ラク"
+  },
+  {
+    "char": "活",
+    "kunYomi": "いきる",
+    "onYomi": "カツ"
+  },
+  {
+    "char": "間",
+    "kunYomi": "あいだ・ま",
+    "onYomi": "カン・ケン"
+  },
+  {
+    "char": "丸",
+    "kunYomi": "まる",
+    "onYomi": "ガン"
+  },
+  {
+    "char": "岩",
+    "kunYomi": "いわ",
+    "onYomi": "ガン"
+  },
+  {
+    "char": "顔",
+    "kunYomi": "かお",
+    "onYomi": "ガン"
+  },
+  {
+    "char": "汽",
+    "kunYomi": "（きしゃのき）",
+    "onYomi": "キ"
+  },
+  {
+    "char": "記",
+    "kunYomi": "しるす",
+    "onYomi": "キ"
+  },
+  {
+    "char": "帰",
+    "kunYomi": "かえる",
+    "onYomi": "キ"
+  },
+  {
+    "char": "弓",
+    "kunYomi": "ゆみ",
+    "onYomi": "キュウ"
+  },
+  {
+    "char": "牛",
+    "kunYomi": "うし",
+    "onYomi": "ギュウ"
+  },
+  {
+    "char": "魚",
+    "kunYomi": "さかな・うお",
+    "onYomi": "ギョ"
+  },
+  {
+    "char": "京",
+    "kunYomi": "きょう",
+    "onYomi": "キョウ・ケイ"
+  },
+  {
+    "char": "強",
+    "kunYomi": "つよい",
+    "onYomi": "キョウ・ゴウ"
+  },
+  {
+    "char": "教",
+    "kunYomi": "おしえる",
+    "onYomi": "キョウ"
+  },
+  {
+    "char": "近",
+    "kunYomi": "ちかい",
+    "onYomi": "キン・コン"
+  },
+  {
+    "char": "兄",
+    "kunYomi": "あに",
+    "onYomi": "キョウ・ケイ"
+  },
+  {
+    "char": "形",
+    "kunYomi": "かたち",
+    "onYomi": "ケイ・ギョウ"
+  },
+  {
+    "char": "計",
+    "kunYomi": "はかる",
+    "onYomi": "ケイ"
+  },
+  {
+    "char": "元",
+    "kunYomi": "もと",
+    "onYomi": "ゲン・ガン"
+  },
+  {
+    "char": "言",
+    "kunYomi": "いう・ごと",
+    "onYomi": "ゲン・ゴン"
+  },
+  {
+    "char": "原",
+    "kunYomi": "はら",
+    "onYomi": "ゲン"
+  },
+  {
+    "char": "戸",
+    "kunYomi": "と",
+    "onYomi": "コ"
+  },
+  {
+    "char": "古",
+    "kunYomi": "ふるい",
+    "onYomi": "コ"
+  },
+  {
+    "char": "午",
+    "kunYomi": "ご・うま（ご）",
+    "onYomi": "ゴ"
+  },
+  {
+    "char": "後",
+    "kunYomi": "うしろ・あと",
+    "onYomi": "ゴ・コウ"
+  },
+  {
+    "char": "語",
+    "kunYomi": "かたる・ご",
+    "onYomi": "ゴ"
+  },
+  {
+    "char": "工",
+    "kunYomi": "たくみ",
+    "onYomi": "コウ・ク"
+  },
+  {
+    "char": "公",
+    "kunYomi": "おおやけ",
+    "onYomi": "コウ"
+  },
+  {
+    "char": "広",
+    "kunYomi": "ひろい",
+    "onYomi": "コウ"
+  },
+  {
+    "char": "交",
+    "kunYomi": "まじわる",
+    "onYomi": "コウ"
+  },
+  {
+    "char": "光",
+    "kunYomi": "ひかり",
+    "onYomi": "コウ"
+  },
+  {
+    "char": "考",
+    "kunYomi": "かんがえる",
+    "onYomi": "コウ"
+  },
+  {
+    "char": "行",
+    "kunYomi": "いく・おこなう",
+    "onYomi": "コウ・ギョウ・アン"
+  },
+  {
+    "char": "高",
+    "kunYomi": "たかい",
+    "onYomi": "コウ"
+  },
+  {
+    "char": "黄",
+    "kunYomi": "き",
+    "onYomi": "コウ・オウ"
+  },
+  {
+    "char": "合",
+    "kunYomi": "ああ・あう",
+    "onYomi": "ゴウ・ガッ"
+  },
+  {
+    "char": "谷",
+    "kunYomi": "たに",
+    "onYomi": "コク"
+  },
+  {
+    "char": "国",
+    "kunYomi": "くに",
+    "onYomi": "コク"
+  },
+  {
+    "char": "黒",
+    "kunYomi": "くろ・くろい",
+    "onYomi": "コク"
+  },
+  {
+    "char": "今",
+    "kunYomi": "いま",
+    "onYomi": "コン・キン"
+  },
+  {
+    "char": "才",
+    "kunYomi": "さい",
+    "onYomi": "サイ"
+  },
+  {
+    "char": "細",
+    "kunYomi": "ほそい",
+    "onYomi": "サイ"
+  },
+  {
+    "char": "作",
+    "kunYomi": "つくる",
+    "onYomi": "サク・サ"
+  },
+  {
+    "char": "算",
+    "kunYomi": "さん・はさん【くわしい】",
+    "onYomi": "サン"
+  },
+  {
+    "char": "止",
+    "kunYomi": "とまる",
+    "onYomi": "シ"
+  },
+  {
+    "char": "市",
+    "kunYomi": "いち",
+    "onYomi": "シ"
+  },
+  {
+    "char": "矢",
+    "kunYomi": "や",
+    "onYomi": "シ"
+  },
+  {
+    "char": "姉",
+    "kunYomi": "あね",
+    "onYomi": "シ"
+  },
+  {
+    "char": "思",
+    "kunYomi": "おもう",
+    "onYomi": "シ"
+  },
+  {
+    "char": "紙",
+    "kunYomi": "かみ",
+    "onYomi": "シ"
+  },
+  {
+    "char": "寺",
+    "kunYomi": "てら",
+    "onYomi": "ジ"
+  },
+  {
+    "char": "自",
+    "kunYomi": "みずから",
+    "onYomi": "ジ・シ"
+  },
+  {
+    "char": "時",
+    "kunYomi": "とき",
+    "onYomi": "ジ"
+  },
+  {
+    "char": "室",
+    "kunYomi": "むろ",
+    "onYomi": "シツ"
+  },
+  {
+    "char": "社",
+    "kunYomi": "やしろ・しゃ",
+    "onYomi": "シャ"
+  },
+  {
+    "char": "弱",
+    "kunYomi": "よわい",
+    "onYomi": "ジャク"
+  },
+  {
+    "char": "首",
+    "kunYomi": "くび",
+    "onYomi": "シュ"
+  },
+  {
+    "char": "秋",
+    "kunYomi": "あき",
+    "onYomi": "シュウ"
+  },
+  {
+    "char": "週",
+    "kunYomi": "しゅう",
+    "onYomi": "シュウ"
+  },
+  {
+    "char": "春",
+    "kunYomi": "はる",
+    "onYomi": "シュン"
+  },
+  {
+    "char": "書",
+    "kunYomi": "かく",
+    "onYomi": "ショ"
+  },
+  {
+    "char": "少",
+    "kunYomi": "すくない・しょう（わかさ）",
+    "onYomi": "ショウ"
+  },
+  {
+    "char": "場",
+    "kunYomi": "ば",
+    "onYomi": "ジョウ・チョウ"
+  },
+  {
+    "char": "色",
+    "kunYomi": "いろ",
+    "onYomi": "ショク・シキ"
+  },
+  {
+    "char": "食",
+    "kunYomi": "たべる・くう",
+    "onYomi": "ショク・ジキ"
+  },
+  {
+    "char": "心",
+    "kunYomi": "こころ",
+    "onYomi": "シン"
+  },
+  {
+    "char": "新",
+    "kunYomi": "あたらしい・あらた",
+    "onYomi": "シン"
+  },
+  {
+    "char": "親",
+    "kunYomi": "おや・したしい",
+    "onYomi": "シン"
+  },
+  {
+    "char": "図",
+    "kunYomi": "ず・え・はかる",
+    "onYomi": "ズ・ト"
+  },
+  {
+    "char": "数",
+    "kunYomi": "かず・かぞえる",
+    "onYomi": "スウ・ス"
+  },
+  {
+    "char": "西",
+    "kunYomi": "にし",
+    "onYomi": "セイ・サイ"
+  },
+  {
+    "char": "声",
+    "kunYomi": "こえ",
+    "onYomi": "セイ・ショウ"
+  },
+  {
+    "char": "星",
+    "kunYomi": "ほし",
+    "onYomi": "セイ・ショウ"
+  },
+  {
+    "char": "晴",
+    "kunYomi": "はれる",
+    "onYomi": "セイ"
+  },
+  {
+    "char": "切",
+    "kunYomi": "きる",
+    "onYomi": "セツ・サイ"
+  },
+  {
+    "char": "雪",
+    "kunYomi": "ゆき",
+    "onYomi": "セツ"
+  },
+  {
+    "char": "船",
+    "kunYomi": "ふね",
+    "onYomi": "セン"
+  },
+  {
+    "char": "線",
+    "kunYomi": "せん",
+    "onYomi": "セン"
+  },
+  {
+    "char": "前",
+    "kunYomi": "まえ",
+    "onYomi": "ゼン"
+  },
+  {
+    "char": "組",
+    "kunYomi": "くむ",
+    "onYomi": "ソ"
+  },
+  {
+    "char": "走",
+    "kunYomi": "はしる",
+    "onYomi": "ソウ"
+  },
+  {
+    "char": "多",
+    "kunYomi": "おおい",
+    "onYomi": "タ"
+  },
+  {
+    "char": "太",
+    "kunYomi": "ふとい・おおきい",
+    "onYomi": "タイ・タ"
+  },
+  {
+    "char": "体",
+    "kunYomi": "からだ",
+    "onYomi": "タイ・テイ"
+  },
+  {
+    "char": "台",
+    "kunYomi": "うてな・だい",
+    "onYomi": "ダイ・タイ"
+  },
+  {
+    "char": "地",
+    "kunYomi": "ち",
+    "onYomi": "チ・ジ"
+  },
+  {
+    "char": "池",
+    "kunYomi": "いけ",
+    "onYomi": "チ"
+  },
+  {
+    "char": "知",
+    "kunYomi": "しる",
+    "onYomi": "チ"
+  },
+  {
+    "char": "茶",
+    "kunYomi": "ちゃ",
+    "onYomi": "チャ・サ"
+  },
+  {
+    "char": "昼",
+    "kunYomi": "ひる",
+    "onYomi": "チュウ"
+  },
+  {
+    "char": "長",
+    "kunYomi": "ながい",
+    "onYomi": "チョウ"
+  },
+  {
+    "char": "鳥",
+    "kunYomi": "とり",
+    "onYomi": "チョウ・ニョウ"
+  },
+  {
+    "char": "朝",
+    "kunYomi": "あさ",
+    "onYomi": "チョウ・ジョウ"
+  },
+  {
+    "char": "直",
+    "kunYomi": "なおす・ただちに",
+    "onYomi": "チョク・ジキ"
+  },
+  {
+    "char": "通",
+    "kunYomi": "とおる・かよう",
+    "onYomi": "ツウ・ツ"
+  },
+  {
+    "char": "弟",
+    "kunYomi": "おとうと",
+    "onYomi": "テイ・ダイ"
+  },
+  {
+    "char": "店",
+    "kunYomi": "みせ",
+    "onYomi": "テン"
+  },
+  {
+    "char": "点",
+    "kunYomi": "てん",
+    "onYomi": "テン"
+  },
+  {
+    "char": "電",
+    "kunYomi": "でん",
+    "onYomi": "デン"
+  },
+  {
+    "char": "刀",
+    "kunYomi": "かたな",
+    "onYomi": "トウ"
+  },
+  {
+    "char": "冬",
+    "kunYomi": "ふゆ",
+    "onYomi": "トウ"
+  },
+  {
+    "char": "当",
+    "kunYomi": "あたる",
+    "onYomi": "トウ"
+  },
+  {
+    "char": "東",
+    "kunYomi": "ひがし",
+    "onYomi": "トウ"
+  },
+  {
+    "char": "答",
+    "kunYomi": "こたえる",
+    "onYomi": "トウ"
+  },
+  {
+    "char": "頭",
+    "kunYomi": "あたま",
+    "onYomi": "トウ・ズ"
+  },
+  {
+    "char": "同",
+    "kunYomi": "おなじ",
+    "onYomi": "ドウ"
+  },
+  {
+    "char": "道",
+    "kunYomi": "みち",
+    "onYomi": "ドウ・トウ"
+  },
+  {
+    "char": "読",
+    "kunYomi": "よむ",
+    "onYomi": "ドク・トク"
+  },
+  {
+    "char": "内",
+    "kunYomi": "うち",
+    "onYomi": "ナイ・ダイ"
+  },
+  {
+    "char": "南",
+    "kunYomi": "みなみ",
+    "onYomi": "ナン・ナ"
+  },
+  {
+    "char": "肉",
+    "kunYomi": "にく",
+    "onYomi": "ニク"
+  },
+  {
+    "char": "馬",
+    "kunYomi": "うま",
+    "onYomi": "バ"
+  },
+  {
+    "char": "売",
+    "kunYomi": "うる",
+    "onYomi": "バイ"
+  },
+  {
+    "char": "買",
+    "kunYomi": "かう",
+    "onYomi": "バイ"
+  },
+  {
+    "char": "麦",
+    "kunYomi": "むぎ",
+    "onYomi": "バク"
+  },
+  {
+    "char": "半",
+    "kunYomi": "なかば",
+    "onYomi": "ハン"
+  },
+  {
+    "char": "番",
+    "kunYomi": "つがい・ばん",
+    "onYomi": "バン"
+  },
+  {
+    "char": "父",
+    "kunYomi": "ちち",
+    "onYomi": "フ"
+  },
+  {
+    "char": "風",
+    "kunYomi": "かぜ",
+    "onYomi": "フウ・フ"
+  },
+  {
+    "char": "分",
+    "kunYomi": "わかる・わける",
+    "onYomi": "ブン・フン・ブ"
+  },
+  {
+    "char": "聞",
+    "kunYomi": "きく",
+    "onYomi": "ブン・モン"
+  },
+  {
+    "char": "米",
+    "kunYomi": "こめ",
+    "onYomi": "マイ・ベイ"
+  },
+  {
+    "char": "歩",
+    "kunYomi": "あるく・あゆむ",
+    "onYomi": "ホ・ブ・フ"
+  },
+  {
+    "char": "母",
+    "kunYomi": "はは",
+    "onYomi": "ボ"
+  },
+  {
+    "char": "方",
+    "kunYomi": "かた",
+    "onYomi": "ホウ"
+  },
+  {
+    "char": "北",
+    "kunYomi": "きた",
+    "onYomi": "ホク"
+  },
+  {
+    "char": "毎",
+    "kunYomi": "ごと",
+    "onYomi": "マイ"
+  },
+  {
+    "char": "妹",
+    "kunYomi": "いもうと",
+    "onYomi": "マイ"
+  },
+  {
+    "char": "万",
+    "kunYomi": "よろず・まん",
+    "onYomi": "マン・バン"
+  },
+  {
+    "char": "明",
+    "kunYomi": "あかるい・あける",
+    "onYomi": "メイ・ミョウ"
+  },
+  {
+    "char": "鳴",
+    "kunYomi": "なく",
+    "onYomi": "メイ"
+  },
+  {
+    "char": "毛",
+    "kunYomi": "け",
+    "onYomi": "モウ"
+  },
+  {
+    "char": "門",
+    "kunYomi": "かど・もん",
+    "onYomi": "モン"
+  },
+  {
+    "char": "夜",
+    "kunYomi": "よる",
+    "onYomi": "ヤ"
+  },
+  {
+    "char": "野",
+    "kunYomi": "の",
+    "onYomi": "ヤ"
+  },
+  {
+    "char": "友",
+    "kunYomi": "とも",
+    "onYomi": "ユウ"
+  },
+  {
+    "char": "用",
+    "kunYomi": "もちいる・よう",
+    "onYomi": "ヨウ"
+  },
+  {
+    "char": "曜",
+    "kunYomi": "よう",
+    "onYomi": "ヨウ"
+  },
+  {
+    "char": "来",
+    "kunYomi": "くる・きたる",
+    "onYomi": "ライ"
+  },
+  {
+    "char": "里",
+    "kunYomi": "さと",
+    "onYomi": "リ"
+  },
+  {
+    "char": "理",
+    "kunYomi": "ことわり",
+    "onYomi": "リ"
+  },
+  {
+    "char": "話",
+    "kunYomi": "はなす・はなし",
+    "onYomi": "ワ"
+  }
+]

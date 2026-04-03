@@ -6,7 +6,6 @@ services:
     ports:
       - "3001:3000"
     environment:
-      - NODE_ENV=development
       - WATCHPACK_POLLING=true
       - NEXT_TELEMETRY_DISABLED=1
     volumes:
