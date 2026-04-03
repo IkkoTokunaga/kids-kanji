@@ -75,7 +75,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.45rem 0.55rem;
-  margin-bottom: 0.65rem;
+  margin-bottom: 0;
 }
 
 .kanji-header__back {
@@ -153,15 +153,6 @@ body {
   padding: 0.3rem 0.65rem;
   background: rgba(0, 0, 0, 0.04);
   border-radius: var(--radius-full);
-}
-
-.kanji-header__title {
-  margin: 0;
-  font-size: 1.28rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  line-height: 1.25;
-  color: var(--ink);
 }
 
 .kanji-header__lead {
@@ -258,41 +249,23 @@ body {
   justify-items: stretch;
 }
 
-.kanji-examples {
-  flex-shrink: 0;
-  background: var(--surface-elevated);
-  border: 1px solid rgba(212, 206, 196, 0.85);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-  padding: 0.7rem 0.95rem 0.85rem;
-  max-width: 100%;
+/* 1:1 セル（列幅＝一辺）。aspect-ratio で padding-bottom 不要 */
+.kanji-grid__cell {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 1 / 1;
+  min-height: 0;
 }
 
-.kanji-examples__title {
-  margin: 0 0 0.45rem;
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  color: var(--accent);
+/* ヘッダー内：読みの下の例文（別カードにせず 1 ブロックに統合） */
+.kanji-header__example {
+  margin-top: 0.65rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(212, 206, 196, 0.65);
 }
 
-.kanji-examples__usage {
-  margin: 0 0 0.6rem;
-  padding-left: 1.15rem;
-  font-size: 0.8rem;
-  line-height: 1.55;
-  color: var(--ink-muted);
-}
-
-.kanji-examples__usage li {
-  margin-bottom: 0.2rem;
-}
-
-.kanji-examples__usage li:last-child {
-  margin-bottom: 0;
-}
-
-.kanji-examples__kanjiLabel {
+.kanji-header__exampleLabel {
   display: block;
   margin: 0 0 0.25rem;
   font-size: 0.68rem;
@@ -301,7 +274,7 @@ body {
   letter-spacing: 0.04em;
 }
 
-.kanji-examples__kanjiSentence {
+.kanji-header__exampleSentence {
   margin: 0;
   font-size: 0.88rem;
   line-height: 1.6;
@@ -309,7 +282,7 @@ body {
   font-weight: 600;
 }
 
-.kanji-examples__emph {
+.kanji-header__exampleEmph {
   color: #c62828;
   font-weight: 800;
 }
@@ -425,4 +398,91 @@ body {
   line-height: 1.25;
   word-break: break-word;
   overflow-wrap: anywhere;
+}
+
+/* 狭い幅：練習は縦並び・TOP はカード密度調整（上書きはこのブロックを最後に） */
+@media (max-width: 700px) {
+  .kanji-chrome {
+    height: auto;
+    min-height: 100dvh;
+    max-height: none;
+    padding: 0.5rem 0.55rem 0.75rem;
+    gap: 0.55rem;
+  }
+
+  .kanji-header,
+  .kanji-footer {
+    padding: 0.65rem 0.8rem 0.75rem;
+  }
+
+  .kanji-header__kunReading {
+    font-size: 1.05rem;
+  }
+
+  .kanji-header__onReading {
+    font-size: 0.92rem;
+  }
+
+  .kanji-grid {
+    grid-template-columns: 1fr;
+    flex: 0 1 auto;
+    min-height: unset;
+    align-content: start;
+    gap: 0.55rem;
+  }
+
+  .kanji-grid__cell {
+    max-width: min(100%, 420px);
+    margin-inline: auto;
+  }
+
+  .kanji-header__exampleSentence {
+    font-size: 0.82rem;
+  }
+
+  .kanji-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .kanji-footer__actions {
+    display: flex;
+    justify-content: stretch;
+    gap: 0.45rem;
+  }
+
+  .kanji-footer__actions .kanji-btn {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .kanji-home {
+    padding: 1rem 0.65rem 2rem;
+  }
+
+  .kanji-home__header {
+    padding: 0.9rem 0.95rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .kanji-home__title {
+    font-size: 1.28rem;
+  }
+
+  .kanji-home__grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .kanji-home__card {
+    min-height: 102px;
+    padding: 0.65rem 0.4rem;
+  }
+
+  .kanji-home__glyph {
+    font-size: 1.85rem;
+  }
 }

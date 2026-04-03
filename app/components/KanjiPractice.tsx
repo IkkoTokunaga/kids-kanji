@@ -29,7 +29,7 @@ function renderExampleWithEmphasis(text: string): ReactNode {
       nodes.push(text.slice(last, m.index));
     }
     nodes.push(
-      <span key={i++} className="kanji-examples__emph">
+      <span key={i++} className="kanji-header__exampleEmph">
         {m[1]}
       </span>
     );
@@ -342,15 +342,6 @@ export default function KanjiPractice({
     setIndex((i) => (i + 1) % KANJI_ITEMS.length);
   };
 
-  /** 1:1 の外ラッパ（padding-bottom トリック）。列幅＝見かけの一辺。 */
-  const squareSizerStyle: CSSProperties = {
-    width: "100%",
-    minWidth: 0,
-    position: "relative",
-    height: 0,
-    paddingBottom: "100%",
-  };
-
   const panelStyle: CSSProperties = {
     position: "absolute",
     left: 0,
@@ -436,7 +427,7 @@ export default function KanjiPractice({
 
   return (
     <main className="kanji-chrome">
-      <header className="kanji-header">
+      <header className="kanji-header" lang="ja-JP">
         <div className="kanji-header__top">
           <Link href="/" className="kanji-header__back">
             いちらんへ
@@ -445,7 +436,7 @@ export default function KanjiPractice({
             {index + 1} / {KANJI_ITEMS.length} もん
           </span>
         </div>
-        <div className="kanji-header__readings" lang="ja-JP">
+        <div className="kanji-header__readings">
           <div className="kanji-header__kun">
             <span className="kanji-header__kunLabel">くんよみ</span>
             <span className="kanji-header__kunReading">{kunYomi}</span>
@@ -455,19 +446,21 @@ export default function KanjiPractice({
             <span className="kanji-header__onReading">{onYomi}</span>
           </div>
         </div>
-        <h1 className="kanji-header__title">かんじのれんしゅう</h1>
-        <p className="kanji-header__lead">
-          ひだりはてほん ·
-          まんなかになぞる ·
-          みぎにじゆうにかく。
-          なぞるばしょとじゆうにかくばしょを、ふたつともかきおわったら「つぎへ」。
-        </p>
+        <div
+          className="kanji-header__example"
+          aria-label="このかんじのれいぶん"
+        >
+          <span className="kanji-header__exampleLabel">このかんじのれいぶん</span>
+          <p className="kanji-header__exampleSentence">
+            {renderExampleWithEmphasis(exampleText)}
+          </p>
+        </div>
       </header>
 
       <div className="kanji-grid">
-        <div style={squareSizerStyle}>
+        <div className="kanji-grid__cell">
           <section style={panelStyle}>
-            <span style={labelStyle}>手本</span>
+            <span style={labelStyle}>てほん</span>
             <div
               style={{
                 minHeight: 0,
@@ -484,7 +477,7 @@ export default function KanjiPractice({
           </section>
         </div>
 
-        <div style={squareSizerStyle}>
+        <div className="kanji-grid__cell">
           <section style={panelStyle}>
             <span style={labelStyle}>なぞる</span>
             <div style={traceStageStyle}>
@@ -515,7 +508,7 @@ export default function KanjiPractice({
           </section>
         </div>
 
-        <div style={squareSizerStyle}>
+        <div className="kanji-grid__cell">
           <section style={panelStyle}>
             <span style={labelStyle}>じゆうにかく</span>
             <canvas
@@ -541,23 +534,6 @@ export default function KanjiPractice({
           </section>
         </div>
       </div>
-
-      <section
-        className="kanji-examples"
-        lang="ja-JP"
-        aria-label="つかいかたのれい"
-      >
-        <h2 className="kanji-examples__title">つかいかたのれい</h2>
-        <ul className="kanji-examples__usage">
-          <li>ひだりのてほんをみて、かきかたをおぼえます。</li>
-          <li>まんなかでは、うすいもじのうえをなぞってかきます。</li>
-          <li>みぎでは、おぼえたかんじをじゆうにかきます。</li>
-        </ul>
-        <span className="kanji-examples__kanjiLabel">このかんじのれいぶん</span>
-        <p className="kanji-examples__kanjiSentence">
-          {renderExampleWithEmphasis(exampleText)}
-        </p>
-      </section>
 
       <footer className="kanji-footer">
         <p
