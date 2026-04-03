@@ -24,9 +24,9 @@
 html,
 body {
   margin: 0;
-  height: 100%;
-  max-height: 100%;
-  overflow: hidden;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
   font-family: var(--font-noto), "Hiragino Sans", "Yu Gothic", sans-serif;
   background: var(--bg-subtle);
   background-color: var(--bg);
@@ -74,6 +74,21 @@ body {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.45rem 0.55rem;
+  margin-bottom: 0.65rem;
+}
+
+.kanji-header__back {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0.25rem 0.15rem;
+  border-radius: var(--radius-sm);
+}
+
+.kanji-header__back:hover {
+  text-decoration: underline;
+  color: var(--accent-hover);
 }
 
 .kanji-header__kun {
@@ -240,4 +255,113 @@ body {
   align-content: center;
   align-items: start;
   justify-items: stretch;
+}
+
+/* —— TOP いちらん —— */
+
+.kanji-home {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2.5rem;
+  box-sizing: border-box;
+}
+
+.kanji-home__header {
+  background: var(--surface-elevated);
+  border: 1px solid rgba(212, 206, 196, 0.85);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: 1.1rem 1.15rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.kanji-home__title {
+  margin: 0 0 0.4rem;
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.kanji-home__intro {
+  margin: 0 0 1rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--ink-muted);
+}
+
+.kanji-home__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.72rem 1.35rem;
+  font-size: 0.95rem;
+}
+
+.kanji-home__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(126px, 1fr));
+  gap: 0.65rem;
+}
+
+.kanji-home__cell {
+  margin: 0;
+}
+
+.kanji-home__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.85rem 0.5rem;
+  min-height: 118px;
+  background: var(--surface-elevated);
+  border: 1px solid rgba(212, 206, 196, 0.85);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.08s ease;
+}
+
+.kanji-home__card:hover {
+  border-color: rgba(42, 107, 82, 0.35);
+  box-shadow: var(--shadow-md);
+}
+
+.kanji-home__card:active {
+  transform: scale(0.98);
+}
+
+.kanji-home__glyph {
+  font-size: 2.15rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.kanji-home__readings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.kanji-home__kun {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1.2;
+}
+
+.kanji-home__on {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #4a5070;
+  line-height: 1.2;
 }

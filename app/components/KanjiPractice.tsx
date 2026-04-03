@@ -8,23 +8,8 @@ import {
   useState,
   type CSSProperties,
 } from "react";
-
-const KANJI_ITEMS: readonly {
-  char: string;
-  kunYomi: string;
-  onYomi: string;
-}[] = [
-  { char: "山", kunYomi: "やま", onYomi: "サン" },
-  { char: "川", kunYomi: "かわ", onYomi: "セン" },
-  { char: "田", kunYomi: "た", onYomi: "デン" },
-  { char: "木", kunYomi: "き", onYomi: "ボク・モク" },
-  { char: "本", kunYomi: "もと", onYomi: "ホン" },
-  { char: "日", kunYomi: "ひ・か・び", onYomi: "ニチ・ジツ" },
-  { char: "月", kunYomi: "つき", onYomi: "ゲツ・ガツ" },
-  { char: "火", kunYomi: "ひ", onYomi: "カ" },
-  { char: "水", kunYomi: "みず", onYomi: "スイ" },
-  { char: "人", kunYomi: "ひと", onYomi: "ニン・ジン" },
-] as const;
+import Link from "next/link";
+import { KANJI_ITEMS, clampKanjiIndex } from "../lib/kanji";
 
 /** キャンバス座標系（以前の約4.35の3倍前後）。 */
 const STROKE_LINE_WIDTH = 13;
@@ -120,8 +105,20 @@ function clearDrawingSurface(
   return 0;
 }
 
-export default function KanjiPractice() {
-  const [index, setIndex] = useState(0);
+type KanjiPracticeProps = {
+  initialIndex?: number;
+};
+
+export default function KanjiPractice({
+  initialIndex = 0,
+}: KanjiPracticeProps) {
+  const safeStart = clampKanjiIndex(initialIndex);
+  const [index, setIndex] = useState(safeStart);
+
+  useEffect(() => {
+    setIndex(clampKanjiIndex(initialIndex));
+  }, [initialIndex]);
+
   const { char, kunYomi, onYomi } = KANJI_ITEMS[index];
   const modelSize = useMemo(
     () => ({ fontSize: "min(110cqw, 42vmin, 16rem)", lineHeight: 1 }),
@@ -268,25 +265,29 @@ export default function KanjiPractice() {
     <main className="kanji-chrome">
       <header className="kanji-header">
         <div className="kanji-header__top">
-          <div className="kanji-header__readings" lang="ja-JP">
-            <div className="kanji-header__kun">
-              <span className="kanji-header__kunLabel">くんよみ</span>
-              <span className="kanji-header__kunReading">{kunYomi}</span>
-            </div>
-            <div className="kanji-header__on">
-              <span className="kanji-header__onLabel">おんよみ</span>
-              <span className="kanji-header__onReading">{onYomi}</span>
-            </div>
-          </div>
+          <Link href="/" className="kanji-header__back">
+            いちらんへ
+          </Link>
           <span className="kanji-header__progress">
             {index + 1} / {KANJI_ITEMS.length} もん
           </span>
+        </div>
+        <div className="kanji-header__readings" lang="ja-JP">
+          <div className="kanji-header__kun">
+            <span className="kanji-header__kunLabel">くんよみ</span>
+            <span className="kanji-header__kunReading">{kunYomi}</span>
+          </div>
+          <div className="kanji-header__on">
+            <span className="kanji-header__onLabel">おんよみ</span>
+            <span className="kanji-header__onReading">{onYomi}</span>
+          </div>
         </div>
         <h1 className="kanji-header__title">かんじのれんしゅう</h1>
         <p className="kanji-header__lead">
           ひだりはてほん ·
           まんなかになぞる ·
-          みぎにじゆうにかく。りょうほうかけたら「つぎへ」。
+          みぎにじゆうにかく。
+          なぞるばしょとじゆうにかくばしょを、ふたつともかきおわったら「つぎへ」。
         </p>
       </header>
 
@@ -377,8 +378,8 @@ export default function KanjiPractice() {
           }
         >
           {canAdvance
-            ? "よくかけました。つぎへをおしてね。"
-            : "なぞりとじゆうのりょうほうに、くっきりせんをひいてね。"}
+            ? "よくかけました。「つぎへ」をおしてね。"
+            : "なぞるばしょと、じゆうにかくばしょに、それぞれくっきりせんをひいてね。"}
         </p>
         <div className="kanji-footer__actions">
           <button
