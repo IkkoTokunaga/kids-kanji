@@ -13,6 +13,8 @@ import { KANJI_ITEMS, clampKanjiIndex } from "../lib/kanji";
 
 /** キャンバス座標系（以前の約4.35の3倍前後）。 */
 const STROKE_LINE_WIDTH = 13;
+/** 不透過（半透明だとストロークの重なりが濃く見えて玉連りになる） */
+const INK_COLOR = "#1a1a1a";
 
 type Point = { x: number; y: number };
 
@@ -29,7 +31,102 @@ function canvasPointFromPointerEvent(
   };
 }
 
-/** ブラウザがまとめた移動の途中位置も含め、なめらかな線にする */
+/** 生サンプルのざらつきを減らす（小さい alpha ほどなめらか・追従は遅め） */
+function smoothAlongAnchor(
+  anchor: Point,
+  samples: Point[],
+  alpha: number
+): Point[] {
+  const out: Point[] = [];
+  let prev = anchor;
+  for (const p of samples) {
+    const q = {
+      x: prev.x + alpha * (p.x - prev.x),
+      y: prev.y + alpha * (p.y - prev.y),
+    };
+    out.push(q);
+    prev = q;
+  }
+  return out;
+}
+
+/** ほぼ同じ座標は間引き（ベジェのオーバーシュート防止） */
+function dedupeNear(points: Point[], minDistSq: number): Point[] {
+  if (points.length === 0) return [];
+  const out: Point[] = [points[0]];
+  for (let i = 1; i < points.length; i++) {
+    const p = points[i];
+    const q = out[out.length - 1]!;
+    const dx = p.x - q.x;
+    const dy = p.y - q.y;
+    if (dx * dx + dy * dy >= minDistSq) out.push(p);
+  }
+  return out;
+}
+
+/** 速い筆致でサンプルが飛ぶとき、曲線用に区間を分割 */
+function subdivideLongSegments(points: Point[], maxSegLen: number): Point[] {
+  if (points.length < 2) return points;
+  const out: Point[] = [];
+  for (let i = 0; i < points.length - 1; i++) {
+    const a = points[i]!;
+    const b = points[i + 1]!;
+    out.push(a);
+    const dx = b.x - a.x;
+    const dy = b.y - a.y;
+    const len = Math.hypot(dx, dy);
+    if (len > maxSegLen) {
+      const n = Math.ceil(len / maxSegLen);
+      for (let k = 1; k < n; k++) {
+        const t = k / n;
+        out.push({ x: a.x + t * dx, y: a.y + t * dy });
+      }
+    }
+  }
+  out.push(points[points.length - 1]!);
+  return out;
+}
+
+function polylineInk(points: Point[]): number {
+  let ink = 0;
+  for (let i = 1; i < points.length; i++) {
+    const a = points[i - 1]!;
+    const b = points[i]!;
+    ink += Math.hypot(b.x - a.x, b.y - a.y);
+  }
+  return ink;
+}
+
+/**
+ * Catmull-Rom（均一）→ 三次ベジェ：手書きアプリでよく使うなめらかな通過曲線
+ */
+function strokeCatmullRomCubic(ctx: CanvasRenderingContext2D, pts: Point[]) {
+  if (pts.length < 2) return;
+  const p0 = pts[0]!;
+  ctx.moveTo(p0.x, p0.y);
+  if (pts.length === 2) {
+    const p1 = pts[1]!;
+    const c1x = p0.x + (p1.x - p0.x) / 3;
+    const c1y = p0.y + (p1.y - p0.y) / 3;
+    const c2x = p1.x - (p1.x - p0.x) / 3;
+    const c2y = p1.y - (p1.y - p0.y) / 3;
+    ctx.bezierCurveTo(c1x, c1y, c2x, c2y, p1.x, p1.y);
+    return;
+  }
+  for (let i = 0; i < pts.length - 1; i++) {
+    const prev = i > 0 ? pts[i - 1]! : pts[i]!;
+    const cur = pts[i]!;
+    const next = pts[i + 1]!;
+    const after = i + 2 < pts.length ? pts[i + 2]! : pts[i + 1]!;
+    const cp1x = cur.x + (next.x - prev.x) / 6;
+    const cp1y = cur.y + (next.y - prev.y) / 6;
+    const cp2x = next.x - (after.x - cur.x) / 6;
+    const cp2y = next.y - (after.y - cur.y) / 6;
+    ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, next.x, next.y);
+  }
+}
+
+/** ブラウザがまとめた移動の途中位置も含める */
 function pointerSamples(
   canvas: HTMLCanvasElement,
   native: PointerEvent
@@ -60,7 +157,8 @@ function useDrawingCanvas(enabled: boolean) {
       lastRef.current = p;
       const ctx = canvas.getContext("2d");
       if (!ctx) return;
-      ctx.fillStyle = "rgba(26, 26, 26, 0.85)";
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = INK_COLOR;
       ctx.beginPath();
       ctx.arc(p.x, p.y, STROKE_LINE_WIDTH / 2, 0, Math.PI * 2);
       ctx.fill();
@@ -79,26 +177,26 @@ function useDrawingCanvas(enabled: boolean) {
       const last = lastRef.current;
       if (!last) return;
 
-      const points = pointerSamples(canvas, e.nativeEvent);
-      if (points.length === 0) return;
+      const samples = pointerSamples(canvas, e.nativeEvent);
+      if (samples.length === 0) return;
 
-      ctx.strokeStyle = "rgba(26, 26, 26, 0.85)";
+      const smoothed = smoothAlongAnchor(last, samples, 0.42);
+      const merged = dedupeNear([last, ...smoothed], 0.32 * 0.32);
+      if (merged.length < 2) return;
+
+      const forCurve = subdivideLongSegments(merged, 4.5);
+
+      ctx.globalAlpha = 1;
+      ctx.strokeStyle = INK_COLOR;
       ctx.lineWidth = STROKE_LINE_WIDTH;
       ctx.lineCap = "round";
       ctx.lineJoin = "round";
       ctx.beginPath();
-      ctx.moveTo(last.x, last.y);
-      let prev = last;
-      let addedInk = 0;
-      for (const p of points) {
-        ctx.lineTo(p.x, p.y);
-        addedInk += Math.hypot(p.x - prev.x, p.y - prev.y);
-        prev = p;
-      }
+      strokeCatmullRomCubic(ctx, forCurve);
       ctx.stroke();
 
-      lastRef.current = prev;
-      inkRef.current += addedInk;
+      lastRef.current = merged[merged.length - 1]!;
+      inkRef.current += polylineInk(merged);
     },
     [enabled]
   );
