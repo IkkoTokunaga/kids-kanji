@@ -46,7 +46,8 @@ body {
   flex-direction: column;
   gap: 0.65rem;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   touch-action: manipulation;
 }
 
@@ -255,6 +256,62 @@ body {
   align-content: center;
   align-items: start;
   justify-items: stretch;
+}
+
+.kanji-examples {
+  flex-shrink: 0;
+  background: var(--surface-elevated);
+  border: 1px solid rgba(212, 206, 196, 0.85);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 0.7rem 0.95rem 0.85rem;
+  max-width: 100%;
+}
+
+.kanji-examples__title {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+
+.kanji-examples__usage {
+  margin: 0 0 0.6rem;
+  padding-left: 1.15rem;
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: var(--ink-muted);
+}
+
+.kanji-examples__usage li {
+  margin-bottom: 0.2rem;
+}
+
+.kanji-examples__usage li:last-child {
+  margin-bottom: 0;
+}
+
+.kanji-examples__kanjiLabel {
+  display: block;
+  margin: 0 0 0.25rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #4a5070;
+  letter-spacing: 0.04em;
+}
+
+.kanji-examples__kanjiSentence {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.kanji-examples__emph {
+  color: #c62828;
+  font-weight: 800;
 }
 
 /* —— TOP いちらん —— */

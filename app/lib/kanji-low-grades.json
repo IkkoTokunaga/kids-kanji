@@ -2,1201 +2,1441 @@
   {
     "char": "一",
     "kunYomi": "いち・ひと",
-    "onYomi": "イチ"
+    "onYomi": "イチ",
+    "example": "りんごを **一**つ（ひとつ） たべました。"
   },
   {
     "char": "右",
     "kunYomi": "みぎ",
-    "onYomi": "ウ・ユウ"
+    "onYomi": "ウ・ユウ",
+    "example": "みちを わたるときは **右**（みぎ）を みます。"
   },
   {
     "char": "雨",
     "kunYomi": "あめ・あま",
-    "onYomi": "ウ"
+    "onYomi": "ウ",
+    "example": "きょうは **雨**（あめ）が ふっています。"
   },
   {
     "char": "円",
     "kunYomi": "まる",
-    "onYomi": "エン"
+    "onYomi": "エン",
+    "example": "ノートを 百**円**（えん）で かいました。"
   },
   {
     "char": "王",
     "kunYomi": "おう",
-    "onYomi": "オウ"
+    "onYomi": "オウ",
+    "example": "えほんに **王**さま（おうさま）が でてきました。"
   },
   {
     "char": "音",
     "kunYomi": "おと・ね",
-    "onYomi": "オン・イン"
+    "onYomi": "オン・イン",
+    "example": "ピアノの きれいな **音**（おと）が きこえます。"
   },
   {
     "char": "下",
     "kunYomi": "した・しも・さがる",
-    "onYomi": "カ・ゲ"
+    "onYomi": "カ・ゲ",
+    "example": "つくえの **下**（した）に 消しゴム（けしごむ）が あります。"
   },
   {
     "char": "火",
     "kunYomi": "ひ",
-    "onYomi": "カ"
+    "onYomi": "カ",
+    "example": "キャンプで **火**（ひ）を おこしました。"
   },
   {
     "char": "花",
     "kunYomi": "はな",
-    "onYomi": "カ"
+    "onYomi": "カ",
+    "example": "にわに 赤い（あかい） **花**（はな）が さきました。"
   },
   {
     "char": "貝",
     "kunYomi": "かい",
-    "onYomi": "バイ"
+    "onYomi": "バイ",
+    "example": "うみで **貝**（かい）がらを ひろいました。"
   },
   {
     "char": "学",
     "kunYomi": "まなぶ",
-    "onYomi": "ガク"
+    "onYomi": "ガク",
+    "example": "あしたから **学**校（がっこう）が はじまります。"
   },
   {
     "char": "気",
     "kunYomi": "き",
-    "onYomi": "キ・ケ"
+    "onYomi": "キ・ケ",
+    "example": "くるまに **気**（き）をつけて あるきましょう。"
   },
   {
     "char": "九",
     "kunYomi": "ここのつ",
-    "onYomi": "キュウ・ク"
+    "onYomi": "キュウ",
+    "example": "おかしが **九**つ（ここのつ） あります。"
   },
   {
     "char": "休",
     "kunYomi": "やすむ",
-    "onYomi": "キュウ"
+    "onYomi": "キュウ",
+    "example": "つかれたので 少し（すこし） **休**（やす）みます。"
   },
   {
     "char": "玉",
     "kunYomi": "たま",
-    "onYomi": "ギョク"
+    "onYomi": "ギョク",
+    "example": "シャボン**玉**（だま）を とばして あそびます。"
   },
   {
     "char": "金",
     "kunYomi": "かね・かな",
-    "onYomi": "キン・コン"
+    "onYomi": "キン・コン",
+    "example": "お**金**（かね）を だいじに つかいます。"
   },
   {
     "char": "空",
     "kunYomi": "そら・あく・から",
-    "onYomi": "クウ"
+    "onYomi": "クウ",
+    "example": "**空**（そら）に 白い（しろい） くもが あります。"
   },
   {
     "char": "月",
     "kunYomi": "つき",
-    "onYomi": "ゲツ・ガツ"
+    "onYomi": "ゲツ・ガツ",
+    "example": "こんやは **月**（つき）が とても まるいです。"
   },
   {
     "char": "犬",
     "kunYomi": "いぬ",
-    "onYomi": "ケン"
+    "onYomi": "ケン",
+    "example": "となりの **犬**（いぬ）が ワンと ほえました。"
   },
   {
     "char": "見",
     "kunYomi": "みる",
-    "onYomi": "ケン"
+    "onYomi": "ケン",
+    "example": "テレビで アニメを **見**（み）ます。"
   },
   {
     "char": "五",
     "kunYomi": "いつつ",
-    "onYomi": "ゴ"
+    "onYomi": "ゴ",
+    "example": "てを パーにすると ゆびは **五**ほん（ごほん）です。"
   },
   {
     "char": "口",
     "kunYomi": "くち",
-    "onYomi": "コウ・ク"
+    "onYomi": "コウ・ク",
+    "example": "**口**（くち）を おおきくあけて あいさつします。"
   },
   {
     "char": "校",
-    "kunYomi": "がっこう（のかんじ）",
-    "onYomi": "コウ"
+    "kunYomi": "がっこう",
+    "onYomi": "コウ",
+    "example": "学**校**（がっこう）に いって きます。"
   },
   {
     "char": "左",
     "kunYomi": "ひだり",
-    "onYomi": "サ"
+    "onYomi": "サ",
+    "example": "おちゃわんは **左**（ひだり）がわに おきます。"
   },
   {
     "char": "三",
     "kunYomi": "みっつ",
-    "onYomi": "サン"
+    "onYomi": "サン",
+    "example": "おだんごを **三**つ（みっつ） たべました。"
   },
   {
     "char": "山",
     "kunYomi": "やま",
-    "onYomi": "サン・セン"
+    "onYomi": "サン・セン",
+    "example": "ふゆの **山**（やま）には 雪（ゆき）が あります。"
   },
   {
     "char": "子",
     "kunYomi": "こ",
-    "onYomi": "シ・ス"
+    "onYomi": "シ・ス",
+    "example": "男（おとこ）の**子**（こ）が はしっています。"
   },
   {
     "char": "四",
     "kunYomi": "よん・よっつ",
-    "onYomi": "シ"
+    "onYomi": "シ",
+    "example": "テーブルの あしは **四**ほん（よんほん）です。"
   },
   {
     "char": "糸",
     "kunYomi": "いと",
-    "onYomi": "シ"
+    "onYomi": "シ",
+    "example": "はりに **糸**（いと）を とおします。"
   },
   {
     "char": "字",
     "kunYomi": "あざ",
-    "onYomi": "ジ"
+    "onYomi": "ジ",
+    "example": "ノートに ていねいな **字**（じ）を かきました。"
   },
   {
     "char": "耳",
     "kunYomi": "みみ",
-    "onYomi": "ジ"
+    "onYomi": "ジ",
+    "example": "おもしろい お話を **耳**（みみ）で ききます。"
   },
   {
     "char": "七",
     "kunYomi": "なな・ななつ",
-    "onYomi": "シチ"
+    "onYomi": "シチ",
+    "example": "虹（にじ）には **七**いろ（なないろ） あります。"
   },
   {
     "char": "車",
     "kunYomi": "くるま",
-    "onYomi": "シャ"
+    "onYomi": "シャ",
+    "example": "お父（とう）さんの **車**（くるま）で おでかけします。"
   },
   {
     "char": "手",
     "kunYomi": "て",
-    "onYomi": "シュ"
+    "onYomi": "シュ",
+    "example": "ごはんに するまえに **手**（て）を あらいます。"
   },
   {
     "char": "十",
     "kunYomi": "とお",
-    "onYomi": "ジュウ"
+    "onYomi": "ジュウ",
+    "example": "あめを **十**こ（じゅっこ） もらいました。"
   },
   {
     "char": "出",
     "kunYomi": "でる・だす",
-    "onYomi": "シュツ"
+    "onYomi": "シュツ",
+    "example": "しゅくだいを かばんから **出**（だ）します。"
   },
   {
     "char": "女",
     "kunYomi": "おんな",
-    "onYomi": "ジョ・ニョウ"
+    "onYomi": "ジョ・ニョウ",
+    "example": "**女**（おんな）の 子（こ）が わらっています。"
   },
   {
     "char": "小",
     "kunYomi": "ちいさい・お",
-    "onYomi": "ショウ"
+    "onYomi": "ショウ",
+    "example": "**小**（ちい）さい アリを みつけました。"
   },
   {
     "char": "上",
     "kunYomi": "うえ・あがる",
-    "onYomi": "ジョウ"
+    "onYomi": "ジョウ",
+    "example": "テーブルの **上**（うえ）に おかしが あります。"
   },
   {
     "char": "森",
     "kunYomi": "もり",
-    "onYomi": "シン"
+    "onYomi": "シン",
+    "example": "**森**（もり）の なかには 木（き）が いっぱいです。"
   },
   {
     "char": "人",
     "kunYomi": "ひと",
-    "onYomi": "ジン・ニン"
+    "onYomi": "ジン・ニン",
+    "example": "こうえんに **人**（ひと）が あつまっています。"
   },
   {
     "char": "水",
     "kunYomi": "みず",
-    "onYomi": "スイ"
+    "onYomi": "スイ",
+    "example": "コップの **水**（みず）を のみます。"
   },
   {
     "char": "正",
     "kunYomi": "ただしい",
-    "onYomi": "セイ・ショウ"
+    "onYomi": "セイ・ショウ",
+    "example": "**正**（ただ）しい かきじゅんで かきましょう。"
   },
   {
     "char": "生",
     "kunYomi": "いきる・うまれる",
-    "onYomi": "セイ・ショウ"
+    "onYomi": "セイ・ショウ",
+    "example": "にわに 新しい（あたらしい） 花（はな）が **生**（は）えました。"
   },
   {
     "char": "青",
     "kunYomi": "あおい",
-    "onYomi": "セイ・ショウ"
+    "onYomi": "セイ・ショウ",
+    "example": "**青**（あお）い シャツを きて います。"
   },
   {
     "char": "夕",
     "kunYomi": "ゆう",
-    "onYomi": "セキ"
+    "onYomi": "セキ",
+    "example": "**夕**（ゆう）がたに なると 空（そら）が 赤い（あかい）です。"
   },
   {
     "char": "石",
     "kunYomi": "いし",
-    "onYomi": "セキ・シャク"
+    "onYomi": "セキ・シャク",
+    "example": "みちばたに おもしろい **石**（いし）が ありました。"
   },
   {
     "char": "赤",
     "kunYomi": "あか",
-    "onYomi": "セキ"
+    "onYomi": "セキ",
+    "example": "トマトは まっ**赤**（か）に うれています。"
   },
   {
     "char": "千",
     "kunYomi": "ち",
-    "onYomi": "セン"
+    "onYomi": "セン",
+    "example": "おりづるを **千**ば（せんば） おりました。"
   },
   {
     "char": "川",
     "kunYomi": "かわ",
-    "onYomi": "セン"
+    "onYomi": "セン",
+    "example": "**川**（かわ）で 小（ちい）さい さかなが およいでいます。"
   },
   {
     "char": "先",
     "kunYomi": "さき",
-    "onYomi": "セン"
+    "onYomi": "セン",
+    "example": "「お**先**（さき）に どうぞ」と ゆずります。"
   },
   {
     "char": "早",
     "kunYomi": "はやい",
-    "onYomi": "ソウ・サッ"
+    "onYomi": "ソウ・サッ",
+    "example": "あしたは **早**（はや）く おきましょう。"
   },
   {
     "char": "草",
     "kunYomi": "くさ",
-    "onYomi": "ソウ"
+    "onYomi": "ソウ",
+    "example": "にわの **草**（くさ）を ぬきました。"
   },
   {
     "char": "足",
     "kunYomi": "あ・たりる",
-    "onYomi": "ソク"
+    "onYomi": "ソク",
+    "example": "**足**（あし）に ぴったりな 靴（くつ）を はきます。"
   },
   {
     "char": "村",
     "kunYomi": "むら",
-    "onYomi": "ソン"
+    "onYomi": "ソン",
+    "example": "おじいちゃんは **村**（むら）に すんでいます。"
   },
   {
     "char": "大",
     "kunYomi": "おお・だい",
-    "onYomi": "タイ・ダイ"
+    "onYomi": "タイ・ダイ",
+    "example": "とても **大**（おお）きい スイカを もらいました。"
   },
   {
     "char": "男",
-    "kunYomi": "おとこ",
-    "onYomi": "ダン"
+    "kunYomi": "おトコ",
+    "onYomi": "ダン",
+    "example": "**男**（おとこ）の 子（こ）が サッカーを しています。"
   },
   {
     "char": "竹",
     "kunYomi": "たけ",
-    "onYomi": "チク"
+    "onYomi": "チク",
+    "example": "**竹**（たけ）やぶを タンケンしました。"
   },
   {
     "char": "中",
     "kunYomi": "なか",
-    "onYomi": "チュウ"
+    "onYomi": "チュウ",
+    "example": "かばんの **中**（なか）に きょうかしょを いれます。"
   },
   {
     "char": "虫",
     "kunYomi": "むし",
-    "onYomi": "チュウ"
+    "onYomi": "チュウ",
+    "example": "くさむらで **虫**（むし）を つかまえました。"
   },
   {
     "char": "町",
     "kunYomi": "まち",
-    "onYomi": "チョウ"
+    "onYomi": "チョウ",
+    "example": "わたしの すんでいる **町**（まち）は しずかです。"
   },
   {
     "char": "天",
     "kunYomi": "あめ（あまつ）",
-    "onYomi": "テン"
+    "onYomi": "テン",
+    "example": "**天**き（てんき）が よくなると いいですね。"
   },
   {
     "char": "田",
     "kunYomi": "た",
-    "onYomi": "デン"
+    "onYomi": "デン",
+    "example": "岡山（おかやま）には **田**んぼ（たんぼ）が たくさん あります。"
   },
   {
     "char": "土",
     "kunYomi": "つち",
-    "onYomi": "ト・ド"
+    "onYomi": "ト・ド",
+    "example": "はなだんに **土**（つち）を いれます。"
   },
   {
     "char": "二",
     "kunYomi": "ふた・ふたつ",
-    "onYomi": "ニ"
+    "onYomi": "ニ",
+    "example": "チョコを **二**つ（ふたつ） たべました。"
   },
   {
     "char": "日",
     "kunYomi": "ひ・か",
-    "onYomi": "ニチ・ジツ"
+    "onYomi": "ニチ・ジツ",
+    "example": "**日**（ひ）が のぼると あかるく なります。"
   },
   {
     "char": "入",
     "kunYomi": "はいる・いれる",
-    "onYomi": "ニュウ"
+    "onYomi": "ニュウ",
+    "example": "おふろに **入**（はい）ります。"
   },
   {
     "char": "年",
     "kunYomi": "とし",
-    "onYomi": "ネン"
+    "onYomi": "ネン",
+    "example": "ことしは 二〇二六**年**（ねん）です。"
   },
   {
     "char": "白",
     "kunYomi": "しろ・しろい",
-    "onYomi": "ハク・ビャク"
+    "onYomi": "ハク・ビャク",
+    "example": "**白**（しろ）い ハンカチを もちました。"
   },
   {
     "char": "八",
     "kunYomi": "やっつ",
-    "onYomi": "ハチ"
+    "onYomi": "ハチ",
+    "example": "タコの あしは **八**ほん（はっぽん）です。"
   },
   {
     "char": "百",
     "kunYomi": "ひゃく",
-    "onYomi": "ヒャク"
+    "onYomi": "ヒャク",
+    "example": "テストで **百**てん（ひゃくてん）を とりました。"
   },
   {
     "char": "文",
     "kunYomi": "ふみ",
-    "onYomi": "ブン・モン"
+    "onYomi": "ブン・モン",
+    "example": "ノートに さく**文**（ぶん）を かきます。"
   },
   {
     "char": "木",
     "kunYomi": "き",
-    "onYomi": "ボク・モク"
+    "onYomi": "ボク・モク",
+    "example": "**木**（き）の したで ひとやすみします。"
   },
   {
     "char": "本",
     "kunYomi": "もと",
-    "onYomi": "ホン"
+    "onYomi": "ホン",
+    "example": "としょかんで **本**（ほん）を かります。"
   },
   {
     "char": "名",
     "kunYomi": "な",
-    "onYomi": "メイ"
+    "onYomi": "メイ",
+    "example": "テストに **名**まえ（なまえ）を かきました。"
   },
   {
     "char": "目",
     "kunYomi": "め",
-    "onYomi": "モク"
+    "onYomi": "モク",
+    "example": "あさ おきたら **目**（め）を こすります。"
   },
   {
     "char": "立",
     "kunYomi": "たつ",
-    "onYomi": "リツ"
+    "onYomi": "リツ",
+    "example": "あさの かいで 元気（げんき）に **立**（た）ちます。"
   },
   {
     "char": "力",
     "kunYomi": "ちから",
-    "onYomi": "リョク・リキ"
+    "onYomi": "リョク・リキ",
+    "example": "**力**（ちから）を あわせて つくえを はこびます。"
   },
   {
     "char": "林",
     "kunYomi": "はやし",
-    "onYomi": "リン"
+    "onYomi": "リン",
+    "example": "となりには 小（ちい）さな **林**（はやし）が あります。"
   },
   {
     "char": "六",
     "kunYomi": "むっつ",
-    "onYomi": "ロク"
+    "onYomi": "ロク",
+    "example": "サイコロを ふって **六**（ろく）が でました。"
   },
   {
     "char": "引",
     "kunYomi": "ひく",
-    "onYomi": "イン"
+    "onYomi": "イン",
+    "example": "ドアを 手前（てまえ）に **引**（ひ）きます。"
   },
   {
     "char": "羽",
     "kunYomi": "はね",
-    "onYomi": "ウ"
+    "onYomi": "ウ",
+    "example": "とりが **羽**（はね）を 広（ひろ）げて とんでいます。"
   },
   {
     "char": "雲",
     "kunYomi": "くも",
-    "onYomi": "ウン"
+    "onYomi": "ウン",
+    "example": "空（そら）に 白い（しろい） **雲**（くも）が うかんでいます。"
   },
   {
     "char": "園",
     "kunYomi": "その",
-    "onYomi": "エン"
+    "onYomi": "エン",
+    "example": "こう**園**（えん）で ブランコに のります。"
   },
   {
     "char": "遠",
     "kunYomi": "とおい",
-    "onYomi": "エン・オン"
+    "onYomi": "エン・オン",
+    "example": "**遠**（とお）くの 山（やま）が きれいに みえます。"
   },
   {
     "char": "何",
     "kunYomi": "なに・なん",
-    "onYomi": "カ"
+    "onYomi": "カ",
+    "example": "あしたの おやつは **何**（なに）かな？"
   },
   {
     "char": "科",
-    "kunYomi": "しな（かもく）",
-    "onYomi": "カ"
+    "kunYomi": "しな",
+    "onYomi": "カ",
+    "example": "り**科**（か）の じけんは おもしろいです。"
   },
   {
     "char": "夏",
     "kunYomi": "なつ",
-    "onYomi": "カ・ゲ"
+    "onYomi": "カ・ゲ",
+    "example": "**夏**（なつ）休み（やすみ）に プールに いきました。"
   },
   {
     "char": "家",
     "kunYomi": "いえ",
-    "onYomi": "カ・ケ"
+    "onYomi": "カ・ケ",
+    "example": "**家**（いえ）に かえったら うがいを します。"
   },
   {
     "char": "歌",
     "kunYomi": "うた",
-    "onYomi": "カ"
+    "onYomi": "カ",
+    "example": "みんなで たのしく **歌**（うた）を うたいます。"
   },
   {
     "char": "画",
     "kunYomi": "え・かく",
-    "onYomi": "ガ・カク"
+    "onYomi": "ガ・カク",
+    "example": "としょかんで 映**画**（えいが）を みました。"
   },
   {
     "char": "回",
     "kunYomi": "まわる・かい",
-    "onYomi": "カイ・エ"
+    "onYomi": "カイ・エ",
+    "example": "なわとびを 三**回**（かい） とびました。"
   },
   {
     "char": "会",
     "kunYomi": "あう",
-    "onYomi": "カイ・エ"
+    "onYomi": "カイ・エ",
+    "example": "こんどの日（ひ）に 友（とも）だちに **会**（あ）います。"
   },
   {
     "char": "海",
     "kunYomi": "うみ",
-    "onYomi": "カイ"
+    "onYomi": "カイ",
+    "example": "**海**（うみ）に いって すなはまで あそびます。"
   },
   {
     "char": "絵",
     "kunYomi": "え",
-    "onYomi": "カイ・エ"
+    "onYomi": "カイ・エ",
+    "example": "画（が）ようしに **絵**（え）を かきました。"
   },
   {
     "char": "外",
     "kunYomi": "そと・ほか",
-    "onYomi": "ガイ・ゲ"
+    "onYomi": "ガイ・ゲ",
+    "example": "**外**（そと）は すこし さむいです。"
   },
   {
     "char": "角",
     "kunYomi": "かど・つの",
-    "onYomi": "カク"
+    "onYomi": "カク",
+    "example": "まがった **角**（かど）に ゆうびんきょくが あります。"
   },
   {
     "char": "楽",
     "kunYomi": "たのしい・らく",
-    "onYomi": "ガク・ラク"
+    "onYomi": "ガク・ラク",
+    "example": "おん**楽**（がく）の じかんが だいすきです。"
   },
   {
     "char": "活",
     "kunYomi": "いきる",
-    "onYomi": "カツ"
+    "onYomi": "カツ",
+    "example": "学（がっ）こう生**活**（かつ）を たのしみます。"
   },
   {
     "char": "間",
     "kunYomi": "あいだ・ま",
-    "onYomi": "カン・ケン"
+    "onYomi": "カン・ケン",
+    "example": "木（き）と 木（き）の **間**（あいだ）に はながあります。"
   },
   {
     "char": "丸",
     "kunYomi": "まる",
-    "onYomi": "ガン"
+    "onYomi": "ガン",
+    "example": "きれいで **丸**（まる）い ビーだまを みつけました。"
   },
   {
     "char": "岩",
     "kunYomi": "いわ",
-    "onYomi": "ガン"
+    "onYomi": "ガン",
+    "example": "山（やま）に ごつごつした **岩**（いわ）が あります。"
   },
   {
     "char": "顔",
     "kunYomi": "かお",
-    "onYomi": "ガン"
+    "onYomi": "ガン",
+    "example": "あさ おきたら **顔**（かお）を あらいます。"
   },
   {
     "char": "汽",
     "kunYomi": "（きしゃのき）",
-    "onYomi": "キ"
+    "onYomi": "キ",
+    "example": "**汽**しゃ（きしゃ）に のって たびに 出（で）ます。"
   },
   {
     "char": "記",
     "kunYomi": "しるす",
-    "onYomi": "キ"
+    "onYomi": "キ",
+    "example": "きょうのことを 日**記**（き）に かきます。"
   },
   {
     "char": "帰",
     "kunYomi": "かえる",
-    "onYomi": "キ"
+    "onYomi": "キ",
+    "example": "学校（がっこう）が おわったら おうちに **帰**（かえ）ります。"
   },
   {
     "char": "弓",
     "kunYomi": "ゆみ",
-    "onYomi": "キュウ"
+    "onYomi": "キュウ",
+    "example": "**弓**（ゆみ）を ひいて やを とばします。"
   },
   {
     "char": "牛",
     "kunYomi": "うし",
-    "onYomi": "ギュウ"
+    "onYomi": "ギュウ",
+    "example": "ぼくじょうに **牛**（うし）が たくさん います。"
   },
   {
     "char": "魚",
     "kunYomi": "さかな・うお",
-    "onYomi": "ギョ"
+    "onYomi": "ギョ",
+    "example": "**魚**（さかな）つりをして あそびます。"
   },
   {
     "char": "京",
     "kunYomi": "きょう",
-    "onYomi": "キョウ・ケイ"
+    "onYomi": "キョウ・ケイ",
+    "example": "東**京**（きょう）には 高（たか）い ビルが あります。"
   },
   {
     "char": "強",
     "kunYomi": "つよい",
-    "onYomi": "キョウ・ゴウ"
+    "onYomi": "キョウ・ゴウ",
+    "example": "風（かぜ）が **強**（つよ）くて かさが とばされそうです。"
   },
   {
     "char": "教",
     "kunYomi": "おしえる",
-    "onYomi": "キョウ"
+    "onYomi": "キョウ",
+    "example": "先生（せんせい）が 漢字（かんじ）を **教**（おし）えてくれます。"
   },
   {
     "char": "近",
     "kunYomi": "ちかい",
-    "onYomi": "キン・コン"
+    "onYomi": "キン・コン",
+    "example": "わたしの いえは 学校（がっこう）に **近**（ちか）いです。"
   },
   {
     "char": "兄",
     "kunYomi": "あに",
-    "onYomi": "キョウ・ケイ"
+    "onYomi": "キョウ・ケイ",
+    "example": "**兄**（あに）と いっしょに 本（ほん）を よみます。"
   },
   {
     "char": "形",
     "kunYomi": "かたち",
-    "onYomi": "ケイ・ギョウ"
+    "onYomi": "ケイ・ギョウ",
+    "example": "いろいろな **形**（かたち）の つみきで あそびます。"
   },
   {
     "char": "計",
     "kunYomi": "はかる",
-    "onYomi": "ケイ"
+    "onYomi": "ケイ",
+    "example": "時計（と**けい**）を みて 時間（じかん）を しらべます。"
   },
   {
     "char": "元",
     "kunYomi": "もと",
-    "onYomi": "ゲン・ガン"
+    "onYomi": "ゲン・ガン",
+    "example": "あさから **元**気（げんき）に あいさつします。"
   },
   {
     "char": "言",
     "kunYomi": "いう・ごと",
-    "onYomi": "ゲン・ゴン"
+    "onYomi": "ゲン・ゴン",
+    "example": "「ありがとう」と **言**（い）うと 気持ち（きもち）がいいです。"
   },
   {
     "char": "原",
     "kunYomi": "はら",
-    "onYomi": "ゲン"
+    "onYomi": "ゲン",
+    "example": "**原**っぱ（はらっぱ）を 元気（げんき）に はしりまわります。"
   },
   {
     "char": "戸",
     "kunYomi": "と",
-    "onYomi": "コ"
+    "onYomi": "コ",
+    "example": "**戸**（と）を しめてから おでかけします。"
   },
   {
     "char": "古",
     "kunYomi": "ふるい",
-    "onYomi": "コ"
+    "onYomi": "コ",
+    "example": "**古**（ふる）い 本（ほん）を だいじに よみます。"
   },
   {
     "char": "午",
-    "kunYomi": "ご・うま（ご）",
-    "onYomi": "ゴ"
+    "kunYomi": "ご・うま",
+    "onYomi": "ゴ",
+    "example": "**午**ぜん（ごぜん）は 学校（がっこう）で おべんきょうです。"
   },
   {
     "char": "後",
     "kunYomi": "うしろ・あと",
-    "onYomi": "ゴ・コウ"
+    "onYomi": "ゴ・コウ",
+    "example": "わたしの **後**（うしろ）に 友（とも）だちが います。"
   },
   {
     "char": "語",
     "kunYomi": "かたる・ご",
-    "onYomi": "ゴ"
+    "onYomi": "ゴ",
+    "example": "こく**語**（ご）の じゅぎょうで 本（ほん）を よみます。"
   },
   {
     "char": "工",
     "kunYomi": "たくみ",
-    "onYomi": "コウ・ク"
+    "onYomi": "コウ・ク",
+    "example": "**工**じ（こうじ）をしている 車（くるま）を みました。"
   },
   {
     "char": "公",
     "kunYomi": "おおやけ",
-    "onYomi": "コウ"
+    "onYomi": "コウ",
+    "example": "**公**えん（こうえん）で ブランコに のります。"
   },
   {
     "char": "広",
     "kunYomi": "ひろい",
-    "onYomi": "コウ"
+    "onYomi": "コウ",
+    "example": "**広**（ひろ）い はらっぱで おにごっこを します。"
   },
   {
     "char": "交",
     "kunYomi": "まじわる",
-    "onYomi": "コウ"
+    "onYomi": "コウ",
+    "example": "**交**ばん（こうばん）で みちを ききました。"
   },
   {
     "char": "光",
     "kunYomi": "ひかり",
-    "onYomi": "コウ"
+    "onYomi": "コウ",
+    "example": "太陽（たいよう）の **光**（ひかり）が まぶしいです。"
   },
   {
     "char": "考",
     "kunYomi": "かんがえる",
-    "onYomi": "コウ"
+    "onYomi": "コウ",
+    "example": "どうやったら できるか じぶんで **考**（かんが）えます。"
   },
   {
     "char": "行",
     "kunYomi": "いく・おこなう",
-    "onYomi": "コウ・ギョウ・アン"
+    "onYomi": "コウ・ギョウ・アン",
+    "example": "あした こうえんに **行**（い）きませんか？"
   },
   {
     "char": "高",
     "kunYomi": "たかい",
-    "onYomi": "コウ"
+    "onYomi": "コウ",
+    "example": "せが **高**（たか）く なって うれしいです。"
   },
   {
     "char": "黄",
     "kunYomi": "き",
-    "onYomi": "コウ・オウ"
+    "onYomi": "コウ・オウ",
+    "example": "**黄**いろ（きいろ）い 帽子（ぼうし）を かぶります。"
   },
   {
     "char": "合",
-    "kunYomi": "ああ・あう",
-    "onYomi": "ゴウ・ガッ"
+    "kunYomi": "あう",
+    "onYomi": "ゴウ・ガッ",
+    "example": "みんなで 力を **合**（あ）わせて がんばります。"
   },
   {
     "char": "谷",
     "kunYomi": "たに",
-    "onYomi": "コク"
+    "onYomi": "コク",
+    "example": "山（やま）と 山（やま）の あいだに **谷**（たに）が あります。"
   },
   {
     "char": "国",
     "kunYomi": "くに",
-    "onYomi": "コク"
+    "onYomi": "コク",
+    "example": "いろいろな **国**（くに）の ことを しらべます。"
   },
   {
     "char": "黒",
     "kunYomi": "くろ・くろい",
-    "onYomi": "コク"
+    "onYomi": "コク",
+    "example": "**黒**（くろ）い クレヨンで 影（かげ）を かきました。"
   },
   {
     "char": "今",
     "kunYomi": "いま",
-    "onYomi": "コン・キン"
+    "onYomi": "コン・キン",
+    "example": "**今**（いま）から おやつを たべます。"
   },
   {
     "char": "才",
     "kunYomi": "さい",
-    "onYomi": "サイ"
+    "onYomi": "サイ",
+    "example": "わたしは 七**才**（さい）に なりました。"
   },
   {
     "char": "細",
     "kunYomi": "ほそい",
-    "onYomi": "サイ"
+    "onYomi": "サイ",
+    "example": "とても **細**（ほそ）い 糸（いと）を つかいます。"
   },
   {
     "char": "作",
     "kunYomi": "つくる",
-    "onYomi": "サク・サ"
+    "onYomi": "サク・サ",
+    "example": "ねんどで 好きな どうぶつを **作**（つく）ります。"
   },
   {
     "char": "算",
-    "kunYomi": "さん・はさん【くわしい】",
-    "onYomi": "サン"
+    "kunYomi": "さん",
+    "onYomi": "サン",
+    "example": "**算**すう（さんすう）で たし算（ざん）を ならいました。"
   },
   {
     "char": "止",
     "kunYomi": "とまる",
-    "onYomi": "シ"
+    "onYomi": "シ",
+    "example": "あか信号（しんごう）で ぴたっと **止**（と）まります。"
   },
   {
     "char": "市",
     "kunYomi": "いち",
-    "onYomi": "シ"
+    "onYomi": "シ",
+    "example": "わたしの いえは 岡山**市**（し）に あります。"
   },
   {
     "char": "矢",
     "kunYomi": "や",
-    "onYomi": "シ"
+    "onYomi": "シ",
+    "example": "**矢**（や）を ぴゅんと とばしました。"
   },
   {
     "char": "姉",
     "kunYomi": "あね",
-    "onYomi": "シ"
+    "onYomi": "シ",
+    "example": "**姉**（あね）と いっしょに おかいものに いきます。"
   },
   {
     "char": "思",
-    "kunYomi": "おもう",
-    "onYomi": "シ"
+    "kunYomi": "お思う",
+    "onYomi": "シ",
+    "example": "友（とも）だちに なれると いいなと **思**（おも）います。"
   },
   {
     "char": "紙",
     "kunYomi": "かみ",
-    "onYomi": "シ"
+    "onYomi": "シ",
+    "example": "折（お）り**紙**（がみ）で つるを おりました。"
   },
   {
     "char": "寺",
     "kunYomi": "てら",
-    "onYomi": "ジ"
+    "onYomi": "ジ",
+    "example": "お**寺**（てら）の かねが ゴーンと なりました。"
   },
   {
     "char": "自",
     "kunYomi": "みずから",
-    "onYomi": "ジ・シ"
+    "onYomi": "ジ・シ",
+    "example": "**自**てん車（じてんしゃ）に のる れんしゅうを します。"
   },
   {
     "char": "時",
     "kunYomi": "とき",
-    "onYomi": "ジ"
+    "onYomi": "ジ",
+    "example": "いまの **時**（じ）こくを しらべます。"
   },
   {
     "char": "室",
     "kunYomi": "むろ",
-    "onYomi": "シツ"
+    "onYomi": "シツ",
+    "example": "教**室**（きょうしつ）に ランドセルを おきます。"
   },
   {
     "char": "社",
-    "kunYomi": "やしろ・しゃ",
-    "onYomi": "シャ"
+    "kunYomi": "やしろ",
+    "onYomi": "シャ",
+    "example": "お正（しょう）がつに 神**社**（じんじゃ）に いきました。"
   },
   {
     "char": "弱",
     "kunYomi": "よわい",
-    "onYomi": "ジャク"
+    "onYomi": "ジャク",
+    "example": "風（かぜ）が **弱**（よわ）く なってきました。"
   },
   {
     "char": "首",
     "kunYomi": "くび",
-    "onYomi": "シュ"
+    "onYomi": "シュ",
+    "example": "キリンは **首**（くび）が とても ながいです。"
   },
   {
     "char": "秋",
     "kunYomi": "あき",
-    "onYomi": "シュウ"
+    "onYomi": "シュウ",
+    "example": "**秋**（あき）に なると 木（き）の はが 赤（あか）くなります。"
   },
   {
     "char": "週",
     "kunYomi": "しゅう",
-    "onYomi": "シュウ"
+    "onYomi": "シュウ",
+    "example": "来**週**（らいしゅう）の お休み（やすみ）が たのしみです。"
   },
   {
     "char": "春",
     "kunYomi": "はる",
-    "onYomi": "シュン"
+    "onYomi": "シュン",
+    "example": "**春**（はる）に なって さくらが さきました。"
   },
   {
     "char": "書",
     "kunYomi": "かく",
-    "onYomi": "ショ"
+    "onYomi": "ショ",
+    "example": "としょかんで **書**（ほん）を よみました。"
   },
   {
     "char": "少",
-    "kunYomi": "すくない・しょう（わかさ）",
-    "onYomi": "ショウ"
+    "kunYomi": "すくない",
+    "onYomi": "ショウ",
+    "example": "おやつを **少**（すこ）しだけ たべました。"
   },
   {
     "char": "場",
     "kunYomi": "ば",
-    "onYomi": "ジョウ・チョウ"
+    "onYomi": "ジョウ・チョウ",
+    "example": "うんどう**場**（じょう）で かけっこを します。"
   },
   {
     "char": "色",
     "kunYomi": "いろ",
-    "onYomi": "ショク・シキ"
+    "onYomi": "ショク・シキ",
+    "example": "好きな **色**（いろ）で ぬりえを します。"
   },
   {
     "char": "食",
-    "kunYomi": "たべる・くう",
-    "onYomi": "ショク・ジキ"
+    "kunYomi": "たべる",
+    "onYomi": "ショク・ジキ",
+    "example": "朝ごはん（あさごはん）を しっかり **食**（た）べます。"
   },
   {
     "char": "心",
     "kunYomi": "こころ",
-    "onYomi": "シン"
+    "onYomi": "シン",
+    "example": "みんなに やさしい **心**（こころ）で せっします。"
   },
   {
     "char": "新",
-    "kunYomi": "あたらしい・あらた",
-    "onYomi": "シン"
+    "kunYomi": "あたらしい",
+    "onYomi": "シン",
+    "example": "**新**（あたら）しい ランドセルは ピカピカです。"
   },
   {
     "char": "親",
     "kunYomi": "おや・したしい",
-    "onYomi": "シン"
+    "onYomi": "シン",
+    "example": "お**親**（や）さんと いっしょに 公園（こうえん）に いきます。"
   },
   {
     "char": "図",
-    "kunYomi": "ず・え・はかる",
-    "onYomi": "ズ・ト"
+    "kunYomi": "ず",
+    "onYomi": "ズ・ト",
+    "example": "**図**こう（ずこう）の じかんに かいじゅうを かきました。"
   },
   {
     "char": "数",
     "kunYomi": "かず・かぞえる",
-    "onYomi": "スウ・ス"
+    "onYomi": "スウ・ス",
+    "example": "リンゴの **数**（かず）を かぞえます。"
   },
   {
     "char": "西",
     "kunYomi": "にし",
-    "onYomi": "セイ・サイ"
+    "onYomi": "セイ・サイ",
+    "example": "太陽（たいよう）は **西**（にし）に しずみます。"
   },
   {
     "char": "声",
     "kunYomi": "こえ",
-    "onYomi": "セイ・ショウ"
+    "onYomi": "セイ・ショウ",
+    "example": "大きな **声**（こえ）で おはあいさつします。"
   },
   {
     "char": "星",
     "kunYomi": "ほし",
-    "onYomi": "セイ・ショウ"
+    "onYomi": "セイ・ショウ",
+    "example": "夜（よる）の 空（そら）に **星**（ほし）が ひかっています。"
   },
   {
     "char": "晴",
     "kunYomi": "はれる",
-    "onYomi": "セイ"
+    "onYomi": "セイ",
+    "example": "あした **晴**（は）れたら そとで あそびましょう。"
   },
   {
     "char": "切",
     "kunYomi": "きる",
-    "onYomi": "セツ・サイ"
+    "onYomi": "セツ・サイ",
+    "example": "はさみで かみを **切**（き）ります。"
   },
   {
     "char": "雪",
     "kunYomi": "ゆき",
-    "onYomi": "セツ"
+    "onYomi": "セツ",
+    "example": "**雪**（ゆき）が ふったので 雪だるま（ゆきだるま）を つくりました。"
   },
   {
     "char": "船",
     "kunYomi": "ふね",
-    "onYomi": "セン"
+    "onYomi": "セン",
+    "example": "海（うみ）に 大きな **船**（ふね）が うかんでいます。"
   },
   {
     "char": "線",
     "kunYomi": "せん",
-    "onYomi": "セン"
+    "onYomi": "セン",
+    "example": "じょうぎで まっすぐな **線**（せん）を ひきます。"
   },
   {
     "char": "前",
     "kunYomi": "まえ",
-    "onYomi": "ゼン"
+    "onYomi": "ゼン",
+    "example": "みんなの **前**（まえ）で はっぴょうします。"
   },
   {
     "char": "組",
     "kunYomi": "くむ",
-    "onYomi": "ソ"
+    "onYomi": "ソ",
+    "example": "わたしは 一（いち）年（ねん） 二**組**（くみ）です。"
   },
   {
     "char": "走",
     "kunYomi": "はしる",
-    "onYomi": "ソウ"
+    "onYomi": "ソウ",
+    "example": "かけっこで 一（いち）ばんを **走**（はし）ります。"
   },
   {
     "char": "多",
     "kunYomi": "おおい",
-    "onYomi": "タ"
+    "onYomi": "タ",
+    "example": "公園（こうえん）に 子（こ）どもが **多**（おお）いですね。"
   },
   {
     "char": "太",
-    "kunYomi": "ふとい・おおきい",
-    "onYomi": "タイ・タ"
+    "kunYomi": "ふとい",
+    "onYomi": "タイ・タ",
+    "example": "とても **太**（ふと）い 木（き）を みつけました。"
   },
   {
     "char": "体",
     "kunYomi": "からだ",
-    "onYomi": "タイ・テイ"
+    "onYomi": "タイ・テイ",
+    "example": "ごはんを たべて **体**（からだ）を じょうぶに します。"
   },
   {
     "char": "台",
-    "kunYomi": "うてな・だい",
-    "onYomi": "ダイ・タイ"
+    "kunYomi": "うてな",
+    "onYomi": "ダイ・タイ",
+    "example": "すべり**台**（だい）で たのしく あそびます。"
   },
   {
     "char": "地",
     "kunYomi": "ち",
-    "onYomi": "チ・ジ"
+    "onYomi": "チ・ジ",
+    "example": "**地**（ち）めんを アリが あるいています。"
   },
   {
     "char": "池",
     "kunYomi": "いけ",
-    "onYomi": "チ"
+    "onYomi": "チ",
+    "example": "**池**（いけ）に カメが ぷかぷか ういています。"
   },
   {
     "char": "知",
     "kunYomi": "しる",
-    "onYomi": "チ"
+    "onYomi": "チ",
+    "example": "その ニュースなら **知**（し）っています。"
   },
   {
     "char": "茶",
     "kunYomi": "ちゃ",
-    "onYomi": "チャ・サ"
+    "onYomi": "チャ・サ",
+    "example": "あたたかい お**茶**（ちゃ）を のみます。"
   },
   {
     "char": "昼",
     "kunYomi": "ひる",
-    "onYomi": "チュウ"
+    "onYomi": "チュウ",
+    "example": "お**昼**（ひる）に おべんとうを たべます。"
   },
   {
     "char": "長",
     "kunYomi": "ながい",
-    "onYomi": "チョウ"
+    "onYomi": "チョウ",
+    "example": "えんぴつを つかって **長**（なが）さを はかります。"
   },
   {
     "char": "鳥",
     "kunYomi": "とり",
-    "onYomi": "チョウ・ニョウ"
+    "onYomi": "チョウ・ニョウ",
+    "example": "**鳥**（とり）が 空（そら）を とんでいます。"
   },
   {
     "char": "朝",
     "kunYomi": "あさ",
-    "onYomi": "チョウ・ジョウ"
+    "onYomi": "チョウ・ジョウ",
+    "example": "**朝**（あさ） おきたら あいさつを します。"
   },
   {
     "char": "直",
-    "kunYomi": "なおす・ただちに",
-    "onYomi": "チョク・ジキ"
+    "kunYomi": "なおす",
+    "onYomi": "チョク・ジキ",
+    "example": "はなれた ラベルを **直**（なお）しました。"
   },
   {
     "char": "通",
     "kunYomi": "とおる・かよう",
-    "onYomi": "ツウ・ツ"
+    "onYomi": "ツウ・ツ",
+    "example": "この みちを まっすぐ **通**（とお）ります。"
   },
   {
     "char": "弟",
     "kunYomi": "おとうと",
-    "onYomi": "テイ・ダイ"
+    "onYomi": "テイ・ダイ",
+    "example": "**弟**（おとうと）と おもちゃで あそびます。"
   },
   {
     "char": "店",
     "kunYomi": "みせ",
-    "onYomi": "テン"
+    "onYomi": "テン",
+    "example": "パン屋（や）さんの お**店**（みせ）に いきました。"
   },
   {
     "char": "点",
     "kunYomi": "てん",
-    "onYomi": "テン"
+    "onYomi": "テン",
+    "example": "ぶんの おわりに **点**（まる）を つけます。"
   },
   {
     "char": "電",
     "kunYomi": "でん",
-    "onYomi": "デン"
+    "onYomi": "デン",
+    "example": "**電**しゃ（でんしゃ）に のって おでかけします。"
   },
   {
     "char": "刀",
     "kunYomi": "かたな",
-    "onYomi": "トウ"
+    "onYomi": "トウ",
+    "example": "はくぶつかんで **刀**（かたな）を みました。"
   },
   {
     "char": "冬",
     "kunYomi": "ふゆ",
-    "onYomi": "トウ"
+    "onYomi": "トウ",
+    "example": "**冬**（ふゆ）は さむいので コートを きます。"
   },
   {
     "char": "当",
     "kunYomi": "あたる",
-    "onYomi": "トウ"
+    "onYomi": "トウ",
+    "example": "ボールが まとに **当**（あ）たりました。"
   },
   {
     "char": "東",
     "kunYomi": "ひがし",
-    "onYomi": "トウ"
+    "onYomi": "トウ",
+    "example": "太陽（たいよう）は **東**（ひがし）から のぼります。"
   },
   {
     "char": "答",
     "kunYomi": "こたえる",
-    "onYomi": "トウ"
+    "onYomi": "トウ",
+    "example": "もんだいに スラスラ **答**（こた）えます。"
   },
   {
     "char": "頭",
     "kunYomi": "あたま",
-    "onYomi": "トウ・ズ"
+    "onYomi": "トウ・ズ",
+    "example": "ぼうしを **頭**（あたま）に かぶります。"
   },
   {
     "char": "同",
     "kunYomi": "おなじ",
-    "onYomi": "ドウ"
+    "onYomi": "ドウ",
+    "example": "友（とも）だちと **同**（おな）じ 本（ほん）を もっています。"
   },
   {
     "char": "道",
     "kunYomi": "みち",
-    "onYomi": "ドウ・トウ"
+    "onYomi": "ドウ・トウ",
+    "example": "車（くるま）に 気（き）をつけて **道**（みち）を あるきます。"
   },
   {
     "char": "読",
     "kunYomi": "よむ",
-    "onYomi": "ドク・トク"
+    "onYomi": "ドク・トク",
+    "example": "しずかな ところで 本（ほん）を **読**（よ）みます。"
   },
   {
     "char": "内",
     "kunYomi": "うち",
-    "onYomi": "ナイ・ダイ"
+    "onYomi": "ナイ・ダイ",
+    "example": "こうえんの **内**（うち）がわで あそびます。"
   },
   {
     "char": "南",
     "kunYomi": "みなみ",
-    "onYomi": "ナン・ナ"
+    "onYomi": "ナン・ナ",
+    "example": "**南**（みなみ）の くには とても あついです。"
   },
   {
     "char": "肉",
     "kunYomi": "にく",
-    "onYomi": "ニク"
+    "onYomi": "ニク",
+    "example": "きょうの 夕（ゆう）はん（ごはん）は **肉**（にく）りょうりです。"
   },
   {
     "char": "馬",
     "kunYomi": "うま",
-    "onYomi": "バ"
+    "onYomi": "バ",
+    "example": "**馬**（うま）が パカパカ はしっています。"
   },
   {
     "char": "売",
     "kunYomi": "うる",
-    "onYomi": "バイ"
+    "onYomi": "バイ",
+    "example": "おもちゃ屋（や）さんで ミニカーを **売**（う）っています。"
   },
   {
     "char": "買",
     "kunYomi": "かう",
-    "onYomi": "バイ"
+    "onYomi": "バイ",
+    "example": "スーパーで おかしを **買**（か）いました。"
   },
   {
     "char": "麦",
     "kunYomi": "むぎ",
-    "onYomi": "バク"
+    "onYomi": "バク",
+    "example": "**麦**（むぎ）わら帽子（ぼうし）を かぶります。"
   },
   {
     "char": "半",
     "kunYomi": "なかば",
-    "onYomi": "ハン"
+    "onYomi": "ハン",
+    "example": "リンゴを **半**ぶん（はんぶん）に わけて たべます。"
   },
   {
     "char": "番",
-    "kunYomi": "つがい・ばん",
-    "onYomi": "バン"
+    "kunYomi": "つがい",
+    "onYomi": "バン",
+    "example": "かけっこで 一**番**（ばん）に なりました。"
   },
   {
     "char": "父",
     "kunYomi": "ちち",
-    "onYomi": "フ"
+    "onYomi": "フ",
+    "example": "お**父**（とう）さんと いっしょに おふろに 入（はい）ります。"
   },
   {
     "char": "風",
     "kunYomi": "かぜ",
-    "onYomi": "フウ・フ"
+    "onYomi": "フウ・フ",
+    "example": "そよ**風**（かぜ）が ふいて 気持ち（きもち）がいいです。"
   },
   {
     "char": "分",
     "kunYomi": "わかる・わける",
-    "onYomi": "ブン・フン・ブ"
+    "onYomi": "ブン・フン・ブ",
+    "example": "じかんを **分**（わ）けて つかいます。"
   },
   {
     "char": "聞",
     "kunYomi": "きく",
-    "onYomi": "ブン・モン"
+    "onYomi": "ブン・モン",
+    "example": "先生（せんせい）の お話を よく **聞**（き）きます。"
   },
   {
     "char": "米",
     "kunYomi": "こめ",
-    "onYomi": "マイ・ベイ"
+    "onYomi": "マイ・ベイ",
+    "example": "お**米**（こめ）を といで ごはんを たきます。"
   },
   {
     "char": "歩",
-    "kunYomi": "あるく・あゆむ",
-    "onYomi": "ホ・ブ・フ"
+    "kunYomi": "あるく",
+    "onYomi": "ホ・ブ・フ",
+    "example": "トボトボと みちを **歩**（ある）きます。"
   },
   {
     "char": "母",
     "kunYomi": "はは",
-    "onYomi": "ボ"
+    "onYomi": "ボ",
+    "example": "お**母**（かあ）さんの りょうりは とても おいしいです。"
   },
   {
     "char": "方",
     "kunYomi": "かた",
-    "onYomi": "ホウ"
+    "onYomi": "ホウ",
+    "example": "あちらの **方**（ほう）に 山（やま）が みえます。"
   },
   {
     "char": "北",
     "kunYomi": "きた",
-    "onYomi": "ホク"
+    "onYomi": "ホク",
+    "example": "**北**（きた）風（かぜ）が ふくと さむくなります。"
   },
   {
     "char": "毎",
     "kunYomi": "ごと",
-    "onYomi": "マイ"
+    "onYomi": "マイ",
+    "example": "**毎**日（まいにち） はみがきを します。"
   },
   {
     "char": "妹",
     "kunYomi": "いもうと",
-    "onYomi": "マイ"
+    "onYomi": "マイ",
+    "example": "**妹**（いもうと）の めんどうを みて あげます。"
   },
   {
     "char": "万",
-    "kunYomi": "よろず・まん",
-    "onYomi": "マン・バン"
+    "kunYomi": "よろず",
+    "onYomi": "マン・バン",
+    "example": "一**万**（まん）円（えん）を ちょきんしました。"
   },
   {
     "char": "明",
-    "kunYomi": "あかるい・あける",
-    "onYomi": "メイ・ミョウ"
+    "kunYomi": "あかるい",
+    "onYomi": "メイ・ミョウ",
+    "example": "**明**（あか）るい ところで 本（ほん）を よみましょう。"
   },
   {
     "char": "鳴",
     "kunYomi": "なく",
-    "onYomi": "メイ"
+    "ofYomi": "メイ",
+    "example": "小鳥（ことり）が チチッ、チチッと **鳴**（な）いています。"
   },
   {
     "char": "毛",
     "kunYomi": "け",
-    "onYomi": "モウ"
+    "onYomi": "モウ",
+    "example": "ネコを なでると **毛**（け）が ふわふわしています。"
   },
   {
     "char": "門",
-    "kunYomi": "かど・もん",
-    "onYomi": "モン"
+    "kunYomi": "かど",
+    "onYomi": "モン",
+    "example": "学校（がっこう）の 正**門**（もん）を くぐります。"
   },
   {
     "char": "夜",
     "kunYomi": "よる",
-    "onYomi": "ヤ"
+    "onYomi": "ヤ",
+    "example": "**夜**（よる）に なると 空（そら）が くらくなります。"
   },
   {
     "char": "野",
     "kunYomi": "の",
-    "onYomi": "ヤ"
+    "onYomi": "ヤ",
+    "example": "**野**さい（やさい）を もりもり たべます。"
   },
   {
     "char": "友",
     "kunYomi": "とも",
-    "onYomi": "ユウ"
+    "onYomi": "ユウ",
+    "example": "**友**（とも）だちと 仲（なか）よく あそびます。"
   },
   {
     "char": "用",
-    "kunYomi": "もちいる・よう",
-    "onYomi": "ヨウ"
+    "kunYomi": "もちいる",
+    "onYomi": "ヨウ",
+    "example": "**用**（よう）じを すませてから あそびます。"
   },
   {
     "char": "曜",
     "kunYomi": "よう",
-    "onYomi": "ヨウ"
+    "onYomi": "ヨウ",
+    "example": "きょうは 何（なに）**曜**（よう）日（び）ですか？"
   },
   {
     "char": "来",
-    "kunYomi": "くる・きたる",
-    "onYomi": "ライ"
+    "kunYomi": "くる",
+    "onYomi": "ライ",
+    "example": "あした 友（とも）だちが いえに **来**（く）ます。"
   },
   {
     "char": "里",
     "kunYomi": "さと",
-    "onYomi": "リ"
+    "onYomi": "リ",
+    "example": "おじいちゃんの ふる**里**（さと）に いきました。"
   },
   {
     "char": "理",
     "kunYomi": "ことわり",
-    "onYomi": "リ"
+    "onYomi": "リ",
+    "example": "り**理**（か）の じけんは おもしろいです。"
   },
   {
     "char": "話",
-    "kunYomi": "はなす・はなし",
-    "onYomi": "ワ"
+    "kunYomi": "はなす",
+    "onYomi": "ワ",
+    "example": "みんなで たのしく お**話**（はなし）を します。"
   }
 ]

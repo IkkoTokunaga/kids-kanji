@@ -7,6 +7,7 @@ import {
   useRef,
   useState,
   type CSSProperties,
+  type ReactNode,
 } from "react";
 import Link from "next/link";
 import { KANJI_ITEMS, clampKanjiIndex } from "../lib/kanji";
@@ -15,6 +16,30 @@ import { KANJI_ITEMS, clampKanjiIndex } from "../lib/kanji";
 const STROKE_LINE_WIDTH = 13;
 /** 不透過（半透明だとストロークの重なりが濃く見えて玉連りになる） */
 const INK_COLOR = "#1a1a1a";
+
+/** 例文内の **…** を除去して赤い span に分割（マークダウン風） */
+function renderExampleWithEmphasis(text: string): ReactNode {
+  const re = /\*\*(.+?)\*\*/g;
+  const nodes: ReactNode[] = [];
+  let last = 0;
+  let m: RegExpExecArray | null;
+  let i = 0;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) {
+      nodes.push(text.slice(last, m.index));
+    }
+    nodes.push(
+      <span key={i++} className="kanji-examples__emph">
+        {m[1]}
+      </span>
+    );
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) {
+    nodes.push(text.slice(last));
+  }
+  return nodes.length === 0 ? text : <>{nodes}</>;
+}
 
 type Point = { x: number; y: number };
 
@@ -252,6 +277,7 @@ export default function KanjiPractice({
   const char = item?.char ?? "\uFF1F";
   const kunYomi = item?.kunYomi ?? "";
   const onYomi = item?.onYomi ?? "";
+  const exampleText = item?.example ?? "";
   const modelSize = useMemo(
     () => ({ fontSize: "min(110cqw, 42vmin, 16rem)", lineHeight: 1 }),
     []
@@ -515,6 +541,23 @@ export default function KanjiPractice({
           </section>
         </div>
       </div>
+
+      <section
+        className="kanji-examples"
+        lang="ja-JP"
+        aria-label="つかいかたのれい"
+      >
+        <h2 className="kanji-examples__title">つかいかたのれい</h2>
+        <ul className="kanji-examples__usage">
+          <li>ひだりのてほんをみて、かきかたをおぼえます。</li>
+          <li>まんなかでは、うすいもじのうえをなぞってかきます。</li>
+          <li>みぎでは、おぼえたかんじをじゆうにかきます。</li>
+        </ul>
+        <span className="kanji-examples__kanjiLabel">このかんじのれいぶん</span>
+        <p className="kanji-examples__kanjiSentence">
+          {renderExampleWithEmphasis(exampleText)}
+        </p>
+      </section>
 
       <footer className="kanji-footer">
         <p

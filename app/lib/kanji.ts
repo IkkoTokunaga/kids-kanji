@@ -4,6 +4,8 @@ export type KanjiItem = {
   char: string;
   kunYomi: string;
   onYomi: string;
+  /** 使い方・短い例文（ひらがな中心） */
+  example: string;
 };
 
 /** 小学校1・2年生の配当漢字（各80・160字、計240字）の代表読みつき */

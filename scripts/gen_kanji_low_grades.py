@@ -253,13 +253,116 @@ READINGS: dict[str, tuple[str, str]] = {
 }
 
 
+def _first_kun_token(kun: str) -> str:
+    part = kun.split("・")[0].strip()
+    if "（" in part:
+        part = part.split("（")[0].strip()
+    return part or kun
+
+
+# 自然な短文（ほかはテンプレで生成）
+_EXAMPLE_LINES = """
+雨|あめがふります。
+火|たきびにひがもえます。
+水|みずをのみます。
+山|やまにのぼります。
+川|かわをわたります。
+木|きのしたであそびます。
+金|かねをつかいます。
+土|つちをほります。
+天|そらがあおいです。
+犬|いぬがほえます。
+目|めをとじます。
+手|てをあらいます。
+足|あしであるきます。
+村|むらにすんでいます。
+校|がっこうへいきます。
+石|いしがおおきいです。
+車|くるまにのります。
+虫|むしがとんでいます。
+竹|たけやぶをあるきます。
+貝|かいがわにまいます。
+玉|たまをだします。
+空|そらをみあげます。
+男|おとこのこがあそびます。
+女|おんなのこがわらいます。
+父|ちちがはたらきます。
+母|ははがりょうりします。
+兄|あにとけんかしました。
+姉|あねがてつだってくれます。
+弟|おとうとがいます。
+夕|ゆうひがしずみます。
+早|はやくおきます。
+草|くさをとります。
+花|はながさいました。
+家|いえにもどります。
+話|はなしをききます。
+語|にほんごをはなします。
+電|でんきをつけます。
+海|うみでおよぎます。
+星|ほしがかがやきます。
+日|ひがでました。
+月|つきがでました。
+雪|ゆきがふりました。
+雲|くもびがうつくしいです。
+国|にほんにすんでいます。
+書|もじをかきます。
+読|ほんをよみます。
+友|ともだちとあそびます。
+名|なまえをかきます。
+休|あしたはやすみます。
+食|パンをたべます。
+肉|にくをすこしだけたべます。
+魚|さかなをたべます。
+米|ごはんはこめです。
+麦|むぎからパンができます。
+茶|おちゃをのみます。
+歌|うたをうたいます。
+画|えほんにががはいっています。
+絵|えをかきます。
+牛|うしがほえます。
+馬|うまがはしります。
+鳥|とりがとんでいます。
+気|きをつけます。
+元|もとにもどります。
+冬|ふゆはさむいです。
+春|はるはあたたかいです。
+夏|なつはあついです。
+秋|あきはすずしいです。
+""".strip().splitlines()
+
+_EXAMPLE_OVERRIDES: dict[str, str] = {}
+for _ln in _EXAMPLE_LINES:
+    if "|" not in _ln:
+        continue
+    _ch, _, _tx = _ln.partition("|")
+    _ch = _ch.strip()
+    if _ch:
+        _EXAMPLE_OVERRIDES[_ch] = _tx.strip()
+
+
+def example_for(char: str, kun: str, _on: str) -> str:
+    if char in _EXAMPLE_OVERRIDES:
+        return _EXAMPLE_OVERRIDES[char]
+    k = _first_kun_token(kun)
+    # UI で **…** を赤表示（JSON 編集時も同形式で統一）
+    return f"「{k}」とよんで、**{char}**とかきます。"
+
+
 def main():
     root = pathlib.Path(__file__).resolve().parents[1]
     out = root / "app" / "lib" / "kanji-low-grades.json"
     items = []
     for ch in G1 + G2:
         kun, on = READINGS[ch]
-        items.append({"char": ch, "kunYomi": kun, "onYomi": on})
+        items.append(
+            {
+                "char": ch,
+                "kunYomi": kun,
+                "onYomi": on,
+                "example": example_for(ch, kun, on),
+            }
+        )
     out.write_text(
         json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8"
     )
