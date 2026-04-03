@@ -1,0 +1,6 @@
+# ホスト側に生成されうる残骸（ボリューム運用でも念のため）
+node_modules
+.next
+out
+.env*.local
+npm-debug.log*
