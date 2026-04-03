@@ -69,6 +69,13 @@ body {
   margin-bottom: 0.65rem;
 }
 
+.kanji-header__readings {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.55rem;
+}
+
 .kanji-header__kun {
   display: inline-flex;
   align-items: center;
@@ -92,6 +99,32 @@ body {
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.04em;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.kanji-header__on {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.75rem 0.35rem 0.45rem;
+  background: rgba(75, 85, 125, 0.09);
+  border: 1px solid rgba(75, 85, 125, 0.16);
+  border-radius: var(--radius-full);
+}
+
+.kanji-header__onLabel {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #4a5070;
+  opacity: 0.95;
+}
+
+.kanji-header__onReading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   color: var(--ink);
   line-height: 1.2;
 }

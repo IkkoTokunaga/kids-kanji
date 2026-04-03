@@ -10,8 +10,8 @@ const noto = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "漢字練習",
-  description: "手本・なぞり・フリー書き",
+  title: "かんじのれんしゅう",
+  description: "てほん・なぞり・じゆうにかく",
 };
 
 export default function RootLayout({
