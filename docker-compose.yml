@@ -15,6 +15,7 @@ services:
       - ./package.json:/app/package.json:ro
       - ./tsconfig.json:/app/tsconfig.json:ro
       - ./next.config.ts:/app/next.config.ts:ro
+      - ./middleware.ts:/app/middleware.ts:ro
       - ./next-env.d.ts:/app/next-env.d.ts:ro
       - kids_kanji_node_modules:/app/node_modules
     command: npm run dev

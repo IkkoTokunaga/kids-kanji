@@ -16,63 +16,91 @@ const STROKE_LINE_WIDTH = 13;
 
 type Point = { x: number; y: number };
 
+function canvasPointFromPointerEvent(
+  canvas: HTMLCanvasElement,
+  ev: PointerEvent
+): Point {
+  const r = canvas.getBoundingClientRect();
+  const scaleX = canvas.width / r.width;
+  const scaleY = canvas.height / r.height;
+  return {
+    x: (ev.clientX - r.left) * scaleX,
+    y: (ev.clientY - r.top) * scaleY,
+  };
+}
+
+/** ブラウザがまとめた移動の途中位置も含め、なめらかな線にする */
+function pointerSamples(
+  canvas: HTMLCanvasElement,
+  native: PointerEvent
+): Point[] {
+  const coalesced =
+    typeof native.getCoalescedEvents === "function"
+      ? native.getCoalescedEvents()
+      : [];
+  const events =
+    coalesced.length > 0 ? coalesced : [native];
+  return events.map((ev) => canvasPointFromPointerEvent(canvas, ev));
+}
+
 function useDrawingCanvas(enabled: boolean) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const drawingRef = useRef(false);
   const lastRef = useRef<Point | null>(null);
   const inkRef = useRef(0);
 
-  const drawLine = useCallback(
-    (from: Point, to: Point) => {
-      const canvas = canvasRef.current;
-      if (!canvas) return;
-      const ctx = canvas.getContext("2d");
-      if (!ctx) return;
-      ctx.strokeStyle = "rgba(26, 26, 26, 0.85)";
-      ctx.lineWidth = STROKE_LINE_WIDTH;
-      ctx.lineCap = "round";
-      ctx.lineJoin = "round";
-      ctx.beginPath();
-      ctx.moveTo(from.x, from.y);
-      ctx.lineTo(to.x, to.y);
-      ctx.stroke();
-      inkRef.current += Math.hypot(to.x - from.x, to.y - from.y);
-    },
-    []
-  );
-
-  const getPos = useCallback((e: React.PointerEvent<HTMLCanvasElement>) => {
-    const canvas = canvasRef.current;
-    if (!canvas) return { x: 0, y: 0 };
-    const r = canvas.getBoundingClientRect();
-    const scaleX = canvas.width / r.width;
-    const scaleY = canvas.height / r.height;
-    return {
-      x: (e.clientX - r.left) * scaleX,
-      y: (e.clientY - r.top) * scaleY,
-    };
-  }, []);
-
   const onPointerDown = useCallback(
     (e: React.PointerEvent<HTMLCanvasElement>) => {
       if (!enabled) return;
       e.currentTarget.setPointerCapture(e.pointerId);
       drawingRef.current = true;
-      const p = getPos(e);
+      const canvas = canvasRef.current;
+      if (!canvas) return;
+      const p = canvasPointFromPointerEvent(canvas, e.nativeEvent);
       lastRef.current = p;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) return;
+      ctx.fillStyle = "rgba(26, 26, 26, 0.85)";
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, STROKE_LINE_WIDTH / 2, 0, Math.PI * 2);
+      ctx.fill();
     },
-    [enabled, getPos]
+    [enabled]
   );
 
   const onPointerMove = useCallback(
     (e: React.PointerEvent<HTMLCanvasElement>) => {
       if (!enabled || !drawingRef.current) return;
-      const p = getPos(e);
+      const canvas = canvasRef.current;
+      if (!canvas) return;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) return;
+
       const last = lastRef.current;
-      if (last) drawLine(last, p);
-      lastRef.current = p;
+      if (!last) return;
+
+      const points = pointerSamples(canvas, e.nativeEvent);
+      if (points.length === 0) return;
+
+      ctx.strokeStyle = "rgba(26, 26, 26, 0.85)";
+      ctx.lineWidth = STROKE_LINE_WIDTH;
+      ctx.lineCap = "round";
+      ctx.lineJoin = "round";
+      ctx.beginPath();
+      ctx.moveTo(last.x, last.y);
+      let prev = last;
+      let addedInk = 0;
+      for (const p of points) {
+        ctx.lineTo(p.x, p.y);
+        addedInk += Math.hypot(p.x - prev.x, p.y - prev.y);
+        prev = p;
+      }
+      ctx.stroke();
+
+      lastRef.current = prev;
+      inkRef.current += addedInk;
     },
-    [drawLine, enabled, getPos]
+    [enabled]
   );
 
   const endStroke = useCallback(() => {
@@ -92,7 +120,6 @@ function useDrawingCanvas(enabled: boolean) {
     canvasRef,
     inkRef,
     handlers: { onPointerDown, onPointerMove, onPointerUp: endStroke, onPointerLeave: endStroke },
-    drawLine,
     clearCanvas,
   };
 }
