@@ -290,6 +290,7 @@ export default function KanjiPractice({
 
   const trace = useDrawingCanvas(true);
   const free = useDrawingCanvas(true);
+  const chromeRef = useRef<HTMLElement | null>(null);
 
   const layoutCanvas = useCallback((canvas: HTMLCanvasElement | null) => {
     if (!canvas) return;
@@ -345,6 +346,10 @@ export default function KanjiPractice({
   const handleNext = () => {
     if (!canAdvance || KANJI_ITEMS.length === 0) return;
     setIndex((i) => (i + 1) % KANJI_ITEMS.length);
+    requestAnimationFrame(() => {
+      chromeRef.current?.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    });
   };
 
   const panelStyle: CSSProperties = {
@@ -415,7 +420,7 @@ export default function KanjiPractice({
 
   if (KANJI_ITEMS.length === 0) {
     return (
-      <main className="kanji-chrome">
+      <main ref={chromeRef} className="kanji-chrome">
         <header className="kanji-header">
           <Link href="/" className="kanji-header__back">
             いちらんへ
@@ -429,7 +434,7 @@ export default function KanjiPractice({
   }
 
   return (
-    <main className="kanji-chrome">
+    <main ref={chromeRef} className="kanji-chrome">
       <header className="kanji-header" lang="ja-JP">
         <div className="kanji-header__top">
           <Link href="/" className="kanji-header__back">
