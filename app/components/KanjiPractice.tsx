@@ -174,7 +174,10 @@ function useDrawingCanvas(enabled: boolean) {
   const onPointerDown = useCallback(
     (e: React.PointerEvent<HTMLCanvasElement>) => {
       if (!enabled) return;
-      e.currentTarget.setPointerCapture(e.pointerId);
+      // 指タッチのみキャプチャしない → キャンバス上からも縦スクロールしやすい
+      if (e.pointerType !== "touch") {
+        e.currentTarget.setPointerCapture(e.pointerId);
+      }
       drawingRef.current = true;
       const canvas = canvasRef.current;
       if (!canvas) return;
@@ -242,7 +245,13 @@ function useDrawingCanvas(enabled: boolean) {
   return {
     canvasRef,
     inkRef,
-    handlers: { onPointerDown, onPointerMove, onPointerUp: endStroke, onPointerLeave: endStroke },
+    handlers: {
+      onPointerDown,
+      onPointerMove,
+      onPointerUp: endStroke,
+      onPointerLeave: endStroke,
+      onPointerCancel: endStroke,
+    },
     clearCanvas,
   };
 }
@@ -369,7 +378,6 @@ export default function KanjiPractice({
     width: "100%",
     height: "100%",
     display: "block",
-    touchAction: "none",
     borderRadius: 8,
     background: "#faf8f5",
   };
@@ -405,7 +413,6 @@ export default function KanjiPractice({
     width: "100%",
     height: "100%",
     display: "block",
-    touchAction: "none",
     background: "transparent",
     borderRadius: 8,
   };
@@ -486,6 +493,7 @@ export default function KanjiPractice({
               </div>
               <canvas
                 ref={trace.canvasRef}
+                className="kanji-practice-canvas"
                 style={traceCanvasStyle}
                 onPointerDown={(e) => {
                   trace.handlers.onPointerDown(e);
@@ -503,6 +511,10 @@ export default function KanjiPractice({
                   trace.handlers.onPointerLeave();
                   bump();
                 }}
+                onPointerCancel={() => {
+                  trace.handlers.onPointerCancel();
+                  bump();
+                }}
               />
             </div>
           </section>
@@ -513,6 +525,7 @@ export default function KanjiPractice({
             <span style={labelStyle}>じゆうにかく</span>
             <canvas
               ref={free.canvasRef}
+              className="kanji-practice-canvas"
               style={canvasStyle}
               onPointerDown={(e) => {
                 free.handlers.onPointerDown(e);
@@ -528,6 +541,10 @@ export default function KanjiPractice({
               }}
               onPointerLeave={() => {
                 free.handlers.onPointerLeave();
+                bump();
+              }}
+              onPointerCancel={() => {
+                free.handlers.onPointerCancel();
                 bump();
               }}
             />
