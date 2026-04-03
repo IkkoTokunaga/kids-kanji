@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { KANJI_ITEMS } from "./lib/kanji";
 
+/** ビルド／ボリュームに古い静的 HTML が残っても一覧が最新になるよう SSR にする */
+export const dynamic = "force-dynamic";
+
 export default function HomePage() {
   return (
     <main className="kanji-home">
