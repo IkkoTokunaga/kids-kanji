@@ -261,69 +261,24 @@ export default function KanjiPractice() {
   };
 
   return (
-    <main
-      style={{
-        maxWidth: 1100,
-        width: "100%",
-        height: "100dvh",
-        maxHeight: "100dvh",
-        margin: "0 auto",
-        padding: "0.75rem 1rem 1rem",
-        display: "flex",
-        flexDirection: "column",
-        gap: "0.75rem",
-        boxSizing: "border-box",
-        overflow: "hidden",
-        touchAction: "manipulation",
-      }}
-    >
-      <header style={{ flexShrink: 0 }}>
-        <p
-          style={{
-            margin: 0,
-            marginBottom: "0.4rem",
-            fontSize: "0.92rem",
-            display: "flex",
-            flexWrap: "wrap",
-            alignItems: "baseline",
-            gap: "0.35rem 0.65rem",
-          }}
-        >
-          <span style={{ opacity: 0.62, fontWeight: 600 }}>訓読み</span>
-          <span
-            style={{
-              fontSize: "1.15rem",
-              fontWeight: 700,
-              letterSpacing: "0.04em",
-              fontFamily: "var(--font-noto), sans-serif",
-            }}
-            lang="ja-JP"
-          >
-            {kunYomi}
+    <main className="kanji-chrome">
+      <header className="kanji-header">
+        <div className="kanji-header__top">
+          <div className="kanji-header__kun" lang="ja-JP">
+            <span className="kanji-header__kunLabel">訓読み</span>
+            <span className="kanji-header__kunReading">{kunYomi}</span>
+          </div>
+          <span className="kanji-header__progress">
+            {index + 1} / {KANJI_ITEMS.length} もん
           </span>
-        </p>
-        <h1 style={{ margin: 0, fontSize: "1.2rem", fontWeight: 700 }}>
-          漢字の練習
-        </h1>
-        <p style={{ margin: "0.25rem 0 0", opacity: 0.75, fontSize: "0.82rem" }}>
-          左は手本 · 真ん中になぞる · 右に自分で書く。両方かけたら「つぎへ」。
+        </div>
+        <h1 className="kanji-header__title">漢字の練習</h1>
+        <p className="kanji-header__lead">
+          左は手本 · 真ん中になぞる · 右にじゆうに書く。両方かけたら「つぎへ」。
         </p>
       </header>
 
-      <div
-        style={{
-          flex: 1,
-          minHeight: 0,
-          minWidth: 0,
-          display: "grid",
-          gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-          gridAutoRows: "auto",
-          gap: "0.6rem",
-          alignContent: "center",
-          alignItems: "start",
-          justifyItems: "stretch",
-        }}
-      >
+      <div className="kanji-grid">
         <div style={squareSizerStyle}>
           <section style={panelStyle}>
             <span style={labelStyle}>手本</span>
@@ -401,52 +356,34 @@ export default function KanjiPractice() {
         </div>
       </div>
 
-      <footer
-        style={{
-          flexShrink: 0,
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "0.75rem",
-          alignItems: "center",
-          justifyContent: "space-between",
-        }}
-      >
-        <div style={{ fontSize: "0.85rem", opacity: 0.8 }}>
-          {index + 1} / {KANJI_ITEMS.length} 問 ·{" "}
-          {canAdvance ? "よくかけました。つぎへどうぞ。" : "なぞりとじゆうの両方に線をひいてね。"}
-        </div>
-        <div style={{ display: "flex", gap: "0.5rem" }}>
+      <footer className="kanji-footer">
+        <p
+          className={
+            canAdvance
+              ? "kanji-footer__status kanji-footer__status--ok"
+              : "kanji-footer__status"
+          }
+        >
+          {canAdvance
+            ? "よくかけました。つぎへをおしてね。"
+            : "なぞりとじゆうの両方に、くっきり線をひいてね。"}
+        </p>
+        <div className="kanji-footer__actions">
           <button
             type="button"
+            className="kanji-btn kanji-btn--ghost"
             onClick={() => {
               resetStrokeArea();
               bump();
-            }}
-            style={{
-              padding: "0.55rem 1rem",
-              borderRadius: 8,
-              border: `1px solid var(--border)`,
-              background: "#fff",
-              cursor: "pointer",
-              fontSize: "0.9rem",
             }}
           >
             やりなおす
           </button>
           <button
             type="button"
+            className="kanji-btn kanji-btn--primary"
             disabled={!canAdvance}
             onClick={handleNext}
-            style={{
-              padding: "0.55rem 1.25rem",
-              borderRadius: 8,
-              border: "none",
-              background: canAdvance ? "var(--accent)" : "var(--accent-dim)",
-              color: "#fff",
-              cursor: canAdvance ? "pointer" : "not-allowed",
-              fontSize: "0.9rem",
-              fontWeight: 700,
-            }}
           >
             つぎへ
           </button>

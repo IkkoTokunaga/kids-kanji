@@ -1,11 +1,20 @@
 :root {
-  --bg: #f6f3ee;
+  --bg: #ede8df;
+  --bg-subtle: linear-gradient(165deg, #f3efe6 0%, #e8e2d6 48%, #e5dfd4 100%);
   --panel: #fffefc;
   --border: #d4cec4;
   --ink: #1a1a1a;
+  --ink-muted: #5c574e;
   --guide: rgba(26, 26, 26, 0.12);
-  --accent: #2d7a5e;
+  --accent: #2a6b52;
+  --accent-hover: #236347;
   --accent-dim: #8fb5a5;
+  --surface-elevated: #fffcf7;
+  --shadow-sm: 0 1px 2px rgba(44, 38, 28, 0.06);
+  --shadow-md: 0 4px 14px rgba(44, 38, 28, 0.08), 0 1px 3px rgba(44, 38, 28, 0.04);
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-full: 999px;
 }
 
 * {
@@ -19,6 +28,183 @@ body {
   max-height: 100%;
   overflow: hidden;
   font-family: var(--font-noto), "Hiragino Sans", "Yu Gothic", sans-serif;
-  background: var(--bg);
+  background: var(--bg-subtle);
+  background-color: var(--bg);
   color: var(--ink);
+}
+
+/* —— 上部・下部 UI —— */
+
+.kanji-chrome {
+  max-width: 1100px;
+  width: 100%;
+  height: 100dvh;
+  max-height: 100dvh;
+  margin: 0 auto;
+  padding: 0.65rem 0.9rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+.kanji-header,
+.kanji-footer {
+  flex-shrink: 0;
+  background: var(--surface-elevated);
+  border: 1px solid rgba(212, 206, 196, 0.85);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: 0.85rem 1rem 0.95rem;
+}
+
+.kanji-header__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.65rem;
+}
+
+.kanji-header__kun {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.75rem 0.35rem 0.45rem;
+  background: rgba(42, 107, 82, 0.08);
+  border: 1px solid rgba(42, 107, 82, 0.15);
+  border-radius: var(--radius-full);
+}
+
+.kanji-header__kunLabel {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  text-transform: none;
+  opacity: 0.9;
+}
+
+.kanji-header__kunReading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.kanji-header__progress {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  letter-spacing: 0.02em;
+  padding: 0.3rem 0.65rem;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: var(--radius-full);
+}
+
+.kanji-header__title {
+  margin: 0;
+  font-size: 1.28rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.kanji-header__lead {
+  margin: 0.35rem 0 0;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: var(--ink-muted);
+  max-width: 40rem;
+}
+
+.kanji-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.kanji-footer__status {
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--ink-muted);
+  max-width: min(100%, 22rem);
+}
+
+.kanji-footer__status--ok {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.kanji-footer__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.kanji-btn {
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 0.58rem 1.1rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.08s ease;
+  border: 1px solid transparent;
+}
+
+.kanji-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.kanji-btn--ghost {
+  background: #fff;
+  border-color: var(--border);
+  color: var(--ink-muted);
+  box-shadow: var(--shadow-sm);
+}
+
+.kanji-btn--ghost:hover:not(:disabled) {
+  background: #faf8f4;
+  border-color: #c9c2b6;
+  color: var(--ink);
+}
+
+.kanji-btn--primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(42, 107, 82, 0.28);
+}
+
+.kanji-btn--primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+  box-shadow: 0 3px 12px rgba(42, 107, 82, 0.35);
+}
+
+.kanji-btn--primary:disabled {
+  background: var(--accent-dim);
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.85;
+}
+
+.kanji-grid {
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: auto;
+  gap: 0.6rem;
+  align-content: center;
+  align-items: start;
+  justify-items: stretch;
 }
