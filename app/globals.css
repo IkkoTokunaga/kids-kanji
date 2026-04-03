@@ -415,6 +415,13 @@ canvas.kanji-practice-canvas {
     gap: 0.55rem;
   }
 
+  /* 練習画面のみ：固定フッター用に下余白 */
+  .kanji-chrome:has(.kanji-footer) {
+    padding-bottom: calc(
+      0.75rem + 8.75rem + env(safe-area-inset-bottom, 0px)
+    );
+  }
+
   .kanji-header,
   .kanji-footer {
     padding: 0.65rem 0.8rem 0.75rem;
@@ -451,6 +458,15 @@ canvas.kanji-practice-canvas {
   .kanji-footer {
     flex-direction: column;
     align-items: stretch;
+    position: fixed;
+    z-index: 20;
+    left: max(0.55rem, env(safe-area-inset-left, 0px));
+    right: max(0.55rem, env(safe-area-inset-right, 0px));
+    bottom: 0;
+    margin: 0;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    padding-bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
+    box-shadow: 0 -6px 22px rgba(44, 38, 28, 0.1);
   }
 
   .kanji-footer__actions {
