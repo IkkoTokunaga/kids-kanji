@@ -1,6 +1,45 @@
 :root {
-  --bg: #ede8df;
-  --bg-subtle: linear-gradient(165deg, #f3efe6 0%, #e8e2d6 48%, #e5dfd4 100%);
+  --bg: #e8e0d4;
+  /* 学問・書斎イメージ：羊皮紙調＋淡い方眼＋ランプ光（html で多層背景に使用） */
+  --bg-scholar-base: linear-gradient(
+    158deg,
+    #f6f1e9 0%,
+    #ebe4d8 38%,
+    #e3d9cb 72%,
+    #ddd2c4 100%
+  );
+  --bg-scholar-grid-h: repeating-linear-gradient(
+    0deg,
+    transparent 0,
+    transparent 31px,
+    rgba(58, 62, 88, 0.045) 31px,
+    rgba(58, 62, 88, 0.045) 32px
+  );
+  --bg-scholar-grid-v: repeating-linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 31px,
+    rgba(58, 62, 88, 0.038) 31px,
+    rgba(58, 62, 88, 0.038) 32px
+  );
+  --bg-scholar-margin: linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 2.35rem,
+    rgba(130, 102, 78, 0.14) 2.35rem,
+    rgba(130, 102, 78, 0.14) calc(2.35rem + 1px),
+    transparent calc(2.35rem + 1px)
+  );
+  --bg-scholar-glow-tl: radial-gradient(
+    ellipse 110% 70% at 10% -5%,
+    rgba(255, 252, 246, 0.72) 0%,
+    transparent 55%
+  );
+  --bg-scholar-shade-br: radial-gradient(
+    ellipse 90% 60% at 92% 105%,
+    rgba(165, 152, 132, 0.22) 0%,
+    transparent 52%
+  );
   --panel: #fffefc;
   --border: #d4cec4;
   --ink: #1a1a1a;
@@ -21,15 +60,23 @@
   box-sizing: border-box;
 }
 
-html,
+html {
+  margin: 0;
+  min-height: 100%;
+  background-color: var(--bg);
+  background-image: var(--bg-scholar-glow-tl), var(--bg-scholar-shade-br),
+    var(--bg-scholar-margin), var(--bg-scholar-grid-h), var(--bg-scholar-grid-v),
+    var(--bg-scholar-base);
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat, repeat, no-repeat;
+}
+
 body {
   margin: 0;
   min-height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
   font-family: var(--font-noto), "Hiragino Sans", "Yu Gothic", sans-serif;
-  background: var(--bg-subtle);
-  background-color: var(--bg);
+  background: transparent;
   color: var(--ink);
 }
 
