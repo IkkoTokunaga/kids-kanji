@@ -611,14 +611,22 @@ canvas.kanji-practice-canvas {
     overflow: hidden;
   }
 
-  .kanji-grid--pair {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* 縦並び：残り高さを 2 等分し、スクロールなしで一画面に収める */
+  .kanji-chrome--practice .kanji-grid--pair {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: unset;
     flex: 1 1 0;
     min-height: 0;
     align-content: stretch;
     align-items: stretch;
-    gap: 0.4rem;
+    gap: 0.35rem;
     justify-items: stretch;
+  }
+
+  .kanji-chrome--practice .kanji-grid--pair > .kanji-grid__cell {
+    aspect-ratio: unset;
+    min-height: 0;
   }
 
   .kanji-chrome--practice .kanji-grid__cell {
