@@ -48,13 +48,19 @@ function clearDocumentSelection() {
   if (sel && sel.rangeCount > 0) sel.removeAllRanges();
 }
 
+/**
+ * ビューポートスクロール後もキャンバス上の見た目と一致させるため、
+ * 毎イベントで getBoundingClientRect() から CSS ピクセル空間→bitmap 空間へ写す。
+ */
 function canvasPointFromPointerEvent(
   canvas: HTMLCanvasElement,
   ev: PointerEvent
 ): Point {
   const r = canvas.getBoundingClientRect();
-  const scaleX = canvas.width / r.width;
-  const scaleY = canvas.height / r.height;
+  const rw = r.width > 0 ? r.width : 1;
+  const rh = r.height > 0 ? r.height : 1;
+  const scaleX = canvas.width / rw;
+  const scaleY = canvas.height / rh;
   return {
     x: (ev.clientX - r.left) * scaleX,
     y: (ev.clientY - r.top) * scaleY,
@@ -273,7 +279,8 @@ function clearDrawingSurface(
  * 表示サイズに合わせて bitmap 寸法を更新する。
  * - clear: 寸法だけ合わせる（代入でバッファは消える。続けて clear を呼ぶ想定）
  * - preserve: 変化がごく小さいときは触らない（サブピクセル／dvh 揺れでの 1px 再設定を防ぐ）。
- *   それ以外で寸法が変わるときは、リサイズ前に内容をコピーして引き継ぐ（スクロール後に線が消えるのを防ぐ）
+ *   それ以外で寸法が変わるときは、オフスクリーン canvas に退避してから width/height を変え、
+ *   drawImage で引き継ぐ（モバイル Chrome のリサイズでも描画を維持）
  */
 function resizeCanvasToDisplaySize(
   canvas: HTMLCanvasElement | null,
@@ -309,6 +316,7 @@ function resizeCanvasToDisplaySize(
     if (w < minW || h < minH) return;
   }
 
+  /** オフスクリーンへ退避（canvas 寸法の再代入は bitmap を白紙にするため必須） */
   let snap: HTMLCanvasElement | null = null;
   if (mode === "preserve" && oldW > 0 && oldH > 0) {
     const ctx0 = canvas.getContext("2d");
@@ -316,7 +324,7 @@ function resizeCanvasToDisplaySize(
       snap = document.createElement("canvas");
       snap.width = oldW;
       snap.height = oldH;
-      const sctx = snap.getContext("2d");
+      const sctx = snap.getContext("2d", { willReadFrequently: false });
       if (sctx) {
         sctx.drawImage(canvas, 0, 0);
       }
@@ -400,30 +408,68 @@ export default function KanjiPractice({
     [trace.canvasRef, trace.inkRef, free.canvasRef, free.inkRef]
   );
 
+  /** 同一フレーム内の複数リサイズ通知をまとめ、レイアウト確定後に preserve 同期する */
+  const layoutPreserveRafRef = useRef<number | null>(null);
+  const scheduleLayoutPreserve = useCallback(() => {
+    if (layoutPreserveRafRef.current != null) {
+      cancelAnimationFrame(layoutPreserveRafRef.current);
+    }
+    layoutPreserveRafRef.current = requestAnimationFrame(() => {
+      layoutPreserveRafRef.current = null;
+      applyCanvasLayout(false);
+    });
+  }, [applyCanvasLayout]);
+
+  useEffect(
+    () => () => {
+      if (layoutPreserveRafRef.current != null) {
+        cancelAnimationFrame(layoutPreserveRafRef.current);
+        layoutPreserveRafRef.current = null;
+      }
+    },
+    []
+  );
+
   /**
    * もんだい切り替え・初回：必ずクリア。
-   * それ以外のレイアウト変化：bitmap を引き継ぎつつ寸法だけ合わせる（スクロール・モバイル UI・dvh で
-   * getBoundingClientRect がわずかに変わり canvas 寸法が再設定されると線が消える問題への対策）。
+   * レイアウト変化：オフスクリーン退避つきで bitmap を合わせる（アドレスバー・dvh・グリッドサイズ変更）。
    */
   useEffect(() => {
     applyCanvasLayout(true);
-    const raf = requestAnimationFrame(() => applyCanvasLayout(false));
-    const onResize = () => applyCanvasLayout(false);
-    window.addEventListener("resize", onResize);
+    const raf = requestAnimationFrame(() => scheduleLayoutPreserve());
+    const onVv = () => scheduleLayoutPreserve();
+    window.addEventListener("resize", onVv);
     const vv = window.visualViewport;
-    vv?.addEventListener("resize", onResize);
+    vv?.addEventListener("resize", onVv);
+    vv?.addEventListener("scroll", onVv);
     return () => {
       cancelAnimationFrame(raf);
-      window.removeEventListener("resize", onResize);
-      vv?.removeEventListener("resize", onResize);
+      window.removeEventListener("resize", onVv);
+      vv?.removeEventListener("resize", onVv);
+      vv?.removeEventListener("scroll", onVv);
     };
-  }, [char, applyCanvasLayout]);
+  }, [char, applyCanvasLayout, scheduleLayoutPreserve]);
+
+  /** 練習グリッドの表示サイズ変化（Chrome のリサイズで aspect-ratio セルが変わる等）を直接検知 */
+  useEffect(() => {
+    let ro: ResizeObserver | null = null;
+    const id = requestAnimationFrame(() => {
+      const root = practiceGridRef.current;
+      if (!root || typeof ResizeObserver === "undefined") return;
+      ro = new ResizeObserver(() => scheduleLayoutPreserve());
+      ro.observe(root);
+    });
+    return () => {
+      cancelAnimationFrame(id);
+      ro?.disconnect();
+    };
+  }, [scheduleLayoutPreserve]);
 
   /** 高速スクロールで一時的に rect が壊れても、止まったあとで bitmap を正しいサイズに合わせる */
   useEffect(() => {
     let el = chromeRef.current;
     let t: ReturnType<typeof setTimeout> | undefined;
-    const sync = () => applyCanvasLayout(false);
+    const sync = () => scheduleLayoutPreserve();
     const debounced = () => {
       if (t !== undefined) clearTimeout(t);
       t = setTimeout(sync, 140);
@@ -455,7 +501,7 @@ export default function KanjiPractice({
       }
       if (t !== undefined) clearTimeout(t);
     };
-  }, [applyCanvasLayout]);
+  }, [scheduleLayoutPreserve]);
 
   const resetStrokeArea = useCallback(() => {
     applyCanvasLayout(true);
@@ -508,6 +554,7 @@ export default function KanjiPractice({
     display: "block",
     borderRadius: 8,
     background: "#faf8f5",
+    touchAction: "none",
   };
 
   const traceStageStyle: CSSProperties = {
@@ -544,6 +591,7 @@ export default function KanjiPractice({
     display: "block",
     background: "transparent",
     borderRadius: 8,
+    touchAction: "none",
   };
 
   if (KANJI_ITEMS.length === 0) {
