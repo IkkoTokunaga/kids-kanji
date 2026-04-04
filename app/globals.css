@@ -302,6 +302,11 @@ body {
   align-items: stretch;
 }
 
+/* なぞり：薄い見本漢字の下がはみ出して切れないよう、正方形よりやや縦長 */
+.kanji-grid--pair .kanji-grid__cell--trace {
+  aspect-ratio: 5 / 6;
+}
+
 /* 1:1 セル（列幅＝一辺）。aspect-ratio で padding-bottom 不要 */
 .kanji-grid__cell {
   position: relative;
