@@ -318,8 +318,9 @@ export default function KanjiPractice({
     };
   }, []);
 
-  const layoutCanvas = useCallback((canvas: HTMLCanvasElement | null) => {
-    if (!canvas) return;
+  /** 表示サイズに合わせて bitmap を更新。寸法が変わったら true（このとき中身はブラウザ側で消える） */
+  const layoutCanvas = useCallback((canvas: HTMLCanvasElement | null): boolean => {
+    if (!canvas) return false;
     const dpr = Math.min(window.devicePixelRatio ?? 1, 2);
     const rect = canvas.getBoundingClientRect();
     const w = Math.max(1, Math.round(rect.width * dpr));
@@ -327,40 +328,48 @@ export default function KanjiPractice({
     if (canvas.width !== w || canvas.height !== h) {
       canvas.width = w;
       canvas.height = h;
+      return true;
     }
+    return false;
   }, []);
 
-  /** リサイズ・問題の切り替え時のみ（描画のたびに走らせない） */
-  useEffect(() => {
-    const sync = () => {
-      layoutCanvas(trace.canvasRef.current);
-      layoutCanvas(free.canvasRef.current);
+  const applyCanvasLayout = useCallback(
+    (forceClear: boolean) => {
+      const traceResized = layoutCanvas(trace.canvasRef.current);
+      const freeResized = layoutCanvas(free.canvasRef.current);
       const t = trace.canvasRef.current;
       const tctx = t?.getContext("2d");
-      if (t && tctx) trace.inkRef.current = clearDrawingSurface(t, tctx);
+      if (t && tctx && (forceClear || traceResized)) {
+        trace.inkRef.current = clearDrawingSurface(t, tctx);
+      }
       const f = free.canvasRef.current;
       const fctx = f?.getContext("2d");
-      if (f && fctx) free.inkRef.current = clearDrawingSurface(f, fctx);
-    };
-    sync();
-    const raf = requestAnimationFrame(sync);
-    window.addEventListener("resize", sync);
+      if (f && fctx && (forceClear || freeResized)) {
+        free.inkRef.current = clearDrawingSurface(f, fctx);
+      }
+    },
+    [layoutCanvas, trace.canvasRef, trace.inkRef, free.canvasRef, free.inkRef]
+  );
+
+  /**
+   * もんだい切り替え・初回：必ずクリア。
+   * window resize だけ：bitmap 寸法が変わったときだけクリア（スマホの UI 表示切替などで
+   * resize が連発しても、レイアウトが変わらなければ線を残す）
+   */
+  useEffect(() => {
+    applyCanvasLayout(true);
+    const raf = requestAnimationFrame(() => applyCanvasLayout(false));
+    const onResize = () => applyCanvasLayout(false);
+    window.addEventListener("resize", onResize);
     return () => {
       cancelAnimationFrame(raf);
-      window.removeEventListener("resize", sync);
+      window.removeEventListener("resize", onResize);
     };
-  }, [char, layoutCanvas, trace.canvasRef, trace.inkRef, free.canvasRef, free.inkRef]);
+  }, [char, applyCanvasLayout]);
 
   const resetStrokeArea = useCallback(() => {
-    layoutCanvas(trace.canvasRef.current);
-    layoutCanvas(free.canvasRef.current);
-    const t = trace.canvasRef.current;
-    const tctx = t?.getContext("2d");
-    if (t && tctx) trace.inkRef.current = clearDrawingSurface(t, tctx);
-    const f = free.canvasRef.current;
-    const fctx = f?.getContext("2d");
-    if (f && fctx) free.inkRef.current = clearDrawingSurface(f, fctx);
-  }, [layoutCanvas, trace.canvasRef, trace.inkRef, free.canvasRef, free.inkRef]);
+    applyCanvasLayout(true);
+  }, [applyCanvasLayout]);
 
   const minTraceInk = 120;
   const minFreeInk = 120;
