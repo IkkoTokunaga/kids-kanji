@@ -710,11 +710,6 @@ canvas.kanji-practice-canvas {
     width: 100%;
   }
 
-  .kanji-chrome--practice .kanji-footer .kanji-btn {
-    padding: 0.48rem 0.85rem;
-    font-size: 0.82rem;
-  }
-
   .kanji-footer--actions-only {
     justify-content: center;
   }
@@ -745,4 +740,10 @@ canvas.kanji-practice-canvas {
   .kanji-home__glyph {
     font-size: 1.85rem;
   }
+}
+
+/* 練習フッター「やりなおす」「つぎへ」：タップ・クリックしやすいよう一回り大きく */
+.kanji-chrome--practice .kanji-footer--actions-only .kanji-btn {
+  font-size: 1rem;
+  padding: 0.72rem 1.3rem;
 }
