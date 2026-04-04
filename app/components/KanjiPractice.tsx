@@ -646,7 +646,7 @@ export default function KanjiPractice({
       </header>
 
       <div ref={practiceGridRef} className="kanji-grid kanji-grid--pair">
-        <div className="kanji-grid__cell kanji-grid__cell--trace">
+        <div className="kanji-grid__cell">
           <section className="kanji-practice-panel" style={panelStyle}>
             <span style={labelStyle}>なぞる</span>
             <div style={traceStageStyle}>

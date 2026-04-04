@@ -302,8 +302,8 @@ body {
   align-items: stretch;
 }
 
-/* なぞり：薄い見本漢字の下がはみ出して切れないよう、正方形よりやや縦長 */
-.kanji-grid--pair .kanji-grid__cell--trace {
+/* なぞり・自由描画：同じ縦長比（見本の下が切れない＆両列の高さを揃える） */
+.kanji-grid--pair > .kanji-grid__cell {
   aspect-ratio: 5 / 6;
 }
 
