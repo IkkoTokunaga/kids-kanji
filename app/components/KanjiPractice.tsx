@@ -299,6 +299,16 @@ function resizeCanvasToDisplaySize(
     return;
   }
 
+  /**
+   * 高速スクロール中、合成レイヤまわりで rect が一瞬ほぼ 0 や極小になることがある。
+   * そのままリサイズすると bitmap が 1〜数 px になり線が実質消えるので拒否する。
+   */
+  if (mode === "preserve" && oldW >= 24 && oldH >= 24) {
+    const minW = Math.max(12, Math.floor(oldW * 0.08));
+    const minH = Math.max(12, Math.floor(oldH * 0.08));
+    if (w < minW || h < minH) return;
+  }
+
   let snap: HTMLCanvasElement | null = null;
   if (mode === "preserve" && oldW > 0 && oldH > 0) {
     const ctx0 = canvas.getContext("2d");
@@ -408,6 +418,44 @@ export default function KanjiPractice({
       vv?.removeEventListener("resize", onResize);
     };
   }, [char, applyCanvasLayout]);
+
+  /** 高速スクロールで一時的に rect が壊れても、止まったあとで bitmap を正しいサイズに合わせる */
+  useEffect(() => {
+    let el = chromeRef.current;
+    let t: ReturnType<typeof setTimeout> | undefined;
+    const sync = () => applyCanvasLayout(false);
+    const debounced = () => {
+      if (t !== undefined) clearTimeout(t);
+      t = setTimeout(sync, 140);
+    };
+    const attach = () => {
+      el = chromeRef.current;
+      if (!el) return;
+      el.addEventListener("scroll", debounced, { passive: true });
+      window.addEventListener("scroll", debounced, { passive: true });
+      if ("onscrollend" in el) {
+        el.addEventListener("scrollend", sync, { passive: true });
+      }
+      if ("onscrollend" in window) {
+        window.addEventListener("scrollend", sync, { passive: true });
+      }
+    };
+    const raf = requestAnimationFrame(attach);
+    return () => {
+      cancelAnimationFrame(raf);
+      if (el) {
+        el.removeEventListener("scroll", debounced);
+        if ("onscrollend" in el) {
+          el.removeEventListener("scrollend", sync);
+        }
+      }
+      window.removeEventListener("scroll", debounced);
+      if ("onscrollend" in window) {
+        window.removeEventListener("scrollend", sync);
+      }
+      if (t !== undefined) clearTimeout(t);
+    };
+  }, [applyCanvasLayout]);
 
   const resetStrokeArea = useCallback(() => {
     applyCanvasLayout(true);
