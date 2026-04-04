@@ -610,7 +610,7 @@ export default function KanjiPractice({
   }
 
   return (
-    <main ref={chromeRef} className="kanji-chrome">
+    <main ref={chromeRef} className="kanji-chrome kanji-chrome--practice">
       <header className="kanji-header" lang="ja-JP">
         <div className="kanji-header__top">
           <Link href="/" className="kanji-header__back">
@@ -641,26 +641,7 @@ export default function KanjiPractice({
         </div>
       </header>
 
-      <div ref={practiceGridRef} className="kanji-grid">
-        <div className="kanji-grid__cell">
-          <section className="kanji-practice-panel" style={panelStyle}>
-            <span style={labelStyle}>てほん</span>
-            <div
-              style={{
-                minHeight: 0,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontWeight: 700,
-                color: "var(--ink)",
-                ...modelSize,
-              }}
-            >
-              {char}
-            </div>
-          </section>
-        </div>
-
+      <div ref={practiceGridRef} className="kanji-grid kanji-grid--pair">
         <div className="kanji-grid__cell">
           <section className="kanji-practice-panel" style={panelStyle}>
             <span style={labelStyle}>なぞる</span>
@@ -735,18 +716,7 @@ export default function KanjiPractice({
         </div>
       </div>
 
-      <footer className="kanji-footer">
-        <p
-          className={
-            canAdvance
-              ? "kanji-footer__status kanji-footer__status--ok"
-              : "kanji-footer__status"
-          }
-        >
-          {canAdvance
-            ? "よくかけました。「つぎへ」をおしてね。"
-            : "なぞるばしょと、じゆうにかくばしょに、それぞれくっきりせんをひいてね。"}
-        </p>
+      <footer className="kanji-footer kanji-footer--actions-only">
         <div className="kanji-footer__actions">
           <button
             type="button"
