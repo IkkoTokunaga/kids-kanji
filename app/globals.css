@@ -305,9 +305,11 @@ body {
   min-height: 0;
 }
 
-/* 描画キャンバス：誤スクロール抑制 */
+/* 描画キャンバス：誤スクロール・テキスト選択の抑制 */
 canvas.kanji-practice-canvas {
   touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 /* ヘッダー内：読みの下の例文（別カードにせず 1 ブロックに統合） */

@@ -174,6 +174,7 @@ function useDrawingCanvas(enabled: boolean) {
   const onPointerDown = useCallback(
     (e: React.PointerEvent<HTMLCanvasElement>) => {
       if (!enabled) return;
+      e.preventDefault();
       e.currentTarget.setPointerCapture(e.pointerId);
       drawingRef.current = true;
       const canvas = canvasRef.current;
@@ -194,6 +195,7 @@ function useDrawingCanvas(enabled: boolean) {
   const onPointerMove = useCallback(
     (e: React.PointerEvent<HTMLCanvasElement>) => {
       if (!enabled || !drawingRef.current) return;
+      e.preventDefault();
       const canvas = canvasRef.current;
       if (!canvas) return;
       const ctx = canvas.getContext("2d");
