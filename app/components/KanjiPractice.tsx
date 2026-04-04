@@ -369,6 +369,8 @@ export default function KanjiPractice({
     gridTemplateRows: "auto minmax(0, 1fr)",
     containerType: "size",
     overflow: "hidden",
+    userSelect: "none",
+    WebkitUserSelect: "none",
   };
 
   const labelStyle: CSSProperties = {
@@ -403,6 +405,7 @@ export default function KanjiPractice({
     justifyContent: "center",
     pointerEvents: "none",
     userSelect: "none",
+    WebkitUserSelect: "none",
     fontWeight: 700,
     color: "var(--ink)",
     opacity: 0.13,
