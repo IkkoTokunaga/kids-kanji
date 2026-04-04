@@ -305,11 +305,28 @@ body {
   min-height: 0;
 }
 
+/*
+ * 練習パネル（てほん・なぞる・自由描画）
+ * スマホの WebKit では user-select だけでは選択が始まることがあるため、
+ * touch-callout や子要素まで含めて明示する。
+ */
+.kanji-practice-panel,
+.kanji-practice-panel * {
+  -webkit-user-select: none !important;
+  user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  -webkit-touch-callout: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* 描画キャンバス：誤スクロール・テキスト選択の抑制 */
 canvas.kanji-practice-canvas {
   touch-action: none;
   user-select: none;
   -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 /* ヘッダー内：読みの下の例文（別カードにせず 1 ブロックに統合） */

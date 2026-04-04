@@ -43,6 +43,11 @@ function renderExampleWithEmphasis(text: string): ReactNode {
 
 type Point = { x: number; y: number };
 
+function clearDocumentSelection() {
+  const sel = window.getSelection?.();
+  if (sel && sel.rangeCount > 0) sel.removeAllRanges();
+}
+
 function canvasPointFromPointerEvent(
   canvas: HTMLCanvasElement,
   ev: PointerEvent
@@ -175,6 +180,7 @@ function useDrawingCanvas(enabled: boolean) {
     (e: React.PointerEvent<HTMLCanvasElement>) => {
       if (!enabled) return;
       e.preventDefault();
+      clearDocumentSelection();
       e.currentTarget.setPointerCapture(e.pointerId);
       drawingRef.current = true;
       const canvas = canvasRef.current;
@@ -249,6 +255,7 @@ function useDrawingCanvas(enabled: boolean) {
       onPointerMove,
       onPointerUp: endStroke,
       onPointerLeave: endStroke,
+      onPointerCancel: endStroke,
     },
     clearCanvas,
   };
@@ -293,6 +300,23 @@ export default function KanjiPractice({
   const trace = useDrawingCanvas(true);
   const free = useDrawingCanvas(true);
   const chromeRef = useRef<HTMLElement | null>(null);
+  const practiceGridRef = useRef<HTMLDivElement | null>(null);
+
+  /** iOS 等：selectstart を抑止（CSS だけでは残る場合がある） */
+  useEffect(() => {
+    const root = practiceGridRef.current;
+    if (!root) return;
+    const block = (e: Event) => {
+      e.preventDefault();
+    };
+    const opts = { capture: true };
+    root.addEventListener("selectstart", block, opts);
+    root.addEventListener("dragstart", block, opts);
+    return () => {
+      root.removeEventListener("selectstart", block, opts);
+      root.removeEventListener("dragstart", block, opts);
+    };
+  }, []);
 
   const layoutCanvas = useCallback((canvas: HTMLCanvasElement | null) => {
     if (!canvas) return;
@@ -470,9 +494,9 @@ export default function KanjiPractice({
         </div>
       </header>
 
-      <div className="kanji-grid">
+      <div ref={practiceGridRef} className="kanji-grid">
         <div className="kanji-grid__cell">
-          <section style={panelStyle}>
+          <section className="kanji-practice-panel" style={panelStyle}>
             <span style={labelStyle}>てほん</span>
             <div
               style={{
@@ -491,7 +515,7 @@ export default function KanjiPractice({
         </div>
 
         <div className="kanji-grid__cell">
-          <section style={panelStyle}>
+          <section className="kanji-practice-panel" style={panelStyle}>
             <span style={labelStyle}>なぞる</span>
             <div style={traceStageStyle}>
               <div aria-hidden style={traceGuideStyle}>
@@ -511,10 +535,17 @@ export default function KanjiPractice({
                 }}
                 onPointerUp={() => {
                   trace.handlers.onPointerUp();
+                  clearDocumentSelection();
                   bump();
                 }}
                 onPointerLeave={() => {
                   trace.handlers.onPointerLeave();
+                  clearDocumentSelection();
+                  bump();
+                }}
+                onPointerCancel={() => {
+                  trace.handlers.onPointerCancel();
+                  clearDocumentSelection();
                   bump();
                 }}
               />
@@ -523,7 +554,7 @@ export default function KanjiPractice({
         </div>
 
         <div className="kanji-grid__cell">
-          <section style={panelStyle}>
+          <section className="kanji-practice-panel" style={panelStyle}>
             <span style={labelStyle}>じゆうにかく</span>
             <canvas
               ref={free.canvasRef}
@@ -539,10 +570,17 @@ export default function KanjiPractice({
               }}
               onPointerUp={() => {
                 free.handlers.onPointerUp();
+                clearDocumentSelection();
                 bump();
               }}
               onPointerLeave={() => {
                 free.handlers.onPointerLeave();
+                clearDocumentSelection();
+                bump();
+              }}
+              onPointerCancel={() => {
+                free.handlers.onPointerCancel();
+                clearDocumentSelection();
                 bump();
               }}
             />
