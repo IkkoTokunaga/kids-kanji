@@ -12,6 +12,9 @@ export type KanjiItem = {
 export const KANJI_ITEMS: readonly KanjiItem[] =
   lowGradesJson as readonly KanjiItem[];
 
+/** 配当表の並び：先頭からこの件数が1年生、続きが2年生 */
+export const KANJI_GRADE_1_COUNT = 80;
+
 export function clampKanjiIndex(n: number): number {
   if (!Number.isFinite(n) || n < 0) return 0;
   const max = KANJI_ITEMS.length - 1;

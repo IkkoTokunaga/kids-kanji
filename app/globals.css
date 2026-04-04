@@ -419,6 +419,25 @@ canvas.kanji-practice-canvas {
   gap: 0.65rem;
 }
 
+.kanji-home__section {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0.35rem 0 0.15rem;
+  list-style: none;
+}
+
+.kanji-home__section:first-of-type {
+  padding-top: 0;
+}
+
+.kanji-home__section-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text-muted, #5c5348);
+}
+
 .kanji-home__cell {
   margin: 0;
 }
@@ -492,8 +511,8 @@ canvas.kanji-practice-canvas {
     gap: 0.55rem;
   }
 
-  /* 練習画面のみ：固定フッター用に下余白 */
-  .kanji-chrome:has(.kanji-footer) {
+  /* 固定フッター用に下余白（一画面練習は別ルールで確保する） */
+  .kanji-chrome:has(.kanji-footer):not(.kanji-chrome--practice) {
     padding-bottom: calc(
       0.75rem + 8.75rem + env(safe-area-inset-bottom, 0px)
     );
@@ -571,7 +590,9 @@ canvas.kanji-practice-canvas {
     max-height: 100dvh;
     min-height: 0;
     overflow: hidden;
-    padding: 0.28rem 0.38rem max(0.28rem, env(safe-area-inset-bottom, 0px));
+    /* 固定フッター＋セーフエリアぶん。なぞる／自由描画の flex 領域がここまでで収まる */
+    padding: 0.28rem 0.38rem
+      calc(0.28rem + 4.35rem + env(safe-area-inset-bottom, 0px));
     gap: 0.28rem;
     /* パネル内余白を詰め、キャンバス領域を最大化（KanjiPractice の CSS 変数） */
     --kanji-panel-pad-top: 0.26rem;
@@ -627,6 +648,10 @@ canvas.kanji-practice-canvas {
 
   .kanji-chrome--practice .kanji-practice-panel {
     border-radius: 10px;
+    flex: 1 1 0;
+    min-height: 0;
+    width: 100%;
+    max-width: none;
   }
 
   /* 縦並び：残り高さを 2 等分（同じ高さ）、flex で空きをすべてグリッドへ */
@@ -646,6 +671,8 @@ canvas.kanji-practice-canvas {
   .kanji-chrome--practice .kanji-grid--pair > .kanji-grid__cell {
     aspect-ratio: unset;
     min-height: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .kanji-chrome--practice .kanji-grid__cell {
@@ -655,12 +682,14 @@ canvas.kanji-practice-canvas {
   }
 
   .kanji-chrome--practice .kanji-footer {
-    position: static;
-    flex-shrink: 0;
+    left: max(0.38rem, env(safe-area-inset-left, 0px));
+    right: max(0.38rem, env(safe-area-inset-right, 0px));
+    bottom: 0;
     padding: 0.32rem 0.42rem;
+    padding-bottom: max(0.32rem, env(safe-area-inset-bottom, 0px));
     margin: 0;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    box-shadow: 0 -6px 22px rgba(44, 38, 28, 0.1);
   }
 
   .kanji-chrome--practice .kanji-footer__actions {
