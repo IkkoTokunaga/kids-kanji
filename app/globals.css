@@ -283,6 +283,20 @@ body {
   opacity: 0.85;
 }
 
+/* ボタン類：ラベル文字が選択されないようにする（タップ長押しのコピーも抑止） */
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.kanji-btn {
+  -webkit-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+}
+
 .kanji-grid {
   flex: 1;
   min-height: 0;
