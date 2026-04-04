@@ -296,6 +296,12 @@ body {
   justify-items: stretch;
 }
 
+/* てほん列なし：なぞる＋自由描画の 2 列 */
+.kanji-grid--pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
 /* 1:1 セル（列幅＝一辺）。aspect-ratio で padding-bottom 不要 */
 .kanji-grid__cell {
   position: relative;
@@ -305,9 +311,28 @@ body {
   min-height: 0;
 }
 
-/* 描画キャンバス：誤スクロール抑制 */
+/*
+ * 練習パネル（てほん・なぞる・自由描画）
+ * スマホの WebKit では user-select だけでは選択が始まることがあるため、
+ * touch-callout や子要素まで含めて明示する。
+ */
+.kanji-practice-panel,
+.kanji-practice-panel * {
+  -webkit-user-select: none !important;
+  user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  -webkit-touch-callout: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 描画キャンバス：誤スクロール・テキスト選択の抑制 */
 canvas.kanji-practice-canvas {
   touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 /* ヘッダー内：読みの下の例文（別カードにせず 1 ブロックに統合） */
@@ -527,6 +552,90 @@ canvas.kanji-practice-canvas {
     min-width: 0;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+  }
+
+  /*
+   * 練習画面（てほん列なし・フッターはボタンのみ）：一画面に収めスクロールしない
+   */
+  .kanji-chrome--practice {
+    height: 100dvh;
+    max-height: 100dvh;
+    min-height: 0;
+    overflow: hidden;
+    padding: 0.4rem 0.45rem max(0.35rem, env(safe-area-inset-bottom, 0px));
+    gap: 0.35rem;
+  }
+
+  .kanji-chrome--practice .kanji-header {
+    padding: 0.45rem 0.55rem 0.5rem;
+  }
+
+  .kanji-chrome--practice .kanji-header__top {
+    margin-bottom: 0.35rem;
+  }
+
+  .kanji-chrome--practice .kanji-header__readings {
+    gap: 0.3rem 0.4rem;
+  }
+
+  .kanji-chrome--practice .kanji-header__kun,
+  .kanji-chrome--practice .kanji-header__on {
+    padding: 0.22rem 0.5rem 0.22rem 0.38rem;
+  }
+
+  .kanji-chrome--practice .kanji-header__kunReading {
+    font-size: 0.98rem;
+  }
+
+  .kanji-chrome--practice .kanji-header__onReading {
+    font-size: 0.86rem;
+  }
+
+  .kanji-chrome--practice .kanji-header__example {
+    margin-top: 0.4rem;
+    padding-top: 0.4rem;
+  }
+
+  .kanji-chrome--practice .kanji-header__exampleSentence {
+    font-size: 0.72rem;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .kanji-grid--pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    flex: 1 1 0;
+    min-height: 0;
+    align-content: stretch;
+    align-items: stretch;
+    gap: 0.4rem;
+    justify-items: stretch;
+  }
+
+  .kanji-chrome--practice .kanji-grid__cell {
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  .kanji-chrome--practice .kanji-footer {
+    position: static;
+    flex-shrink: 0;
+    padding: 0.4rem 0.5rem;
+    margin: 0;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .kanji-chrome--practice .kanji-footer__actions {
+    width: 100%;
+  }
+
+  .kanji-footer--actions-only {
     justify-content: center;
   }
 

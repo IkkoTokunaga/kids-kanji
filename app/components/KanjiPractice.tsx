@@ -43,13 +43,24 @@ function renderExampleWithEmphasis(text: string): ReactNode {
 
 type Point = { x: number; y: number };
 
+function clearDocumentSelection() {
+  const sel = window.getSelection?.();
+  if (sel && sel.rangeCount > 0) sel.removeAllRanges();
+}
+
+/**
+ * ビューポートスクロール後もキャンバス上の見た目と一致させるため、
+ * 毎イベントで getBoundingClientRect() から CSS ピクセル空間→bitmap 空間へ写す。
+ */
 function canvasPointFromPointerEvent(
   canvas: HTMLCanvasElement,
   ev: PointerEvent
 ): Point {
   const r = canvas.getBoundingClientRect();
-  const scaleX = canvas.width / r.width;
-  const scaleY = canvas.height / r.height;
+  const rw = r.width > 0 ? r.width : 1;
+  const rh = r.height > 0 ? r.height : 1;
+  const scaleX = canvas.width / rw;
+  const scaleY = canvas.height / rh;
   return {
     x: (ev.clientX - r.left) * scaleX,
     y: (ev.clientY - r.top) * scaleY,
@@ -174,6 +185,8 @@ function useDrawingCanvas(enabled: boolean) {
   const onPointerDown = useCallback(
     (e: React.PointerEvent<HTMLCanvasElement>) => {
       if (!enabled) return;
+      e.preventDefault();
+      clearDocumentSelection();
       e.currentTarget.setPointerCapture(e.pointerId);
       drawingRef.current = true;
       const canvas = canvasRef.current;
@@ -194,6 +207,7 @@ function useDrawingCanvas(enabled: boolean) {
   const onPointerMove = useCallback(
     (e: React.PointerEvent<HTMLCanvasElement>) => {
       if (!enabled || !drawingRef.current) return;
+      e.preventDefault();
       const canvas = canvasRef.current;
       if (!canvas) return;
       const ctx = canvas.getContext("2d");
@@ -247,6 +261,7 @@ function useDrawingCanvas(enabled: boolean) {
       onPointerMove,
       onPointerUp: endStroke,
       onPointerLeave: endStroke,
+      onPointerCancel: endStroke,
     },
     clearCanvas,
   };
@@ -258,6 +273,73 @@ function clearDrawingSurface(
 ): number {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   return 0;
+}
+
+/**
+ * 表示サイズに合わせて bitmap 寸法を更新する。
+ * - clear: 寸法だけ合わせる（代入でバッファは消える。続けて clear を呼ぶ想定）
+ * - preserve: 変化がごく小さいときは触らない（サブピクセル／dvh 揺れでの 1px 再設定を防ぐ）。
+ *   それ以外で寸法が変わるときは、オフスクリーン canvas に退避してから width/height を変え、
+ *   drawImage で引き継ぐ（モバイル Chrome のリサイズでも描画を維持）
+ */
+function resizeCanvasToDisplaySize(
+  canvas: HTMLCanvasElement | null,
+  mode: "clear" | "preserve"
+): void {
+  if (!canvas) return;
+  const dpr = Math.min(window.devicePixelRatio ?? 1, 2);
+  const rect = canvas.getBoundingClientRect();
+  const w = Math.max(1, Math.round(rect.width * dpr));
+  const h = Math.max(1, Math.round(rect.height * dpr));
+  const oldW = canvas.width;
+  const oldH = canvas.height;
+
+  if (oldW === w && oldH === h) return;
+
+  if (
+    mode === "preserve" &&
+    oldW > 0 &&
+    oldH > 0 &&
+    Math.abs(w - oldW) <= 1 &&
+    Math.abs(h - oldH) <= 1
+  ) {
+    return;
+  }
+
+  /**
+   * 高速スクロール中、合成レイヤまわりで rect が一瞬ほぼ 0 や極小になることがある。
+   * そのままリサイズすると bitmap が 1〜数 px になり線が実質消えるので拒否する。
+   */
+  if (mode === "preserve" && oldW >= 24 && oldH >= 24) {
+    const minW = Math.max(12, Math.floor(oldW * 0.08));
+    const minH = Math.max(12, Math.floor(oldH * 0.08));
+    if (w < minW || h < minH) return;
+  }
+
+  /** オフスクリーンへ退避（canvas 寸法の再代入は bitmap を白紙にするため必須） */
+  let snap: HTMLCanvasElement | null = null;
+  if (mode === "preserve" && oldW > 0 && oldH > 0) {
+    const ctx0 = canvas.getContext("2d");
+    if (ctx0) {
+      snap = document.createElement("canvas");
+      snap.width = oldW;
+      snap.height = oldH;
+      const sctx = snap.getContext("2d", { willReadFrequently: false });
+      if (sctx) {
+        sctx.drawImage(canvas, 0, 0);
+      }
+    }
+  }
+
+  canvas.width = w;
+  canvas.height = h;
+
+  if (snap) {
+    const ctx = canvas.getContext("2d");
+    if (ctx) {
+      ctx.drawImage(snap, 0, 0, snap.width, snap.height, 0, 0, w, h);
+    }
+  }
 }
 
 type KanjiPracticeProps = {
@@ -291,50 +373,139 @@ export default function KanjiPractice({
   const trace = useDrawingCanvas(true);
   const free = useDrawingCanvas(true);
   const chromeRef = useRef<HTMLElement | null>(null);
+  const practiceGridRef = useRef<HTMLDivElement | null>(null);
 
-  const layoutCanvas = useCallback((canvas: HTMLCanvasElement | null) => {
-    if (!canvas) return;
-    const dpr = Math.min(window.devicePixelRatio ?? 1, 2);
-    const rect = canvas.getBoundingClientRect();
-    const w = Math.max(1, Math.round(rect.width * dpr));
-    const h = Math.max(1, Math.round(rect.height * dpr));
-    if (canvas.width !== w || canvas.height !== h) {
-      canvas.width = w;
-      canvas.height = h;
-    }
+  /** iOS 等：selectstart を抑止（CSS だけでは残る場合がある） */
+  useEffect(() => {
+    const root = practiceGridRef.current;
+    if (!root) return;
+    const block = (e: Event) => {
+      e.preventDefault();
+    };
+    const opts = { capture: true };
+    root.addEventListener("selectstart", block, opts);
+    root.addEventListener("dragstart", block, opts);
+    return () => {
+      root.removeEventListener("selectstart", block, opts);
+      root.removeEventListener("dragstart", block, opts);
+    };
   }, []);
 
-  /** リサイズ・問題の切り替え時のみ（描画のたびに走らせない） */
-  useEffect(() => {
-    const sync = () => {
-      layoutCanvas(trace.canvasRef.current);
-      layoutCanvas(free.canvasRef.current);
+  const applyCanvasLayout = useCallback(
+    (forceClear: boolean) => {
+      const mode = forceClear ? "clear" : "preserve";
+      resizeCanvasToDisplaySize(trace.canvasRef.current, mode);
+      resizeCanvasToDisplaySize(free.canvasRef.current, mode);
       const t = trace.canvasRef.current;
       const tctx = t?.getContext("2d");
-      if (t && tctx) trace.inkRef.current = clearDrawingSurface(t, tctx);
       const f = free.canvasRef.current;
       const fctx = f?.getContext("2d");
-      if (f && fctx) free.inkRef.current = clearDrawingSurface(f, fctx);
-    };
-    sync();
-    const raf = requestAnimationFrame(sync);
-    window.addEventListener("resize", sync);
+      if (forceClear) {
+        if (t && tctx) trace.inkRef.current = clearDrawingSurface(t, tctx);
+        if (f && fctx) free.inkRef.current = clearDrawingSurface(f, fctx);
+      }
+    },
+    [trace.canvasRef, trace.inkRef, free.canvasRef, free.inkRef]
+  );
+
+  /** 同一フレーム内の複数リサイズ通知をまとめ、レイアウト確定後に preserve 同期する */
+  const layoutPreserveRafRef = useRef<number | null>(null);
+  const scheduleLayoutPreserve = useCallback(() => {
+    if (layoutPreserveRafRef.current != null) {
+      cancelAnimationFrame(layoutPreserveRafRef.current);
+    }
+    layoutPreserveRafRef.current = requestAnimationFrame(() => {
+      layoutPreserveRafRef.current = null;
+      applyCanvasLayout(false);
+    });
+  }, [applyCanvasLayout]);
+
+  useEffect(
+    () => () => {
+      if (layoutPreserveRafRef.current != null) {
+        cancelAnimationFrame(layoutPreserveRafRef.current);
+        layoutPreserveRafRef.current = null;
+      }
+    },
+    []
+  );
+
+  /**
+   * もんだい切り替え・初回：必ずクリア。
+   * レイアウト変化：オフスクリーン退避つきで bitmap を合わせる（アドレスバー・dvh・グリッドサイズ変更）。
+   */
+  useEffect(() => {
+    applyCanvasLayout(true);
+    const raf = requestAnimationFrame(() => scheduleLayoutPreserve());
+    const onVv = () => scheduleLayoutPreserve();
+    window.addEventListener("resize", onVv);
+    const vv = window.visualViewport;
+    vv?.addEventListener("resize", onVv);
+    vv?.addEventListener("scroll", onVv);
     return () => {
       cancelAnimationFrame(raf);
-      window.removeEventListener("resize", sync);
+      window.removeEventListener("resize", onVv);
+      vv?.removeEventListener("resize", onVv);
+      vv?.removeEventListener("scroll", onVv);
     };
-  }, [char, layoutCanvas, trace.canvasRef, trace.inkRef, free.canvasRef, free.inkRef]);
+  }, [char, applyCanvasLayout, scheduleLayoutPreserve]);
+
+  /** 練習グリッドの表示サイズ変化（Chrome のリサイズで aspect-ratio セルが変わる等）を直接検知 */
+  useEffect(() => {
+    let ro: ResizeObserver | null = null;
+    const id = requestAnimationFrame(() => {
+      const root = practiceGridRef.current;
+      if (!root || typeof ResizeObserver === "undefined") return;
+      ro = new ResizeObserver(() => scheduleLayoutPreserve());
+      ro.observe(root);
+    });
+    return () => {
+      cancelAnimationFrame(id);
+      ro?.disconnect();
+    };
+  }, [scheduleLayoutPreserve]);
+
+  /** 高速スクロールで一時的に rect が壊れても、止まったあとで bitmap を正しいサイズに合わせる */
+  useEffect(() => {
+    let el = chromeRef.current;
+    let t: ReturnType<typeof setTimeout> | undefined;
+    const sync = () => scheduleLayoutPreserve();
+    const debounced = () => {
+      if (t !== undefined) clearTimeout(t);
+      t = setTimeout(sync, 140);
+    };
+    const attach = () => {
+      el = chromeRef.current;
+      if (!el) return;
+      el.addEventListener("scroll", debounced, { passive: true });
+      window.addEventListener("scroll", debounced, { passive: true });
+      if ("onscrollend" in el) {
+        el.addEventListener("scrollend", sync, { passive: true });
+      }
+      if ("onscrollend" in window) {
+        window.addEventListener("scrollend", sync, { passive: true });
+      }
+    };
+    const raf = requestAnimationFrame(attach);
+    return () => {
+      cancelAnimationFrame(raf);
+      if (el) {
+        el.removeEventListener("scroll", debounced);
+        if ("onscrollend" in el) {
+          el.removeEventListener("scrollend", sync);
+        }
+      }
+      window.removeEventListener("scroll", debounced);
+      if ("onscrollend" in window) {
+        window.removeEventListener("scrollend", sync);
+      }
+      if (t !== undefined) clearTimeout(t);
+    };
+  }, [scheduleLayoutPreserve]);
 
   const resetStrokeArea = useCallback(() => {
-    layoutCanvas(trace.canvasRef.current);
-    layoutCanvas(free.canvasRef.current);
-    const t = trace.canvasRef.current;
-    const tctx = t?.getContext("2d");
-    if (t && tctx) trace.inkRef.current = clearDrawingSurface(t, tctx);
-    const f = free.canvasRef.current;
-    const fctx = f?.getContext("2d");
-    if (f && fctx) free.inkRef.current = clearDrawingSurface(f, fctx);
-  }, [layoutCanvas, trace.canvasRef, trace.inkRef, free.canvasRef, free.inkRef]);
+    applyCanvasLayout(true);
+  }, [applyCanvasLayout]);
 
   const minTraceInk = 120;
   const minFreeInk = 120;
@@ -367,6 +538,8 @@ export default function KanjiPractice({
     gridTemplateRows: "auto minmax(0, 1fr)",
     containerType: "size",
     overflow: "hidden",
+    userSelect: "none",
+    WebkitUserSelect: "none",
   };
 
   const labelStyle: CSSProperties = {
@@ -381,6 +554,7 @@ export default function KanjiPractice({
     display: "block",
     borderRadius: 8,
     background: "#faf8f5",
+    touchAction: "none",
   };
 
   const traceStageStyle: CSSProperties = {
@@ -401,6 +575,7 @@ export default function KanjiPractice({
     justifyContent: "center",
     pointerEvents: "none",
     userSelect: "none",
+    WebkitUserSelect: "none",
     fontWeight: 700,
     color: "var(--ink)",
     opacity: 0.13,
@@ -416,6 +591,7 @@ export default function KanjiPractice({
     display: "block",
     background: "transparent",
     borderRadius: 8,
+    touchAction: "none",
   };
 
   if (KANJI_ITEMS.length === 0) {
@@ -434,7 +610,7 @@ export default function KanjiPractice({
   }
 
   return (
-    <main ref={chromeRef} className="kanji-chrome">
+    <main ref={chromeRef} className="kanji-chrome kanji-chrome--practice">
       <header className="kanji-header" lang="ja-JP">
         <div className="kanji-header__top">
           <Link href="/" className="kanji-header__back">
@@ -465,28 +641,9 @@ export default function KanjiPractice({
         </div>
       </header>
 
-      <div className="kanji-grid">
+      <div ref={practiceGridRef} className="kanji-grid kanji-grid--pair">
         <div className="kanji-grid__cell">
-          <section style={panelStyle}>
-            <span style={labelStyle}>てほん</span>
-            <div
-              style={{
-                minHeight: 0,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontWeight: 700,
-                color: "var(--ink)",
-                ...modelSize,
-              }}
-            >
-              {char}
-            </div>
-          </section>
-        </div>
-
-        <div className="kanji-grid__cell">
-          <section style={panelStyle}>
+          <section className="kanji-practice-panel" style={panelStyle}>
             <span style={labelStyle}>なぞる</span>
             <div style={traceStageStyle}>
               <div aria-hidden style={traceGuideStyle}>
@@ -506,10 +663,17 @@ export default function KanjiPractice({
                 }}
                 onPointerUp={() => {
                   trace.handlers.onPointerUp();
+                  clearDocumentSelection();
                   bump();
                 }}
                 onPointerLeave={() => {
                   trace.handlers.onPointerLeave();
+                  clearDocumentSelection();
+                  bump();
+                }}
+                onPointerCancel={() => {
+                  trace.handlers.onPointerCancel();
+                  clearDocumentSelection();
                   bump();
                 }}
               />
@@ -518,7 +682,7 @@ export default function KanjiPractice({
         </div>
 
         <div className="kanji-grid__cell">
-          <section style={panelStyle}>
+          <section className="kanji-practice-panel" style={panelStyle}>
             <span style={labelStyle}>じゆうにかく</span>
             <canvas
               ref={free.canvasRef}
@@ -534,10 +698,17 @@ export default function KanjiPractice({
               }}
               onPointerUp={() => {
                 free.handlers.onPointerUp();
+                clearDocumentSelection();
                 bump();
               }}
               onPointerLeave={() => {
                 free.handlers.onPointerLeave();
+                clearDocumentSelection();
+                bump();
+              }}
+              onPointerCancel={() => {
+                free.handlers.onPointerCancel();
+                clearDocumentSelection();
                 bump();
               }}
             />
@@ -545,18 +716,7 @@ export default function KanjiPractice({
         </div>
       </div>
 
-      <footer className="kanji-footer">
-        <p
-          className={
-            canAdvance
-              ? "kanji-footer__status kanji-footer__status--ok"
-              : "kanji-footer__status"
-          }
-        >
-          {canAdvance
-            ? "よくかけました。「つぎへ」をおしてね。"
-            : "なぞるばしょと、じゆうにかくばしょに、それぞれくっきりせんをひいてね。"}
-        </p>
+      <footer className="kanji-footer kanji-footer--actions-only">
         <div className="kanji-footer__actions">
           <button
             type="button"
