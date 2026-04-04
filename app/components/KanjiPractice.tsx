@@ -533,7 +533,8 @@ export default function KanjiPractice({
     background: "var(--panel)",
     border: `1px solid var(--border)`,
     borderRadius: 12,
-    padding: "0.5rem 0.5rem 0.65rem",
+    padding:
+      "var(--kanji-panel-pad-top, 0.5rem) var(--kanji-panel-pad-x, 0.5rem) var(--kanji-panel-pad-bottom, 0.65rem)",
     display: "grid",
     gridTemplateRows: "auto minmax(0, 1fr)",
     containerType: "size",
@@ -543,9 +544,9 @@ export default function KanjiPractice({
   };
 
   const labelStyle: CSSProperties = {
-    fontSize: "0.7rem",
+    fontSize: "var(--kanji-panel-label-size, 0.7rem)",
     opacity: 0.6,
-    marginBottom: 4,
+    marginBottom: "var(--kanji-panel-label-gap, 4px)",
   };
 
   const canvasStyle: CSSProperties = {
@@ -648,7 +649,9 @@ export default function KanjiPractice({
       <div ref={practiceGridRef} className="kanji-grid kanji-grid--pair">
         <div className="kanji-grid__cell">
           <section className="kanji-practice-panel" style={panelStyle}>
-            <span style={labelStyle}>なぞる</span>
+            <span className="kanji-practice-panel__label" style={labelStyle}>
+              なぞる
+            </span>
             <div style={traceStageStyle}>
               <div aria-hidden style={traceGuideStyle}>
                 {char}
@@ -687,7 +690,9 @@ export default function KanjiPractice({
 
         <div className="kanji-grid__cell">
           <section className="kanji-practice-panel" style={panelStyle}>
-            <span style={labelStyle}>じゆうにかく</span>
+            <span className="kanji-practice-panel__label" style={labelStyle}>
+              じゆうにかく
+            </span>
             <canvas
               ref={free.canvasRef}
               className="kanji-practice-canvas"
