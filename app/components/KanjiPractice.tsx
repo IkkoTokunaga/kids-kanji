@@ -269,6 +269,61 @@ function clearDrawingSurface(
   return 0;
 }
 
+/**
+ * 表示サイズに合わせて bitmap 寸法を更新する。
+ * - clear: 寸法だけ合わせる（代入でバッファは消える。続けて clear を呼ぶ想定）
+ * - preserve: 変化がごく小さいときは触らない（サブピクセル／dvh 揺れでの 1px 再設定を防ぐ）。
+ *   それ以外で寸法が変わるときは、リサイズ前に内容をコピーして引き継ぐ（スクロール後に線が消えるのを防ぐ）
+ */
+function resizeCanvasToDisplaySize(
+  canvas: HTMLCanvasElement | null,
+  mode: "clear" | "preserve"
+): void {
+  if (!canvas) return;
+  const dpr = Math.min(window.devicePixelRatio ?? 1, 2);
+  const rect = canvas.getBoundingClientRect();
+  const w = Math.max(1, Math.round(rect.width * dpr));
+  const h = Math.max(1, Math.round(rect.height * dpr));
+  const oldW = canvas.width;
+  const oldH = canvas.height;
+
+  if (oldW === w && oldH === h) return;
+
+  if (
+    mode === "preserve" &&
+    oldW > 0 &&
+    oldH > 0 &&
+    Math.abs(w - oldW) <= 1 &&
+    Math.abs(h - oldH) <= 1
+  ) {
+    return;
+  }
+
+  let snap: HTMLCanvasElement | null = null;
+  if (mode === "preserve" && oldW > 0 && oldH > 0) {
+    const ctx0 = canvas.getContext("2d");
+    if (ctx0) {
+      snap = document.createElement("canvas");
+      snap.width = oldW;
+      snap.height = oldH;
+      const sctx = snap.getContext("2d");
+      if (sctx) {
+        sctx.drawImage(canvas, 0, 0);
+      }
+    }
+  }
+
+  canvas.width = w;
+  canvas.height = h;
+
+  if (snap) {
+    const ctx = canvas.getContext("2d");
+    if (ctx) {
+      ctx.drawImage(snap, 0, 0, snap.width, snap.height, 0, 0, w, h);
+    }
+  }
+}
+
 type KanjiPracticeProps = {
   initialIndex?: number;
 };
@@ -318,52 +373,39 @@ export default function KanjiPractice({
     };
   }, []);
 
-  /** 表示サイズに合わせて bitmap を更新。寸法が変わったら true（このとき中身はブラウザ側で消える） */
-  const layoutCanvas = useCallback((canvas: HTMLCanvasElement | null): boolean => {
-    if (!canvas) return false;
-    const dpr = Math.min(window.devicePixelRatio ?? 1, 2);
-    const rect = canvas.getBoundingClientRect();
-    const w = Math.max(1, Math.round(rect.width * dpr));
-    const h = Math.max(1, Math.round(rect.height * dpr));
-    if (canvas.width !== w || canvas.height !== h) {
-      canvas.width = w;
-      canvas.height = h;
-      return true;
-    }
-    return false;
-  }, []);
-
   const applyCanvasLayout = useCallback(
     (forceClear: boolean) => {
-      const traceResized = layoutCanvas(trace.canvasRef.current);
-      const freeResized = layoutCanvas(free.canvasRef.current);
+      const mode = forceClear ? "clear" : "preserve";
+      resizeCanvasToDisplaySize(trace.canvasRef.current, mode);
+      resizeCanvasToDisplaySize(free.canvasRef.current, mode);
       const t = trace.canvasRef.current;
       const tctx = t?.getContext("2d");
-      if (t && tctx && (forceClear || traceResized)) {
-        trace.inkRef.current = clearDrawingSurface(t, tctx);
-      }
       const f = free.canvasRef.current;
       const fctx = f?.getContext("2d");
-      if (f && fctx && (forceClear || freeResized)) {
-        free.inkRef.current = clearDrawingSurface(f, fctx);
+      if (forceClear) {
+        if (t && tctx) trace.inkRef.current = clearDrawingSurface(t, tctx);
+        if (f && fctx) free.inkRef.current = clearDrawingSurface(f, fctx);
       }
     },
-    [layoutCanvas, trace.canvasRef, trace.inkRef, free.canvasRef, free.inkRef]
+    [trace.canvasRef, trace.inkRef, free.canvasRef, free.inkRef]
   );
 
   /**
    * もんだい切り替え・初回：必ずクリア。
-   * window resize だけ：bitmap 寸法が変わったときだけクリア（スマホの UI 表示切替などで
-   * resize が連発しても、レイアウトが変わらなければ線を残す）
+   * それ以外のレイアウト変化：bitmap を引き継ぎつつ寸法だけ合わせる（スクロール・モバイル UI・dvh で
+   * getBoundingClientRect がわずかに変わり canvas 寸法が再設定されると線が消える問題への対策）。
    */
   useEffect(() => {
     applyCanvasLayout(true);
     const raf = requestAnimationFrame(() => applyCanvasLayout(false));
     const onResize = () => applyCanvasLayout(false);
     window.addEventListener("resize", onResize);
+    const vv = window.visualViewport;
+    vv?.addEventListener("resize", onResize);
     return () => {
       cancelAnimationFrame(raf);
       window.removeEventListener("resize", onResize);
+      vv?.removeEventListener("resize", onResize);
     };
   }, [char, applyCanvasLayout]);
 
