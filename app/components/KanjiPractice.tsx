@@ -580,6 +580,10 @@ export default function KanjiPractice({
     color: "var(--ink)",
     opacity: 0.13,
     ...modelSize,
+    /* lineHeight:1 だと漢字のはみ出し（下）が traceStage の overflow で切れる */
+    lineHeight: 1.12,
+    paddingBottom: "0.08em",
+    boxSizing: "border-box",
   };
 
   const traceCanvasStyle: CSSProperties = {
@@ -642,7 +646,7 @@ export default function KanjiPractice({
       </header>
 
       <div ref={practiceGridRef} className="kanji-grid kanji-grid--pair">
-        <div className="kanji-grid__cell">
+        <div className="kanji-grid__cell kanji-grid__cell--trace">
           <section className="kanji-practice-panel" style={panelStyle}>
             <span style={labelStyle}>なぞる</span>
             <div style={traceStageStyle}>
