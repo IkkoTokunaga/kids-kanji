@@ -516,6 +516,10 @@ export default function KanjiPractice({
 
   const handleNext = () => {
     if (!canAdvance || KANJI_ITEMS.length === 0) return;
+    /* 次の問題へ：effect で canvas を消す前の 1 フレーム、inkRef が残ると canAdvance が true のままになる */
+    trace.inkRef.current = 0;
+    free.inkRef.current = 0;
+    bump();
     setIndex((i) => (i + 1) % KANJI_ITEMS.length);
     requestAnimationFrame(() => {
       chromeRef.current?.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -649,9 +653,7 @@ export default function KanjiPractice({
       <div ref={practiceGridRef} className="kanji-grid kanji-grid--pair">
         <div className="kanji-grid__cell">
           <section className="kanji-practice-panel" style={panelStyle}>
-            <span className="kanji-practice-panel__label" style={labelStyle}>
-              なぞる
-            </span>
+            <span style={labelStyle}>なぞる</span>
             <div style={traceStageStyle}>
               <div aria-hidden style={traceGuideStyle}>
                 {char}
@@ -690,9 +692,7 @@ export default function KanjiPractice({
 
         <div className="kanji-grid__cell">
           <section className="kanji-practice-panel" style={panelStyle}>
-            <span className="kanji-practice-panel__label" style={labelStyle}>
-              じゆうにかく
-            </span>
+            <span style={labelStyle}>じゆうにかく</span>
             <canvas
               ref={free.canvasRef}
               className="kanji-practice-canvas"
