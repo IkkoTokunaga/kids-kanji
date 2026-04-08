@@ -557,19 +557,8 @@ export default function KanjiPractice({
     width: "100%",
     height: "100%",
     display: "block",
-    borderRadius: 8,
-    background: "#faf8f5",
+    background: "transparent",
     touchAction: "none",
-  };
-
-  const traceStageStyle: CSSProperties = {
-    position: "relative",
-    minHeight: 0,
-    width: "100%",
-    height: "100%",
-    background: "#faf8f5",
-    borderRadius: 8,
-    overflow: "hidden",
   };
 
   const traceGuideStyle: CSSProperties = {
@@ -599,7 +588,6 @@ export default function KanjiPractice({
     height: "100%",
     display: "block",
     background: "transparent",
-    borderRadius: 8,
     touchAction: "none",
   };
 
@@ -654,7 +642,7 @@ export default function KanjiPractice({
         <div className="kanji-grid__cell">
           <section className="kanji-practice-panel" style={panelStyle}>
             <span style={labelStyle}>なぞる</span>
-            <div style={traceStageStyle}>
+            <div className="kanji-practice-draw-area">
               <div aria-hidden style={traceGuideStyle}>
                 {char}
               </div>
@@ -693,34 +681,36 @@ export default function KanjiPractice({
         <div className="kanji-grid__cell">
           <section className="kanji-practice-panel" style={panelStyle}>
             <span style={labelStyle}>じゆうにかく</span>
-            <canvas
-              ref={free.canvasRef}
-              className="kanji-practice-canvas"
-              style={canvasStyle}
-              onPointerDown={(e) => {
-                free.handlers.onPointerDown(e);
-                bump();
-              }}
-              onPointerMove={(e) => {
-                free.handlers.onPointerMove(e);
-                bump();
-              }}
-              onPointerUp={() => {
-                free.handlers.onPointerUp();
-                clearDocumentSelection();
-                bump();
-              }}
-              onPointerLeave={() => {
-                free.handlers.onPointerLeave();
-                clearDocumentSelection();
-                bump();
-              }}
-              onPointerCancel={() => {
-                free.handlers.onPointerCancel();
-                clearDocumentSelection();
-                bump();
-              }}
-            />
+            <div className="kanji-practice-draw-area">
+              <canvas
+                ref={free.canvasRef}
+                className="kanji-practice-canvas"
+                style={canvasStyle}
+                onPointerDown={(e) => {
+                  free.handlers.onPointerDown(e);
+                  bump();
+                }}
+                onPointerMove={(e) => {
+                  free.handlers.onPointerMove(e);
+                  bump();
+                }}
+                onPointerUp={() => {
+                  free.handlers.onPointerUp();
+                  clearDocumentSelection();
+                  bump();
+                }}
+                onPointerLeave={() => {
+                  free.handlers.onPointerLeave();
+                  clearDocumentSelection();
+                  bump();
+                }}
+                onPointerCancel={() => {
+                  free.handlers.onPointerCancel();
+                  clearDocumentSelection();
+                  bump();
+                }}
+              />
+            </div>
           </section>
         </div>
       </div>
