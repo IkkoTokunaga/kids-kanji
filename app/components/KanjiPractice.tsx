@@ -16,7 +16,7 @@ import { KANJI_ITEMS, clampKanjiIndex } from "../lib/kanji";
 const INK_COLOR = "#1a1a1a";
 
 /**
- * なぞりガイドと同じ fontSize 前提（min(110cqw, 42vmin, 16rem)）で、
+ * 自由描画パネルと同じ fontSize 前提（min(110cqw, 42vmin, 16rem)）で、
  * 太字漢字の画の太さに近い線幅を bitmap 座標で返す。
  */
 function strokeWidthForCanvas(canvas: HTMLCanvasElement): number {
@@ -385,12 +385,18 @@ export default function KanjiPractice({
   const kunYomi = item?.kunYomi ?? "";
   const onYomi = item?.onYomi ?? "";
   const exampleText = item?.example ?? "";
-  const modelSize = useMemo(
-    () => ({ fontSize: "min(110cqw, 42vmin, 16rem)", lineHeight: 1 }),
+  /** みほんブロック：大きくはっきり表示（キャンバスなし） */
+  const modelGlyphStyle: CSSProperties = useMemo(
+    () => ({
+      fontSize: "min(132cqw, 54vmin, 22rem)",
+      lineHeight: 1.05,
+      fontWeight: 800,
+      color: "var(--ink)",
+      letterSpacing: "-0.02em",
+    }),
     []
   );
 
-  const trace = useDrawingCanvas(true);
   const free = useDrawingCanvas(true);
   const chromeRef = useRef<HTMLElement | null>(null);
   const practiceGridRef = useRef<HTMLDivElement | null>(null);
@@ -414,18 +420,14 @@ export default function KanjiPractice({
   const applyCanvasLayout = useCallback(
     (forceClear: boolean) => {
       const mode = forceClear ? "clear" : "preserve";
-      resizeCanvasToDisplaySize(trace.canvasRef.current, mode);
       resizeCanvasToDisplaySize(free.canvasRef.current, mode);
-      const t = trace.canvasRef.current;
-      const tctx = t?.getContext("2d");
       const f = free.canvasRef.current;
       const fctx = f?.getContext("2d");
       if (forceClear) {
-        if (t && tctx) trace.inkRef.current = clearDrawingSurface(t, tctx);
         if (f && fctx) free.inkRef.current = clearDrawingSurface(f, fctx);
       }
     },
-    [trace.canvasRef, trace.inkRef, free.canvasRef, free.inkRef]
+    [free.canvasRef, free.inkRef]
   );
 
   /** 同一フレーム内の複数リサイズ通知をまとめ、レイアウト確定後に preserve 同期する */
@@ -527,17 +529,14 @@ export default function KanjiPractice({
     applyCanvasLayout(true);
   }, [applyCanvasLayout]);
 
-  const minTraceInk = 120;
   const minFreeInk = 120;
-  const canAdvance =
-    trace.inkRef.current >= minTraceInk && free.inkRef.current >= minFreeInk;
+  const canAdvance = free.inkRef.current >= minFreeInk;
   const [, tick] = useState(0);
   const bump = useCallback(() => tick((t) => t + 1), []);
 
   const handleNext = () => {
     if (!canAdvance || KANJI_ITEMS.length === 0) return;
     /* 次の問題へ：effect で canvas を消す前の 1 フレーム、inkRef が残ると canAdvance が true のままになる */
-    trace.inkRef.current = 0;
     free.inkRef.current = 0;
     bump();
     setIndex((i) => (i + 1) % KANJI_ITEMS.length);
@@ -574,36 +573,6 @@ export default function KanjiPractice({
   };
 
   const canvasStyle: CSSProperties = {
-    width: "100%",
-    height: "100%",
-    display: "block",
-    background: "transparent",
-    touchAction: "none",
-  };
-
-  const traceGuideStyle: CSSProperties = {
-    position: "absolute",
-    inset: 0,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    pointerEvents: "none",
-    userSelect: "none",
-    WebkitUserSelect: "none",
-    fontWeight: 700,
-    color: "var(--ink)",
-    opacity: 0.13,
-    ...modelSize,
-    /* lineHeight:1 だと漢字のはみ出し（下）が traceStage の overflow で切れる */
-    lineHeight: 1.12,
-    paddingBottom: "0.08em",
-    boxSizing: "border-box",
-  };
-
-  const traceCanvasStyle: CSSProperties = {
-    position: "absolute",
-    left: 0,
-    top: 0,
     width: "100%",
     height: "100%",
     display: "block",
@@ -660,40 +629,16 @@ export default function KanjiPractice({
 
       <div ref={practiceGridRef} className="kanji-grid kanji-grid--pair">
         <div className="kanji-grid__cell">
-          <section className="kanji-practice-panel" style={panelStyle}>
-            <span style={labelStyle}>なぞる</span>
-            <div className="kanji-practice-draw-area">
-              <div aria-hidden style={traceGuideStyle}>
+          <section
+            className="kanji-practice-panel"
+            style={panelStyle}
+            aria-label="このかんじのみほん"
+          >
+            <span style={labelStyle}>みほん</span>
+            <div className="kanji-practice-model-area">
+              <span className="kanji-practice-model-glyph" style={modelGlyphStyle}>
                 {char}
-              </div>
-              <canvas
-                ref={trace.canvasRef}
-                className="kanji-practice-canvas"
-                style={traceCanvasStyle}
-                onPointerDown={(e) => {
-                  trace.handlers.onPointerDown(e);
-                  bump();
-                }}
-                onPointerMove={(e) => {
-                  trace.handlers.onPointerMove(e);
-                  bump();
-                }}
-                onPointerUp={() => {
-                  trace.handlers.onPointerUp();
-                  clearDocumentSelection();
-                  bump();
-                }}
-                onPointerLeave={() => {
-                  trace.handlers.onPointerLeave();
-                  clearDocumentSelection();
-                  bump();
-                }}
-                onPointerCancel={() => {
-                  trace.handlers.onPointerCancel();
-                  clearDocumentSelection();
-                  bump();
-                }}
-              />
+              </span>
             </div>
           </section>
         </div>
