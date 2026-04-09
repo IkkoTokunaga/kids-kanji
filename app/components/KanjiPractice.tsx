@@ -12,10 +12,27 @@ import {
 import Link from "next/link";
 import { KANJI_ITEMS, clampKanjiIndex } from "../lib/kanji";
 
-/** キャンバス座標系（以前の約4.35の3倍前後）。 */
-const STROKE_LINE_WIDTH = 13;
 /** 不透過（半透明だとストロークの重なりが濃く見えて玉連りになる） */
 const INK_COLOR = "#1a1a1a";
+
+/**
+ * なぞりガイドと同じ fontSize 前提（min(110cqw, 42vmin, 16rem)）で、
+ * 太字漢字の画の太さに近い線幅を bitmap 座標で返す。
+ */
+function strokeWidthForCanvas(canvas: HTMLCanvasElement): number {
+  const rect = canvas.getBoundingClientRect();
+  const rw = rect.width > 0 ? rect.width : 1;
+  const panel = canvas.closest(".kanji-practice-panel") as HTMLElement | null;
+  const cw = panel?.clientWidth ?? rw;
+  const vmin = Math.min(window.innerWidth, window.innerHeight);
+  const rootRem =
+    parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+  const cssFontPx = Math.min(cw * 1.1, vmin * 0.42, 16 * rootRem);
+  const scale = canvas.width / rw;
+  /* 太字の縦画に見える程度（ガイド opacity とは別に、幾何の太さ合わせ） */
+  const w = cssFontPx * 0.11 * scale;
+  return Math.min(58, Math.max(9, w));
+}
 
 /** 例文内の **…** を除去して赤い span に分割（マークダウン風） */
 function renderExampleWithEmphasis(text: string): ReactNode {
@@ -195,10 +212,11 @@ function useDrawingCanvas(enabled: boolean) {
       lastRef.current = p;
       const ctx = canvas.getContext("2d");
       if (!ctx) return;
+      const lw = strokeWidthForCanvas(canvas);
       ctx.globalAlpha = 1;
       ctx.fillStyle = INK_COLOR;
       ctx.beginPath();
-      ctx.arc(p.x, p.y, STROKE_LINE_WIDTH / 2, 0, Math.PI * 2);
+      ctx.arc(p.x, p.y, lw / 2, 0, Math.PI * 2);
       ctx.fill();
     },
     [enabled]
@@ -219,15 +237,17 @@ function useDrawingCanvas(enabled: boolean) {
       const samples = pointerSamples(canvas, e.nativeEvent);
       if (samples.length === 0) return;
 
+      const lw = strokeWidthForCanvas(canvas);
+      const minDist = Math.max(0.35, lw * 0.028);
       const smoothed = smoothAlongAnchor(last, samples, 0.42);
-      const merged = dedupeNear([last, ...smoothed], 0.32 * 0.32);
+      const merged = dedupeNear([last, ...smoothed], minDist * minDist);
       if (merged.length < 2) return;
 
-      const forCurve = subdivideLongSegments(merged, 4.5);
+      const forCurve = subdivideLongSegments(merged, Math.max(4, lw * 0.38));
 
       ctx.globalAlpha = 1;
       ctx.strokeStyle = INK_COLOR;
-      ctx.lineWidth = STROKE_LINE_WIDTH;
+      ctx.lineWidth = lw;
       ctx.lineCap = "round";
       ctx.lineJoin = "round";
       ctx.beginPath();
