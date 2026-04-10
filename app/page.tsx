@@ -12,13 +12,14 @@ export default function HomePage() {
         <p className="kanji-home__intro">
           しょうがっこう いちねん・にねんのはっていかんじ（240じ）。
           したのいちらんは、はいたいひょうのじゅん（1ねんせい→2ねんせい）だよ。
-          えらんでれんしゅうするか、したのボタンでさいしょからはじめられるよ。
+          れんしゅうは<strong>1ねんせいの80じ</strong>から<strong>らんだむ</strong>だよ。
+          したのカードをえらぶと、そのかんじからはじまるよ。
         </p>
         <Link
-          href="/practice?start=0"
+          href="/practice"
           className="kanji-btn kanji-btn--primary kanji-home__cta"
         >
-          れんしゅうをはじめる
+          れんしゅうをはじめる（らんだむ）
         </Link>
       </header>
 
@@ -51,9 +52,10 @@ export default function HomePage() {
           return (
             <li key={`${i}-${item.char}`} className="kanji-home__cell">
               <Link
-                href={`/practice?start=${i}`}
+                href="/practice"
                 className="kanji-home__card"
                 lang="ja-JP"
+                title="れんしゅうは1ねんせいかららんだむ"
               >
                 <span className="kanji-home__glyph" aria-hidden>
                   {item.char}
