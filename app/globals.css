@@ -139,23 +139,37 @@ body {
   color: var(--accent-hover);
 }
 
+/*
+ * くん／おん読み：ボタンに見えないよう、枠・ピル型・塗りをやめてタイポ＋左ラインのみ
+ */
 .kanji-header__kun {
   display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.35rem 0.75rem 0.35rem 0.45rem;
-  background: rgba(42, 107, 82, 0.08);
-  border: 1px solid rgba(42, 107, 82, 0.15);
-  border-radius: var(--radius-full);
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.35rem;
+  padding: 0.15rem 0 0.15rem 0.55rem;
+  margin: 0 0.35rem 0.15rem 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-left: 3px solid rgba(42, 107, 82, 0.45);
+  box-shadow: none;
 }
 
 .kanji-header__kunLabel {
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: var(--accent);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink-muted);
   text-transform: none;
-  opacity: 0.9;
+  opacity: 1;
+}
+
+.kanji-header__kunLabel::after {
+  content: "：";
+  font-weight: 500;
+  color: var(--ink-muted);
+  margin-left: 0.02em;
 }
 
 .kanji-header__kunReading {
@@ -168,20 +182,31 @@ body {
 
 .kanji-header__on {
   display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.35rem 0.75rem 0.35rem 0.45rem;
-  background: rgba(75, 85, 125, 0.09);
-  border: 1px solid rgba(75, 85, 125, 0.16);
-  border-radius: var(--radius-full);
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.35rem;
+  padding: 0.15rem 0 0.15rem 0.55rem;
+  margin: 0 0.35rem 0.15rem 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-left: 3px solid rgba(75, 85, 125, 0.42);
+  box-shadow: none;
 }
 
 .kanji-header__onLabel {
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: #4a5070;
-  opacity: 0.95;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink-muted);
+  opacity: 1;
+}
+
+.kanji-header__onLabel::after {
+  content: "：";
+  font-weight: 500;
+  color: var(--ink-muted);
+  margin-left: 0.02em;
 }
 
 .kanji-header__onReading {
@@ -665,7 +690,8 @@ canvas.kanji-practice-canvas {
 
   .kanji-chrome--practice .kanji-header__kun,
   .kanji-chrome--practice .kanji-header__on {
-    padding: 0.18rem 0.42rem 0.18rem 0.32rem;
+    padding: 0.08rem 0 0.08rem 0.45rem;
+    margin: 0 0.28rem 0.1rem 0;
   }
 
   .kanji-chrome--practice .kanji-header__kunReading {
