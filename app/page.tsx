@@ -9,12 +9,6 @@ export default function HomePage() {
     <main className="kanji-home">
       <header className="kanji-home__header">
         <h1 className="kanji-home__title">かんじ いちらん</h1>
-        <p className="kanji-home__intro">
-          しょうがっこう いちねん・にねんのはっていかんじ（240じ）。
-          したのいちらんは、はいたいひょうのじゅん（1ねんせい→2ねんせい）だよ。
-          まず<strong>なんねんせいのれんしゅう</strong>かえらんでね。れんしゅうはそのがくねんのかんじから
-          <strong>らんだむ</strong>だよ。したのカードをえらぶと、そのかんじからはじまるよ。
-        </p>
         <div
           className="kanji-home__grade-pick"
           role="group"
@@ -24,13 +18,13 @@ export default function HomePage() {
             href="/practice?grade=1"
             className="kanji-btn kanji-btn--primary kanji-home__grade-btn"
           >
-            1ねんせいでれんしゅう（らんだむ）
+            1ねんせいでれんしゅう
           </Link>
           <Link
             href="/practice?grade=2"
             className="kanji-btn kanji-btn--primary kanji-home__grade-btn kanji-home__grade-btn--secondary"
           >
-            2ねんせいでれんしゅう（らんだむ）
+            2ねんせいでれんしゅう
           </Link>
         </div>
       </header>
