@@ -15,11 +15,29 @@ export const KANJI_ITEMS: readonly KanjiItem[] =
 /** 配当表の並び：先頭からこの件数が1年生、続きが2年生 */
 export const KANJI_GRADE_1_COUNT = 80;
 
-/** 小学校1年生の配当漢字のみ（れんしゅうはここからランダム） */
+/** れんしゅうで選べる学年（配当表どおり 1・2 のみ） */
+export type PracticeGrade = 1 | 2;
+
+/** 小学校1年生の配当漢字 */
 export const KANJI_GRADE_1_ITEMS: readonly KanjiItem[] = KANJI_ITEMS.slice(
   0,
   KANJI_GRADE_1_COUNT
 ) as readonly KanjiItem[];
+
+/** 小学校2年生の配当漢字 */
+export const KANJI_GRADE_2_ITEMS: readonly KanjiItem[] = KANJI_ITEMS.slice(
+  KANJI_GRADE_1_COUNT
+) as readonly KanjiItem[];
+
+export const KANJI_GRADE_2_COUNT = KANJI_GRADE_2_ITEMS.length;
+
+export function getPracticeItems(grade: PracticeGrade): readonly KanjiItem[] {
+  return grade === 1 ? KANJI_GRADE_1_ITEMS : KANJI_GRADE_2_ITEMS;
+}
+
+export function practiceGradeItemCount(grade: PracticeGrade): number {
+  return grade === 1 ? KANJI_GRADE_1_COUNT : KANJI_GRADE_2_COUNT;
+}
 
 export function clampKanjiIndex(n: number): number {
   if (!Number.isFinite(n) || n < 0) return 0;
@@ -29,17 +47,23 @@ export function clampKanjiIndex(n: number): number {
   return Math.floor(n);
 }
 
-export function clampGrade1KanjiIndex(n: number): number {
-  if (!Number.isFinite(n) || n < 0) return 0;
-  const max = KANJI_GRADE_1_COUNT - 1;
+export function clampPracticeKanjiIndex(
+  n: number,
+  grade: PracticeGrade
+): number {
+  const max = practiceGradeItemCount(grade) - 1;
   if (max < 0) return 0;
+  if (!Number.isFinite(n) || n < 0) return 0;
   if (n > max) return max;
   return Math.floor(n);
 }
 
-/** 1年生の範囲でランダム。`excludeIndex` ありのときは別の字を選ぶ（同じ字の連続を避ける） */
-export function randomGrade1KanjiIndex(excludeIndex?: number): number {
-  const len: number = KANJI_GRADE_1_COUNT;
+/** その学年の範囲でランダム。`excludeIndex` ありのときは別の字を選ぶ */
+export function randomPracticeKanjiIndex(
+  grade: PracticeGrade,
+  excludeIndex?: number
+): number {
+  const len: number = practiceGradeItemCount(grade);
   if (len <= 0) return 0;
   if (len === 1) return 0;
   if (

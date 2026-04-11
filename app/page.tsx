@@ -12,15 +12,27 @@ export default function HomePage() {
         <p className="kanji-home__intro">
           しょうがっこう いちねん・にねんのはっていかんじ（240じ）。
           したのいちらんは、はいたいひょうのじゅん（1ねんせい→2ねんせい）だよ。
-          れんしゅうは<strong>1ねんせいの80じ</strong>から<strong>らんだむ</strong>だよ。
-          したのカードをえらぶと、そのかんじからはじまるよ。
+          まず<strong>なんねんせいのれんしゅう</strong>かえらんでね。れんしゅうはそのがくねんのかんじから
+          <strong>らんだむ</strong>だよ。したのカードをえらぶと、そのかんじからはじまるよ。
         </p>
-        <Link
-          href="/practice"
-          className="kanji-btn kanji-btn--primary kanji-home__cta"
+        <div
+          className="kanji-home__grade-pick"
+          role="group"
+          aria-label="れんしゅうするがくねんをえらぶ"
         >
-          れんしゅうをはじめる（らんだむ）
-        </Link>
+          <Link
+            href="/practice?grade=1"
+            className="kanji-btn kanji-btn--primary kanji-home__grade-btn"
+          >
+            1ねんせいでれんしゅう（らんだむ）
+          </Link>
+          <Link
+            href="/practice?grade=2"
+            className="kanji-btn kanji-btn--primary kanji-home__grade-btn kanji-home__grade-btn--secondary"
+          >
+            2ねんせいでれんしゅう（らんだむ）
+          </Link>
+        </div>
       </header>
 
       <ul className="kanji-home__grid" role="list">
@@ -30,7 +42,7 @@ export default function HomePage() {
         {KANJI_ITEMS.slice(0, KANJI_GRADE_1_COUNT).map((item, i) => (
           <li key={`${i}-${item.char}`} className="kanji-home__cell">
             <Link
-              href={`/practice?start=${i}`}
+              href={`/practice?grade=1&start=${i}`}
               className="kanji-home__card"
               lang="ja-JP"
             >
@@ -52,10 +64,9 @@ export default function HomePage() {
           return (
             <li key={`${i}-${item.char}`} className="kanji-home__cell">
               <Link
-                href="/practice"
+                href={`/practice?grade=2&start=${j}`}
                 className="kanji-home__card"
                 lang="ja-JP"
-                title="れんしゅうは1ねんせいかららんだむ"
               >
                 <span className="kanji-home__glyph" aria-hidden>
                   {item.char}

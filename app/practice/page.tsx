@@ -1,32 +1,44 @@
 import KanjiPractice from "../components/KanjiPractice";
 import {
-  clampGrade1KanjiIndex,
-  randomGrade1KanjiIndex,
+  type PracticeGrade,
+  clampPracticeKanjiIndex,
+  randomPracticeKanjiIndex,
 } from "../lib/kanji";
 
 type Props = {
   searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-/** 1年生の並び内インデックスのみ受け付け。未指定はサーバーでランダム（SSR と一致させる） */
-function resolveGrade1StartIndex(
+function parseGrade(
   sp: Record<string, string | string[] | undefined> | undefined
+): PracticeGrade {
+  const raw = sp?.grade;
+  const first = Array.isArray(raw) ? raw[0] : raw;
+  const n = Number.parseInt(String(first ?? "1"), 10);
+  if (n === 2) return 2;
+  return 1;
+}
+
+function resolveStartIndex(
+  sp: Record<string, string | string[] | undefined> | undefined,
+  grade: PracticeGrade
 ): number {
   const raw = sp?.start;
   const first = Array.isArray(raw) ? raw[0] : raw;
   if (first === undefined || first === "") {
-    return randomGrade1KanjiIndex();
+    return randomPracticeKanjiIndex(grade);
   }
   const parsed = Number.parseInt(String(first), 10);
   if (Number.isNaN(parsed)) {
-    return randomGrade1KanjiIndex();
+    return randomPracticeKanjiIndex(grade);
   }
-  return clampGrade1KanjiIndex(parsed);
+  return clampPracticeKanjiIndex(parsed, grade);
 }
 
 export default async function PracticePage({ searchParams }: Props) {
   const resolved = searchParams == null ? {} : await searchParams;
-  const initialIndex = resolveGrade1StartIndex(resolved);
+  const grade = parseGrade(resolved);
+  const initialIndex = resolveStartIndex(resolved, grade);
 
-  return <KanjiPractice initialIndex={initialIndex} />;
+  return <KanjiPractice grade={grade} initialIndex={initialIndex} />;
 }

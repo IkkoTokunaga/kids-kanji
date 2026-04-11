@@ -11,10 +11,11 @@ import {
 } from "react";
 import Link from "next/link";
 import {
-  KANJI_GRADE_1_COUNT,
-  KANJI_GRADE_1_ITEMS,
-  clampGrade1KanjiIndex,
-  randomGrade1KanjiIndex,
+  type PracticeGrade,
+  clampPracticeKanjiIndex,
+  getPracticeItems,
+  practiceGradeItemCount,
+  randomPracticeKanjiIndex,
 } from "../lib/kanji";
 
 /** 不透過（半透明だとストロークの重なりが濃く見えて玉連りになる） */
@@ -368,26 +369,29 @@ function resizeCanvasToDisplaySize(
 }
 
 type KanjiPracticeProps = {
-  /** 1年生リスト内 0〜79（ページでランダムまたは ?start= 指定） */
+  grade: PracticeGrade;
+  /** その学年リスト内のインデックス（ページでランダムまたは ?start= 指定） */
   initialIndex: number;
 };
 
 export default function KanjiPractice({
+  grade,
   initialIndex,
 }: KanjiPracticeProps) {
+  const items = getPracticeItems(grade);
+  const count = practiceGradeItemCount(grade);
+
   const [index, setIndex] = useState(() =>
-    clampGrade1KanjiIndex(initialIndex)
+    clampPracticeKanjiIndex(initialIndex, grade)
   );
 
   useEffect(() => {
-    setIndex(clampGrade1KanjiIndex(initialIndex));
-  }, [initialIndex]);
+    setIndex(clampPracticeKanjiIndex(initialIndex, grade));
+  }, [grade, initialIndex]);
 
-  const safeIndex = clampGrade1KanjiIndex(index);
+  const safeIndex = clampPracticeKanjiIndex(index, grade);
   const item =
-    KANJI_GRADE_1_ITEMS.length > 0
-      ? (KANJI_GRADE_1_ITEMS[safeIndex] ?? KANJI_GRADE_1_ITEMS[0])
-      : null;
+    items.length > 0 ? (items[safeIndex] ?? items[0]) : null;
   const char = item?.char ?? "\uFF1F";
   const kunYomi = item?.kunYomi ?? "";
   const onYomi = item?.onYomi ?? "";
@@ -542,11 +546,11 @@ export default function KanjiPractice({
   const bump = useCallback(() => tick((t) => t + 1), []);
 
   const handleNext = () => {
-    if (!canAdvance || KANJI_GRADE_1_ITEMS.length === 0) return;
+    if (!canAdvance || items.length === 0) return;
     /* 次の問題へ：effect で canvas を消す前の 1 フレーム、inkRef が残ると canAdvance が true のままになる */
     free.inkRef.current = 0;
     bump();
-    setIndex((i) => randomGrade1KanjiIndex(i));
+    setIndex((i) => randomPracticeKanjiIndex(grade, i));
     requestAnimationFrame(() => {
       chromeRef.current?.scrollTo({ top: 0, left: 0, behavior: "auto" });
       window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -587,7 +591,7 @@ export default function KanjiPractice({
     touchAction: "none",
   };
 
-  if (KANJI_GRADE_1_ITEMS.length === 0) {
+  if (items.length === 0) {
     return (
       <main ref={chromeRef} className="kanji-chrome">
         <header className="kanji-header">
@@ -610,7 +614,7 @@ export default function KanjiPractice({
             いちらんへ
           </Link>
           <span className="kanji-header__progress">
-            1ねんせい（{KANJI_GRADE_1_COUNT}じ）らんだむ
+            {grade}ねんせい（{count}じ）らんだむ
           </span>
         </div>
         <div className="kanji-header__readings">
