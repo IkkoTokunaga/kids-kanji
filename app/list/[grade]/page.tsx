@@ -47,7 +47,12 @@ export default async function GradeListPage({ params }: Props) {
   const items = KANJI_ITEMS.slice(start, end);
   const randomOrder = shuffledIndices(items.length).join(",");
   const title = `${gradeNum}年生 一覧`;
-  const otherGrades = PRACTICE_GRADES.filter((g) => g !== gradeNum);
+  const gradeIndex = PRACTICE_GRADES.indexOf(gradeNum);
+  const prevGrade = gradeIndex > 0 ? PRACTICE_GRADES[gradeIndex - 1] : null;
+  const nextGrade =
+    gradeIndex >= 0 && gradeIndex < PRACTICE_GRADES.length - 1
+      ? PRACTICE_GRADES[gradeIndex + 1]
+      : null;
 
   return (
     <main className="kanji-home">
@@ -63,11 +68,22 @@ export default async function GradeListPage({ params }: Props) {
           <Link href="/" className="kanji-btn kanji-btn--ghost kanji-home__cta">
             TOPへ
           </Link>
-          {otherGrades.map((g) => (
-            <Link key={g} href={`/list/${g}`} className="kanji-btn kanji-btn--ghost kanji-home__cta">
-              {g}年生を見る
+          {prevGrade != null && (
+            <Link
+              href={`/list/${prevGrade}`}
+              className="kanji-btn kanji-btn--ghost kanji-home__cta"
+            >
+              ← {prevGrade}年生へ
             </Link>
-          ))}
+          )}
+          {nextGrade != null && (
+            <Link
+              href={`/list/${nextGrade}`}
+              className="kanji-btn kanji-btn--ghost kanji-home__cta"
+            >
+              {nextGrade}年生へ →
+            </Link>
+          )}
         </div>
       </header>
 
