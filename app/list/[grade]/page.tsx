@@ -28,10 +28,10 @@ export default async function GradeListPage({ params }: Props) {
     return (
       <main className="kanji-home">
         <header className="kanji-home__header">
-          <h1 className="kanji-home__title">がくねんがみつかりません</h1>
-          <p className="kanji-home__intro">1ねんせい か 2ねんせい をえらんでください。</p>
+          <h1 className="kanji-home__title">学年が見つかりません</h1>
+          <p className="kanji-home__intro">1年生 か 2年生 を選んでください。</p>
           <Link href="/" className="kanji-btn kanji-btn--primary kanji-home__cta">
-            TOPにもどる
+            TOPに戻る
           </Link>
         </header>
       </main>
@@ -42,9 +42,9 @@ export default async function GradeListPage({ params }: Props) {
   const end = isGrade1 ? KANJI_GRADE_1_COUNT : KANJI_ITEMS.length;
   const items = KANJI_ITEMS.slice(start, end);
   const randomOrder = shuffledIndices(items.length).join(",");
-  const title = isGrade1 ? "1ねんせい いちらん" : "2ねんせい いちらん";
+  const title = isGrade1 ? "1年生 一覧" : "2年生 一覧";
   const otherGrade = isGrade1 ? 2 : 1;
-  const otherLabel = isGrade1 ? "2ねんせい" : "1ねんせい";
+  const otherLabel = isGrade1 ? "2年生" : "1年生";
 
   return (
     <main className="kanji-home">
@@ -55,7 +55,7 @@ export default async function GradeListPage({ params }: Props) {
             href={`/practice?grade=${gradeNum}&start=0&order=${encodeURIComponent(randomOrder)}`}
             className="kanji-btn kanji-btn--primary kanji-home__cta"
           >
-            れんしゅうをはじめる
+            練習を始める
           </Link>
           <Link href="/" className="kanji-btn kanji-btn--ghost kanji-home__cta">
             TOPへ
@@ -64,7 +64,7 @@ export default async function GradeListPage({ params }: Props) {
             href={`/list/${otherGrade}`}
             className="kanji-btn kanji-btn--ghost kanji-home__cta"
           >
-            {otherLabel}をみる
+            {otherLabel}を見る
           </Link>
         </div>
       </header>

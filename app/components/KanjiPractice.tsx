@@ -624,11 +624,11 @@ export default function KanjiPractice({
       <main ref={chromeRef} className="kanji-chrome">
         <header className="kanji-header">
           <Link href="/" className="kanji-header__back">
-            いちらんへ
+            一覧へ
           </Link>
         </header>
         <p className="kanji-header__lead">
-          かんじのデータをよみこめませんでした。かんりしゃにきいてください。
+          漢字のデータを読み込めませんでした。管理者に聞いてください。
         </p>
       </main>
     );
@@ -639,29 +639,29 @@ export default function KanjiPractice({
       <header className="kanji-header" lang="ja-JP">
         <div className="kanji-header__top">
           <Link href="/" className="kanji-header__back">
-            いちらんへ
+            一覧へ
           </Link>
           <span className="kanji-header__progress">
             {hasCustomOrder
-              ? `${safeIndex + 1} / ${sequenceLength} もん`
-              : `${grade}ねんせい（${count}じ）`}
+              ? `${safeIndex + 1} / ${sequenceLength} 問`
+              : `${grade}年生（${count}字）`}
           </span>
         </div>
         <div className="kanji-header__readings">
           <div className="kanji-header__kun">
-            <span className="kanji-header__kunLabel">くんよみ</span>
+            <span className="kanji-header__kunLabel">訓読み</span>
             <span className="kanji-header__kunReading">{kunYomi}</span>
           </div>
           <div className="kanji-header__on">
-            <span className="kanji-header__onLabel">おんよみ</span>
+            <span className="kanji-header__onLabel">音読み</span>
             <span className="kanji-header__onReading">{onYomi}</span>
           </div>
         </div>
         <div
           className="kanji-header__example"
-          aria-label="このかんじのれいぶん"
+          aria-label="この漢字の例文"
         >
-          <span className="kanji-header__exampleLabel">このかんじのれいぶん</span>
+          <span className="kanji-header__exampleLabel">この漢字の例文</span>
           <p className="kanji-header__exampleSentence">
             {renderExampleWithEmphasis(exampleText)}
           </p>
@@ -673,9 +673,9 @@ export default function KanjiPractice({
           <section
             className="kanji-practice-panel"
             style={panelStyle}
-            aria-label="このかんじのみほん"
+            aria-label="この漢字の見本"
           >
-            <span style={labelStyle}>みほん</span>
+            <span style={labelStyle}>見本</span>
             <div className="kanji-practice-model-area">
               <span className="kanji-practice-model-glyph" style={modelGlyphStyle}>
                 {char}
@@ -686,7 +686,7 @@ export default function KanjiPractice({
 
         <div className="kanji-grid__cell">
           <section className="kanji-practice-panel" style={panelStyle}>
-            <span style={labelStyle}>じゆうにかく</span>
+            <span style={labelStyle}>自由に書く</span>
             <div className="kanji-practice-draw-area">
               <canvas
                 ref={free.canvasRef}
@@ -731,7 +731,7 @@ export default function KanjiPractice({
               bump();
             }}
           >
-            やりなおす
+            やり直す
           </button>
           <button
             type="button"
@@ -739,7 +739,7 @@ export default function KanjiPractice({
             disabled={!canAdvance}
             onClick={handleNext}
           >
-            つぎへ
+            次へ
           </button>
         </div>
       </footer>
