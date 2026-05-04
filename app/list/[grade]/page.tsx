@@ -50,16 +50,12 @@ export default async function GradeListPage({ params }: Props) {
     <main className="kanji-home">
       <header className="kanji-home__header">
         <h1 className="kanji-home__title">{title}</h1>
-        <p className="kanji-home__intro">
-          したのカードから 1もじずつ れんしゅうできるよ。ほかのがくねんもみたいときは
-          ボタンをおしてね。
-        </p>
         <div className="kanji-home__gradeActions">
           <Link
             href={`/practice?grade=${gradeNum}&start=0&order=${encodeURIComponent(randomOrder)}`}
             className="kanji-btn kanji-btn--primary kanji-home__cta"
           >
-            れんしゅうをはじめる（ランダム）
+            れんしゅうをはじめる
           </Link>
           <Link href="/" className="kanji-btn kanji-btn--ghost kanji-home__cta">
             TOPへ

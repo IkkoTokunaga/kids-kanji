@@ -644,7 +644,7 @@ export default function KanjiPractice({
           <span className="kanji-header__progress">
             {hasCustomOrder
               ? `${safeIndex + 1} / ${sequenceLength} もん`
-              : `${grade}ねんせい（${count}じ）らんだむ`}
+              : `${grade}ねんせい（${count}じ）`}
           </span>
         </div>
         <div className="kanji-header__readings">
