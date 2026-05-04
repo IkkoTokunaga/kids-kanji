@@ -370,28 +370,52 @@ function resizeCanvasToDisplaySize(
 
 type KanjiPracticeProps = {
   grade: PracticeGrade;
-  /** その学年リスト内のインデックス（ページでランダムまたは ?start= 指定） */
   initialIndex: number;
+  order?: number[];
 };
 
 export default function KanjiPractice({
   grade,
   initialIndex,
+  order,
 }: KanjiPracticeProps) {
   const items = getPracticeItems(grade);
   const count = practiceGradeItemCount(grade);
 
+  const sequence = useMemo(() => {
+    if (!Array.isArray(order) || order.length === 0) return null;
+    const seen = new Set<number>();
+    const cleaned: number[] = [];
+    for (const idx of order) {
+      const safe = clampPracticeKanjiIndex(idx, grade);
+      if (!seen.has(safe)) {
+        seen.add(safe);
+        cleaned.push(safe);
+      }
+    }
+    return cleaned.length > 0 ? cleaned : null;
+  }, [order, grade]);
+
+  const hasCustomOrder = sequence != null && sequence.length > 0;
+  const sequenceLength = hasCustomOrder ? sequence.length : count;
+
   const [index, setIndex] = useState(() =>
-    clampPracticeKanjiIndex(initialIndex, grade)
+    clampPracticeKanjiIndex(
+      initialIndex,
+      grade
+    )
   );
 
   useEffect(() => {
     setIndex(clampPracticeKanjiIndex(initialIndex, grade));
   }, [grade, initialIndex]);
 
-  const safeIndex = clampPracticeKanjiIndex(index, grade);
+  const safeIndex = hasCustomOrder
+    ? Math.min(Math.max(0, Math.floor(index)), sequenceLength - 1)
+    : clampPracticeKanjiIndex(index, grade);
+  const actualIndex = hasCustomOrder ? sequence[safeIndex]! : safeIndex;
   const item =
-    items.length > 0 ? (items[safeIndex] ?? items[0]) : null;
+    items.length > 0 ? (items[actualIndex] ?? items[0]) : null;
   const char = item?.char ?? "\uFF1F";
   const kunYomi = item?.kunYomi ?? "";
   const onYomi = item?.onYomi ?? "";
@@ -546,11 +570,15 @@ export default function KanjiPractice({
   const bump = useCallback(() => tick((t) => t + 1), []);
 
   const handleNext = () => {
-    if (!canAdvance || items.length === 0) return;
+    if (!canAdvance || sequenceLength === 0) return;
     /* 次の問題へ：effect で canvas を消す前の 1 フレーム、inkRef が残ると canAdvance が true のままになる */
     free.inkRef.current = 0;
     bump();
-    setIndex((i) => randomPracticeKanjiIndex(grade, i));
+    if (hasCustomOrder) {
+      setIndex((i) => (i + 1) % sequenceLength);
+    } else {
+      setIndex((i) => randomPracticeKanjiIndex(grade, i));
+    }
     requestAnimationFrame(() => {
       chromeRef.current?.scrollTo({ top: 0, left: 0, behavior: "auto" });
       window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -614,7 +642,9 @@ export default function KanjiPractice({
             いちらんへ
           </Link>
           <span className="kanji-header__progress">
-            {grade}ねんせい（{count}じ）らんだむ
+            {hasCustomOrder
+              ? `${safeIndex + 1} / ${sequenceLength} もん`
+              : `${grade}ねんせい（${count}じ）らんだむ`}
           </span>
         </div>
         <div className="kanji-header__readings">

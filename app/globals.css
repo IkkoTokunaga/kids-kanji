@@ -519,6 +519,23 @@ canvas.kanji-practice-canvas {
   box-shadow: 0 3px 12px rgba(74, 80, 112, 0.35);
 }
 
+.kanji-home__gradeActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.kanji-home__gradeActions--stack {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.kanji-home__meta {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--ink-muted);
+}
+
 .kanji-home__grid {
   list-style: none;
   margin: 0;
@@ -831,6 +848,11 @@ canvas.kanji-practice-canvas {
   .kanji-home__grid {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 0.5rem;
+  }
+
+  .kanji-home__gradeActions {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .kanji-home__card {
