@@ -629,7 +629,7 @@ export default function KanjiPractice({
     return (
       <main ref={chromeRef} className="kanji-chrome">
         <header className="kanji-header">
-          <Link href="/" className="kanji-header__back">
+          <Link href={`/list/${grade}`} className="kanji-header__back">
             一覧へ
           </Link>
         </header>
@@ -644,7 +644,7 @@ export default function KanjiPractice({
     <main ref={chromeRef} className="kanji-chrome kanji-chrome--practice">
       <header className="kanji-header" lang="ja-JP">
         <div className="kanji-header__top">
-          <Link href="/" className="kanji-header__back">
+          <Link href={`/list/${grade}`} className="kanji-header__back">
             一覧へ
           </Link>
           <span className="kanji-header__progress">
