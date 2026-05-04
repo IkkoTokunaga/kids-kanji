@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "@/app/globals.css";
 
@@ -12,6 +12,10 @@ const noto = Noto_Sans_JP({
 export const metadata: Metadata = {
   title: "漢字の練習",
   description: "小1〜6年 配当漢字1026字 見本・なぞり・自由書き",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#2a6b52",
 };
 
 export default function RootLayout({
