@@ -530,6 +530,48 @@ canvas.kanji-practice-canvas {
   grid-template-columns: 1fr;
 }
 
+/* TOP 学年ボタン：既存トーンを保ったまま学年ごとに淡色化 */
+.kanji-home__gradeLink {
+  border-width: 1px;
+  border-style: solid;
+  color: var(--ink);
+}
+
+.kanji-home__gradeLink--g1 {
+  background: #f7efe7;
+  border-color: #dbcbbd;
+}
+
+.kanji-home__gradeLink--g2 {
+  background: #f4f0e3;
+  border-color: #d8cfb8;
+}
+
+.kanji-home__gradeLink--g3 {
+  background: #eef3e7;
+  border-color: #c9d7be;
+}
+
+.kanji-home__gradeLink--g4 {
+  background: #eaf2ef;
+  border-color: #c2d5cf;
+}
+
+.kanji-home__gradeLink--g5 {
+  background: #eaf0f7;
+  border-color: #c2cfdf;
+}
+
+.kanji-home__gradeLink--g6 {
+  background: #f0edf7;
+  border-color: #cbc4df;
+}
+
+.kanji-home__gradeLink:hover:not(:disabled) {
+  filter: brightness(0.985);
+  box-shadow: var(--shadow-md);
+}
+
 .kanji-home__meta {
   margin: 0;
   font-size: 0.84rem;

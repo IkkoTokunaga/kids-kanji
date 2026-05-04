@@ -8,35 +8,63 @@ export type KanjiItem = {
   example: string;
 };
 
-/** 小学校1・2年生の配当漢字（各80・160字、計240字）の代表読みつき */
+/** 小学校1〜6年生の配当漢字（計1026字）の代表読みつき */
 export const KANJI_ITEMS: readonly KanjiItem[] =
   lowGradesJson as readonly KanjiItem[];
 
-/** 配当表の並び：先頭からこの件数が1年生、続きが2年生 */
-export const KANJI_GRADE_1_COUNT = 80;
+/** 学年ごとの配当数（学年別漢字配当表） */
+export const KANJI_GRADE_COUNTS = {
+  1: 80,
+  2: 160,
+  3: 200,
+  4: 202,
+  5: 193,
+  6: 191,
+} as const;
 
-/** れんしゅうで選べる学年（配当表どおり 1・2 のみ） */
-export type PracticeGrade = 1 | 2;
+/** れんしゅうで選べる学年（配当表どおり 1〜6） */
+export type PracticeGrade = keyof typeof KANJI_GRADE_COUNTS;
 
-/** 小学校1年生の配当漢字 */
-export const KANJI_GRADE_1_ITEMS: readonly KanjiItem[] = KANJI_ITEMS.slice(
-  0,
-  KANJI_GRADE_1_COUNT
-) as readonly KanjiItem[];
+export const PRACTICE_GRADES: readonly PracticeGrade[] = [1, 2, 3, 4, 5, 6];
 
-/** 小学校2年生の配当漢字 */
-export const KANJI_GRADE_2_ITEMS: readonly KanjiItem[] = KANJI_ITEMS.slice(
-  KANJI_GRADE_1_COUNT
-) as readonly KanjiItem[];
+const KANJI_GRADE_STARTS: Readonly<Record<PracticeGrade, number>> = {
+  1: 0,
+  2: KANJI_GRADE_COUNTS[1],
+  3: KANJI_GRADE_COUNTS[1] + KANJI_GRADE_COUNTS[2],
+  4: KANJI_GRADE_COUNTS[1] + KANJI_GRADE_COUNTS[2] + KANJI_GRADE_COUNTS[3],
+  5:
+    KANJI_GRADE_COUNTS[1] +
+    KANJI_GRADE_COUNTS[2] +
+    KANJI_GRADE_COUNTS[3] +
+    KANJI_GRADE_COUNTS[4],
+  6:
+    KANJI_GRADE_COUNTS[1] +
+    KANJI_GRADE_COUNTS[2] +
+    KANJI_GRADE_COUNTS[3] +
+    KANJI_GRADE_COUNTS[4] +
+    KANJI_GRADE_COUNTS[5],
+};
 
-export const KANJI_GRADE_2_COUNT = KANJI_GRADE_2_ITEMS.length;
+export function isPracticeGrade(value: number): value is PracticeGrade {
+  return PRACTICE_GRADES.includes(value as PracticeGrade);
+}
+
+export function gradeSliceRange(grade: PracticeGrade): {
+  start: number;
+  end: number;
+} {
+  const start = KANJI_GRADE_STARTS[grade];
+  const end = start + KANJI_GRADE_COUNTS[grade];
+  return { start, end };
+}
 
 export function getPracticeItems(grade: PracticeGrade): readonly KanjiItem[] {
-  return grade === 1 ? KANJI_GRADE_1_ITEMS : KANJI_GRADE_2_ITEMS;
+  const { start, end } = gradeSliceRange(grade);
+  return KANJI_ITEMS.slice(start, end) as readonly KanjiItem[];
 }
 
 export function practiceGradeItemCount(grade: PracticeGrade): number {
-  return grade === 1 ? KANJI_GRADE_1_COUNT : KANJI_GRADE_2_COUNT;
+  return KANJI_GRADE_COUNTS[grade];
 }
 
 export function clampKanjiIndex(n: number): number {

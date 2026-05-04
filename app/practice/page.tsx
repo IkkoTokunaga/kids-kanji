@@ -1,5 +1,9 @@
 import KanjiPractice from "../components/KanjiPractice";
-import { type PracticeGrade, clampPracticeKanjiIndex } from "../lib/kanji";
+import {
+  type PracticeGrade,
+  clampPracticeKanjiIndex,
+  isPracticeGrade,
+} from "../lib/kanji";
 
 type Props = {
   searchParams?: Promise<Record<string, string | string[] | undefined>>;
@@ -14,7 +18,7 @@ function parseGrade(
 ): PracticeGrade {
   const first = firstValue(sp?.grade);
   const n = Number.parseInt(String(first ?? "1"), 10);
-  if (n === 2) return 2;
+  if (isPracticeGrade(n)) return n;
   return 1;
 }
 

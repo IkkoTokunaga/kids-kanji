@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { KANJI_GRADE_1_COUNT, KANJI_ITEMS } from "../../lib/kanji";
+import {
+  KANJI_ITEMS,
+  PRACTICE_GRADES,
+  type PracticeGrade,
+  gradeSliceRange,
+  isPracticeGrade,
+} from "../../lib/kanji";
 
 type Props = {
   params: Promise<{ grade: string }>;
@@ -20,16 +26,15 @@ function shuffledIndices(length: number): number[] {
 
 export default async function GradeListPage({ params }: Props) {
   const { grade } = await params;
-  const gradeNum = Number.parseInt(grade, 10);
-  const isGrade1 = gradeNum === 1;
-  const isGrade2 = gradeNum === 2;
+  const parsed = Number.parseInt(grade, 10);
+  const gradeNum: PracticeGrade | null = isPracticeGrade(parsed) ? parsed : null;
 
-  if (!isGrade1 && !isGrade2) {
+  if (gradeNum == null) {
     return (
       <main className="kanji-home">
         <header className="kanji-home__header">
           <h1 className="kanji-home__title">学年が見つかりません</h1>
-          <p className="kanji-home__intro">1年生 か 2年生 を選んでください。</p>
+          <p className="kanji-home__intro">1年生 から 6年生 を選んでください。</p>
           <Link href="/" className="kanji-btn kanji-btn--primary kanji-home__cta">
             TOPに戻る
           </Link>
@@ -38,13 +43,11 @@ export default async function GradeListPage({ params }: Props) {
     );
   }
 
-  const start = isGrade1 ? 0 : KANJI_GRADE_1_COUNT;
-  const end = isGrade1 ? KANJI_GRADE_1_COUNT : KANJI_ITEMS.length;
+  const { start, end } = gradeSliceRange(gradeNum);
   const items = KANJI_ITEMS.slice(start, end);
   const randomOrder = shuffledIndices(items.length).join(",");
-  const title = isGrade1 ? "1年生 一覧" : "2年生 一覧";
-  const otherGrade = isGrade1 ? 2 : 1;
-  const otherLabel = isGrade1 ? "2年生" : "1年生";
+  const title = `${gradeNum}年生 一覧`;
+  const otherGrades = PRACTICE_GRADES.filter((g) => g !== gradeNum);
 
   return (
     <main className="kanji-home">
@@ -60,12 +63,11 @@ export default async function GradeListPage({ params }: Props) {
           <Link href="/" className="kanji-btn kanji-btn--ghost kanji-home__cta">
             TOPへ
           </Link>
-          <Link
-            href={`/list/${otherGrade}`}
-            className="kanji-btn kanji-btn--ghost kanji-home__cta"
-          >
-            {otherLabel}を見る
-          </Link>
+          {otherGrades.map((g) => (
+            <Link key={g} href={`/list/${g}`} className="kanji-btn kanji-btn--ghost kanji-home__cta">
+              {g}年生を見る
+            </Link>
+          ))}
         </div>
       </header>
 

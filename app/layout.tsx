@@ -11,7 +11,7 @@ const noto = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: "漢字の練習",
-  description: "小1・2年 配当漢字240字 見本・なぞり・自由書き",
+  description: "小1〜6年 配当漢字1026字 見本・なぞり・自由書き",
 };
 
 export default function RootLayout({
