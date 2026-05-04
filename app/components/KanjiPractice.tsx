@@ -10,6 +10,7 @@ import {
   type ReactNode,
 } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import {
   type PracticeGrade,
   clampPracticeKanjiIndex,
@@ -379,6 +380,7 @@ export default function KanjiPractice({
   initialIndex,
   order,
 }: KanjiPracticeProps) {
+  const router = useRouter();
   const items = getPracticeItems(grade);
   const count = practiceGradeItemCount(grade);
 
@@ -575,7 +577,11 @@ export default function KanjiPractice({
     free.inkRef.current = 0;
     bump();
     if (hasCustomOrder) {
-      setIndex((i) => (i + 1) % sequenceLength);
+      if (safeIndex >= sequenceLength - 1) {
+        router.push(`/list/${grade}`);
+        return;
+      }
+      setIndex((i) => i + 1);
     } else {
       setIndex((i) => randomPracticeKanjiIndex(grade, i));
     }
