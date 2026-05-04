@@ -1,8 +1,8 @@
 [
   {
     "char": "一",
-    "kunYomi": "いち・ひと",
-    "onYomi": "イチ",
+    "kunYomi": "ひと・ひと-つ",
+    "onYomi": "イチ・イツ",
     "example": "りんごを **一**つ（ひとつ） たべました。"
   },
   {
@@ -19,25 +19,25 @@
   },
   {
     "char": "円",
-    "kunYomi": "まる",
+    "kunYomi": "まる-い",
     "onYomi": "エン",
     "example": "ノートを 百**円**（えん）で かいました。"
   },
   {
     "char": "王",
-    "kunYomi": "おう",
+    "kunYomi": "—",
     "onYomi": "オウ",
     "example": "えほんに **王**さま（おうさま）が でてきました。"
   },
   {
     "char": "音",
     "kunYomi": "おと・ね",
-    "onYomi": "オン・イン",
+    "onYomi": "オン",
     "example": "ピアノの きれいな **音**（おと）が きこえます。"
   },
   {
     "char": "下",
-    "kunYomi": "した・しも・さがる",
+    "kunYomi": "した・しも・さ-げる・さ-がる・くだ-る・くだ-す・くだ-さる・お-ろす・お-りる",
     "onYomi": "カ・ゲ",
     "example": "つくえの **下**（した）に 消しゴム（けしごむ）が あります。"
   },
@@ -56,30 +56,30 @@
   {
     "char": "貝",
     "kunYomi": "かい",
-    "onYomi": "バイ",
+    "onYomi": "—",
     "example": "うみで **貝**（かい）がらを ひろいました。"
   },
   {
     "char": "学",
-    "kunYomi": "まなぶ",
+    "kunYomi": "まな-ぶ",
     "onYomi": "ガク",
     "example": "あしたから **学**校（がっこう）が はじまります。"
   },
   {
     "char": "気",
-    "kunYomi": "き",
+    "kunYomi": "—",
     "onYomi": "キ・ケ",
     "example": "くるまに **気**（き）をつけて あるきましょう。"
   },
   {
     "char": "九",
-    "kunYomi": "ここのつ",
-    "onYomi": "キュウ",
+    "kunYomi": "ここの・ここの-つ",
+    "onYomi": "キュウ・ク",
     "example": "おかしが **九**つ（ここのつ） あります。"
   },
   {
     "char": "休",
-    "kunYomi": "やすむ",
+    "kunYomi": "やす-む・やす-まる・やす-める",
     "onYomi": "キュウ",
     "example": "つかれたので 少し（すこし） **休**（やす）みます。"
   },
@@ -97,7 +97,7 @@
   },
   {
     "char": "空",
-    "kunYomi": "そら・あく・から",
+    "kunYomi": "そら・あ-く・あ-ける・から",
     "onYomi": "クウ",
     "example": "**空**（そら）に 白い（しろい） くもが あります。"
   },
@@ -115,13 +115,13 @@
   },
   {
     "char": "見",
-    "kunYomi": "みる",
+    "kunYomi": "み-る・み-える・み-せる",
     "onYomi": "ケン",
     "example": "テレビで アニメを **見**（み）ます。"
   },
   {
     "char": "五",
-    "kunYomi": "いつつ",
+    "kunYomi": "いつ・いつ-つ",
     "onYomi": "ゴ",
     "example": "てを パーにすると ゆびは **五**ほん（ごほん）です。"
   },
@@ -133,7 +133,7 @@
   },
   {
     "char": "校",
-    "kunYomi": "がっこう",
+    "kunYomi": "—",
     "onYomi": "コウ",
     "example": "学**校**（がっこう）に いって きます。"
   },
@@ -145,14 +145,14 @@
   },
   {
     "char": "三",
-    "kunYomi": "みっつ",
+    "kunYomi": "み・み-つ・みっ-つ",
     "onYomi": "サン",
     "example": "おだんごを **三**つ（みっつ） たべました。"
   },
   {
     "char": "山",
     "kunYomi": "やま",
-    "onYomi": "サン・セン",
+    "onYomi": "サン",
     "example": "ふゆの **山**（やま）には 雪（ゆき）が あります。"
   },
   {
@@ -163,7 +163,7 @@
   },
   {
     "char": "四",
-    "kunYomi": "よん・よっつ",
+    "kunYomi": "よ・よ-つ・よっ-つ・よん",
     "onYomi": "シ",
     "example": "テーブルの あしは **四**ほん（よんほん）です。"
   },
@@ -175,19 +175,19 @@
   },
   {
     "char": "字",
-    "kunYomi": "あざ",
+    "kunYomi": "—",
     "onYomi": "ジ",
     "example": "ノートに ていねいな **字**（じ）を かきました。"
   },
   {
     "char": "耳",
     "kunYomi": "みみ",
-    "onYomi": "ジ",
+    "onYomi": "—",
     "example": "おもしろい お話を **耳**（みみ）で ききます。"
   },
   {
     "char": "七",
-    "kunYomi": "なな・ななつ",
+    "kunYomi": "なな・なな-つ・なの",
     "onYomi": "シチ",
     "example": "虹（にじ）には **七**いろ（なないろ） あります。"
   },
@@ -205,31 +205,31 @@
   },
   {
     "char": "十",
-    "kunYomi": "とお",
-    "onYomi": "ジュウ",
+    "kunYomi": "とお・と",
+    "onYomi": "ジュウ・ジッ",
     "example": "あめを **十**こ（じゅっこ） もらいました。"
   },
   {
     "char": "出",
-    "kunYomi": "でる・だす",
+    "kunYomi": "で-る・だ-す",
     "onYomi": "シュツ",
     "example": "しゅくだいを かばんから **出**（だ）します。"
   },
   {
     "char": "女",
     "kunYomi": "おんな",
-    "onYomi": "ジョ・ニョウ",
+    "onYomi": "ジョ",
     "example": "**女**（おんな）の 子（こ）が わらっています。"
   },
   {
     "char": "小",
-    "kunYomi": "ちいさい・お",
+    "kunYomi": "ちい-さい・こ・お",
     "onYomi": "ショウ",
     "example": "**小**（ちい）さい アリを みつけました。"
   },
   {
     "char": "上",
-    "kunYomi": "うえ・あがる",
+    "kunYomi": "うえ・うわ・かみ・あ-げる・あ-がる・のぼ-る",
     "onYomi": "ジョウ",
     "example": "テーブルの **上**（うえ）に おかしが あります。"
   },
@@ -253,26 +253,26 @@
   },
   {
     "char": "正",
-    "kunYomi": "ただしい",
+    "kunYomi": "ただ-しい・ただ-す・まさ",
     "onYomi": "セイ・ショウ",
     "example": "**正**（ただ）しい かきじゅんで かきましょう。"
   },
   {
     "char": "生",
-    "kunYomi": "いきる・うまれる",
+    "kunYomi": "い-きる・い-かす・い-ける・う-まれる・う-む・は-える・は-やす・なま",
     "onYomi": "セイ・ショウ",
     "example": "にわに 新しい（あたらしい） 花（はな）が **生**（は）えました。"
   },
   {
     "char": "青",
-    "kunYomi": "あおい",
-    "onYomi": "セイ・ショウ",
+    "kunYomi": "あお・あお-い",
+    "onYomi": "セイ",
     "example": "**青**（あお）い シャツを きて います。"
   },
   {
     "char": "夕",
     "kunYomi": "ゆう",
-    "onYomi": "セキ",
+    "onYomi": "—",
     "example": "**夕**（ゆう）がたに なると 空（そら）が 赤い（あかい）です。"
   },
   {
@@ -283,7 +283,7 @@
   },
   {
     "char": "赤",
-    "kunYomi": "あか",
+    "kunYomi": "あか・あか-い・あか-らむ・あか-らめる",
     "onYomi": "セキ",
     "example": "トマトは まっ**赤**（か）に うれています。"
   },
@@ -296,7 +296,7 @@
   {
     "char": "川",
     "kunYomi": "かわ",
-    "onYomi": "セン",
+    "onYomi": "—",
     "example": "**川**（かわ）で 小（ちい）さい さかなが およいでいます。"
   },
   {
@@ -307,8 +307,8 @@
   },
   {
     "char": "早",
-    "kunYomi": "はやい",
-    "onYomi": "ソウ・サッ",
+    "kunYomi": "はや-い・はや-まる・はや-める",
+    "onYomi": "ソウ",
     "example": "あしたは **早**（はや）く おきましょう。"
   },
   {
@@ -319,7 +319,7 @@
   },
   {
     "char": "足",
-    "kunYomi": "あ・たりる",
+    "kunYomi": "あし・た-りる・た-る・た-す",
     "onYomi": "ソク",
     "example": "**足**（あし）に ぴったりな 靴（くつ）を はきます。"
   },
@@ -331,14 +331,14 @@
   },
   {
     "char": "大",
-    "kunYomi": "おお・だい",
-    "onYomi": "タイ・ダイ",
+    "kunYomi": "おお・おお-きい・おお-いに",
+    "onYomi": "ダイ・タイ",
     "example": "とても **大**（おお）きい スイカを もらいました。"
   },
   {
     "char": "男",
-    "kunYomi": "おトコ",
-    "onYomi": "ダン",
+    "kunYomi": "おとこ",
+    "onYomi": "ダン・ナン",
     "example": "**男**（おとこ）の 子（こ）が サッカーを しています。"
   },
   {
@@ -350,7 +350,7 @@
   {
     "char": "中",
     "kunYomi": "なか",
-    "onYomi": "チュウ",
+    "onYomi": "チュウ・ジュウ",
     "example": "かばんの **中**（なか）に きょうかしょを いれます。"
   },
   {
@@ -367,7 +367,7 @@
   },
   {
     "char": "天",
-    "kunYomi": "あめ（あまつ）",
+    "kunYomi": "あま",
     "onYomi": "テン",
     "example": "**天**き（てんき）が よくなると いいですね。"
   },
@@ -380,12 +380,12 @@
   {
     "char": "土",
     "kunYomi": "つち",
-    "onYomi": "ト・ド",
+    "onYomi": "ド・ト",
     "example": "はなだんに **土**（つち）を いれます。"
   },
   {
     "char": "二",
-    "kunYomi": "ふた・ふたつ",
+    "kunYomi": "ふた・ふた-つ",
     "onYomi": "ニ",
     "example": "チョコを **二**つ（ふたつ） たべました。"
   },
@@ -397,7 +397,7 @@
   },
   {
     "char": "入",
-    "kunYomi": "はいる・いれる",
+    "kunYomi": "い-る・い-れる・はい-る",
     "onYomi": "ニュウ",
     "example": "おふろに **入**（はい）ります。"
   },
@@ -409,31 +409,31 @@
   },
   {
     "char": "白",
-    "kunYomi": "しろ・しろい",
-    "onYomi": "ハク・ビャク",
+    "kunYomi": "しろ・しら・しろ-い",
+    "onYomi": "ハク",
     "example": "**白**（しろ）い ハンカチを もちました。"
   },
   {
     "char": "八",
-    "kunYomi": "やっつ",
+    "kunYomi": "や・や-つ・やっ-つ・よう",
     "onYomi": "ハチ",
     "example": "タコの あしは **八**ほん（はっぽん）です。"
   },
   {
     "char": "百",
-    "kunYomi": "ひゃく",
+    "kunYomi": "—",
     "onYomi": "ヒャク",
     "example": "テストで **百**てん（ひゃくてん）を とりました。"
   },
   {
     "char": "文",
-    "kunYomi": "ふみ",
+    "kunYomi": "—",
     "onYomi": "ブン・モン",
     "example": "ノートに さく**文**（ぶん）を かきます。"
   },
   {
     "char": "木",
-    "kunYomi": "き",
+    "kunYomi": "き・こ",
     "onYomi": "ボク・モク",
     "example": "**木**（き）の したで ひとやすみします。"
   },
@@ -446,7 +446,7 @@
   {
     "char": "名",
     "kunYomi": "な",
-    "onYomi": "メイ",
+    "onYomi": "メイ・ミョウ",
     "example": "テストに **名**まえ（なまえ）を かきました。"
   },
   {
@@ -457,7 +457,7 @@
   },
   {
     "char": "立",
-    "kunYomi": "たつ",
+    "kunYomi": "た-つ・た-てる",
     "onYomi": "リツ",
     "example": "あさの かいで 元気（げんき）に **立**（た）ちます。"
   },
@@ -475,20 +475,20 @@
   },
   {
     "char": "六",
-    "kunYomi": "むっつ",
+    "kunYomi": "む・む-つ・むっ-つ・むい",
     "onYomi": "ロク",
     "example": "サイコロを ふって **六**（ろく）が でました。"
   },
   {
     "char": "引",
-    "kunYomi": "ひく",
+    "kunYomi": "ひ-く・ひ-ける",
     "onYomi": "イン",
     "example": "ドアを 手前（てまえ）に **引**（ひ）きます。"
   },
   {
     "char": "羽",
-    "kunYomi": "はね",
-    "onYomi": "ウ",
+    "kunYomi": "は・はね",
+    "onYomi": "—",
     "example": "とりが **羽**（はね）を 広（ひろ）げて とんでいます。"
   },
   {
@@ -499,62 +499,62 @@
   },
   {
     "char": "園",
-    "kunYomi": "その",
+    "kunYomi": "—",
     "onYomi": "エン",
     "example": "こう**園**（えん）で ブランコに のります。"
   },
   {
     "char": "遠",
-    "kunYomi": "とおい",
-    "onYomi": "エン・オン",
+    "kunYomi": "とお-い",
+    "onYomi": "エン",
     "example": "**遠**（とお）くの 山（やま）が きれいに みえます。"
   },
   {
     "char": "何",
     "kunYomi": "なに・なん",
-    "onYomi": "カ",
+    "onYomi": "—",
     "example": "あしたの おやつは **何**（なに）かな？"
   },
   {
     "char": "科",
-    "kunYomi": "しな",
+    "kunYomi": "—",
     "onYomi": "カ",
     "example": "り**科**（か）の じけんは おもしろいです。"
   },
   {
     "char": "夏",
     "kunYomi": "なつ",
-    "onYomi": "カ・ゲ",
+    "onYomi": "カ",
     "example": "**夏**（なつ）休み（やすみ）に プールに いきました。"
   },
   {
     "char": "家",
-    "kunYomi": "いえ",
+    "kunYomi": "いえ・や",
     "onYomi": "カ・ケ",
     "example": "**家**（いえ）に かえったら うがいを します。"
   },
   {
     "char": "歌",
-    "kunYomi": "うた",
+    "kunYomi": "うた・うた-う",
     "onYomi": "カ",
     "example": "みんなで たのしく **歌**（うた）を うたいます。"
   },
   {
     "char": "画",
-    "kunYomi": "え・かく",
+    "kunYomi": "—",
     "onYomi": "ガ・カク",
     "example": "としょかんで 映**画**（えいが）を みました。"
   },
   {
     "char": "回",
-    "kunYomi": "まわる・かい",
-    "onYomi": "カイ・エ",
+    "kunYomi": "まわ-る・まわ-す",
+    "onYomi": "カイ",
     "example": "なわとびを 三**回**（かい） とびました。"
   },
   {
     "char": "会",
-    "kunYomi": "あう",
-    "onYomi": "カイ・エ",
+    "kunYomi": "あ-う",
+    "onYomi": "カイ",
     "example": "こんどの日（ひ）に 友（とも）だちに **会**（あ）います。"
   },
   {
@@ -565,14 +565,14 @@
   },
   {
     "char": "絵",
-    "kunYomi": "え",
+    "kunYomi": "—",
     "onYomi": "カイ・エ",
     "example": "画（が）ようしに **絵**（え）を かきました。"
   },
   {
     "char": "外",
-    "kunYomi": "そと・ほか",
-    "onYomi": "ガイ・ゲ",
+    "kunYomi": "そと・ほか・はず-す・はず-れる",
+    "onYomi": "ガイ",
     "example": "**外**（そと）は すこし さむいです。"
   },
   {
@@ -583,13 +583,13 @@
   },
   {
     "char": "楽",
-    "kunYomi": "たのしい・らく",
+    "kunYomi": "たの-しい・たの-しむ",
     "onYomi": "ガク・ラク",
     "example": "おん**楽**（がく）の じかんが だいすきです。"
   },
   {
     "char": "活",
-    "kunYomi": "いきる",
+    "kunYomi": "—",
     "onYomi": "カツ",
     "example": "学（がっ）こう生**活**（かつ）を たのしみます。"
   },
@@ -601,7 +601,7 @@
   },
   {
     "char": "丸",
-    "kunYomi": "まる",
+    "kunYomi": "まる・まる-い・まる-める",
     "onYomi": "ガン",
     "example": "きれいで **丸**（まる）い ビーだまを みつけました。"
   },
@@ -619,26 +619,26 @@
   },
   {
     "char": "汽",
-    "kunYomi": "（きしゃのき）",
+    "kunYomi": "—",
     "onYomi": "キ",
     "example": "**汽**しゃ（きしゃ）に のって たびに 出（で）ます。"
   },
   {
     "char": "記",
-    "kunYomi": "しるす",
+    "kunYomi": "しる-す",
     "onYomi": "キ",
     "example": "きょうのことを 日**記**（き）に かきます。"
   },
   {
     "char": "帰",
-    "kunYomi": "かえる",
+    "kunYomi": "かえ-る・かえ-す",
     "onYomi": "キ",
     "example": "学校（がっこう）が おわったら おうちに **帰**（かえ）ります。"
   },
   {
     "char": "弓",
     "kunYomi": "ゆみ",
-    "onYomi": "キュウ",
+    "onYomi": "—",
     "example": "**弓**（ゆみ）を ひいて やを とばします。"
   },
   {
@@ -649,49 +649,49 @@
   },
   {
     "char": "魚",
-    "kunYomi": "さかな・うお",
+    "kunYomi": "うお・さかな",
     "onYomi": "ギョ",
     "example": "**魚**（さかな）つりをして あそびます。"
   },
   {
     "char": "京",
-    "kunYomi": "きょう",
-    "onYomi": "キョウ・ケイ",
+    "kunYomi": "—",
+    "onYomi": "キョウ",
     "example": "東**京**（きょう）には 高（たか）い ビルが あります。"
   },
   {
     "char": "強",
-    "kunYomi": "つよい",
-    "onYomi": "キョウ・ゴウ",
+    "kunYomi": "つよ-い・つよ-まる・つよ-める",
+    "onYomi": "キョウ",
     "example": "風（かぜ）が **強**（つよ）くて かさが とばされそうです。"
   },
   {
     "char": "教",
-    "kunYomi": "おしえる",
+    "kunYomi": "おし-える・おそ-わる",
     "onYomi": "キョウ",
     "example": "先生（せんせい）が 漢字（かんじ）を **教**（おし）えてくれます。"
   },
   {
     "char": "近",
-    "kunYomi": "ちかい",
-    "onYomi": "キン・コン",
+    "kunYomi": "ちか-い",
+    "onYomi": "キン",
     "example": "わたしの いえは 学校（がっこう）に **近**（ちか）いです。"
   },
   {
     "char": "兄",
     "kunYomi": "あに",
-    "onYomi": "キョウ・ケイ",
+    "onYomi": "キョウ",
     "example": "**兄**（あに）と いっしょに 本（ほん）を よみます。"
   },
   {
     "char": "形",
-    "kunYomi": "かたち",
+    "kunYomi": "かた・かたち",
     "onYomi": "ケイ・ギョウ",
     "example": "いろいろな **形**（かたち）の つみきで あそびます。"
   },
   {
     "char": "計",
-    "kunYomi": "はかる",
+    "kunYomi": "はか-る・はか-らう",
     "onYomi": "ケイ",
     "example": "時計（と**けい**）を みて 時間（じかん）を しらべます。"
   },
@@ -703,7 +703,7 @@
   },
   {
     "char": "言",
-    "kunYomi": "いう・ごと",
+    "kunYomi": "い-う・こと",
     "onYomi": "ゲン・ゴン",
     "example": "「ありがとう」と **言**（い）うと 気持ち（きもち）がいいです。"
   },
@@ -721,92 +721,92 @@
   },
   {
     "char": "古",
-    "kunYomi": "ふるい",
+    "kunYomi": "ふる-い・ふる-す",
     "onYomi": "コ",
     "example": "**古**（ふる）い 本（ほん）を だいじに よみます。"
   },
   {
     "char": "午",
-    "kunYomi": "ご・うま",
+    "kunYomi": "—",
     "onYomi": "ゴ",
     "example": "**午**ぜん（ごぜん）は 学校（がっこう）で おべんきょうです。"
   },
   {
     "char": "後",
-    "kunYomi": "うしろ・あと",
+    "kunYomi": "のち・うし-ろ・あと",
     "onYomi": "ゴ・コウ",
     "example": "わたしの **後**（うしろ）に 友（とも）だちが います。"
   },
   {
     "char": "語",
-    "kunYomi": "かたる・ご",
+    "kunYomi": "かた-る・かた-らう",
     "onYomi": "ゴ",
     "example": "こく**語**（ご）の じゅぎょうで 本（ほん）を よみます。"
   },
   {
     "char": "工",
-    "kunYomi": "たくみ",
+    "kunYomi": "—",
     "onYomi": "コウ・ク",
     "example": "**工**じ（こうじ）をしている 車（くるま）を みました。"
   },
   {
     "char": "公",
-    "kunYomi": "おおやけ",
+    "kunYomi": "—",
     "onYomi": "コウ",
     "example": "**公**えん（こうえん）で ブランコに のります。"
   },
   {
     "char": "広",
-    "kunYomi": "ひろい",
+    "kunYomi": "ひろ-い・ひろ-まる・ひろ-める・ひろ-がる・ひろ-げる",
     "onYomi": "コウ",
     "example": "**広**（ひろ）い はらっぱで おにごっこを します。"
   },
   {
     "char": "交",
-    "kunYomi": "まじわる",
+    "kunYomi": "まじ-わる・まじ-える・ま-じる・ま-ざる・ま-ぜる",
     "onYomi": "コウ",
     "example": "**交**ばん（こうばん）で みちを ききました。"
   },
   {
     "char": "光",
-    "kunYomi": "ひかり",
+    "kunYomi": "ひか-る・ひかり",
     "onYomi": "コウ",
     "example": "太陽（たいよう）の **光**（ひかり）が まぶしいです。"
   },
   {
     "char": "考",
-    "kunYomi": "かんがえる",
+    "kunYomi": "かんが-える",
     "onYomi": "コウ",
     "example": "どうやったら できるか じぶんで **考**（かんが）えます。"
   },
   {
     "char": "行",
-    "kunYomi": "いく・おこなう",
-    "onYomi": "コウ・ギョウ・アン",
+    "kunYomi": "い-く・ゆ-く・おこな-う",
+    "onYomi": "コウ・ギョウ",
     "example": "あした こうえんに **行**（い）きませんか？"
   },
   {
     "char": "高",
-    "kunYomi": "たかい",
+    "kunYomi": "たか-い・たか・たか-まる・たか-める",
     "onYomi": "コウ",
     "example": "せが **高**（たか）く なって うれしいです。"
   },
   {
     "char": "黄",
     "kunYomi": "き",
-    "onYomi": "コウ・オウ",
+    "onYomi": "オウ",
     "example": "**黄**いろ（きいろ）い 帽子（ぼうし）を かぶります。"
   },
   {
     "char": "合",
-    "kunYomi": "あう",
-    "onYomi": "ゴウ・ガッ",
+    "kunYomi": "あ-う・あ-わす・あ-わせる",
+    "onYomi": "ゴウ・ガッ・カッ",
     "example": "みんなで 力を **合**（あ）わせて がんばります。"
   },
   {
     "char": "谷",
     "kunYomi": "たに",
-    "onYomi": "コク",
+    "onYomi": "—",
     "example": "山（やま）と 山（やま）の あいだに **谷**（たに）が あります。"
   },
   {
@@ -817,43 +817,43 @@
   },
   {
     "char": "黒",
-    "kunYomi": "くろ・くろい",
+    "kunYomi": "くろ・くろ-い",
     "onYomi": "コク",
     "example": "**黒**（くろ）い クレヨンで 影（かげ）を かきました。"
   },
   {
     "char": "今",
     "kunYomi": "いま",
-    "onYomi": "コン・キン",
+    "onYomi": "コン",
     "example": "**今**（いま）から おやつを たべます。"
   },
   {
     "char": "才",
-    "kunYomi": "さい",
+    "kunYomi": "—",
     "onYomi": "サイ",
     "example": "わたしは 七**才**（さい）に なりました。"
   },
   {
     "char": "細",
-    "kunYomi": "ほそい",
+    "kunYomi": "ほそ-い・ほそ-る・こま-か・こま-かい",
     "onYomi": "サイ",
     "example": "とても **細**（ほそ）い 糸（いと）を つかいます。"
   },
   {
     "char": "作",
-    "kunYomi": "つくる",
+    "kunYomi": "つく-る",
     "onYomi": "サク・サ",
     "example": "ねんどで 好きな どうぶつを **作**（つく）ります。"
   },
   {
     "char": "算",
-    "kunYomi": "さん",
+    "kunYomi": "—",
     "onYomi": "サン",
     "example": "**算**すう（さんすう）で たし算（ざん）を ならいました。"
   },
   {
     "char": "止",
-    "kunYomi": "とまる",
+    "kunYomi": "と-まる・と-める",
     "onYomi": "シ",
     "example": "あか信号（しんごう）で ぴたっと **止**（と）まります。"
   },
@@ -866,18 +866,18 @@
   {
     "char": "矢",
     "kunYomi": "や",
-    "onYomi": "シ",
+    "onYomi": "—",
     "example": "**矢**（や）を ぴゅんと とばしました。"
   },
   {
     "char": "姉",
     "kunYomi": "あね",
-    "onYomi": "シ",
+    "onYomi": "—",
     "example": "**姉**（あね）と いっしょに おかいものに いきます。"
   },
   {
     "char": "思",
-    "kunYomi": "お思う",
+    "kunYomi": "おも-う",
     "onYomi": "シ",
     "example": "友（とも）だちに なれると いいなと **思**（おも）います。"
   },
@@ -895,7 +895,7 @@
   },
   {
     "char": "自",
-    "kunYomi": "みずから",
+    "kunYomi": "みずか-ら",
     "onYomi": "ジ・シ",
     "example": "**自**てん車（じてんしゃ）に のる れんしゅうを します。"
   },
@@ -907,7 +907,7 @@
   },
   {
     "char": "室",
-    "kunYomi": "むろ",
+    "kunYomi": "—",
     "onYomi": "シツ",
     "example": "教**室**（きょうしつ）に ランドセルを おきます。"
   },
@@ -919,7 +919,7 @@
   },
   {
     "char": "弱",
-    "kunYomi": "よわい",
+    "kunYomi": "よわ-い・よわ-る・よわ-まる・よわ-める",
     "onYomi": "ジャク",
     "example": "風（かぜ）が **弱**（よわ）く なってきました。"
   },
@@ -937,7 +937,7 @@
   },
   {
     "char": "週",
-    "kunYomi": "しゅう",
+    "kunYomi": "—",
     "onYomi": "シュウ",
     "example": "来**週**（らいしゅう）の お休み（やすみ）が たのしみです。"
   },
@@ -949,20 +949,20 @@
   },
   {
     "char": "書",
-    "kunYomi": "かく",
+    "kunYomi": "か-く",
     "onYomi": "ショ",
     "example": "としょかんで **書**（ほん）を よみました。"
   },
   {
     "char": "少",
-    "kunYomi": "すくない",
+    "kunYomi": "すく-ない・すこ-し",
     "onYomi": "ショウ",
     "example": "おやつを **少**（すこ）しだけ たべました。"
   },
   {
     "char": "場",
     "kunYomi": "ば",
-    "onYomi": "ジョウ・チョウ",
+    "onYomi": "ジョウ",
     "example": "うんどう**場**（じょう）で かけっこを します。"
   },
   {
@@ -973,8 +973,8 @@
   },
   {
     "char": "食",
-    "kunYomi": "たべる",
-    "onYomi": "ショク・ジキ",
+    "kunYomi": "く-う・た-べる",
+    "onYomi": "ショク",
     "example": "朝ごはん（あさごはん）を しっかり **食**（た）べます。"
   },
   {
@@ -985,26 +985,26 @@
   },
   {
     "char": "新",
-    "kunYomi": "あたらしい",
+    "kunYomi": "あたら-しい・あら-た・にい",
     "onYomi": "シン",
     "example": "**新**（あたら）しい ランドセルは ピカピカです。"
   },
   {
     "char": "親",
-    "kunYomi": "おや・したしい",
+    "kunYomi": "おや・した-しい・した-しむ",
     "onYomi": "シン",
     "example": "お**親**（や）さんと いっしょに 公園（こうえん）に いきます。"
   },
   {
     "char": "図",
-    "kunYomi": "ず",
+    "kunYomi": "—",
     "onYomi": "ズ・ト",
     "example": "**図**こう（ずこう）の じかんに かいじゅうを かきました。"
   },
   {
     "char": "数",
-    "kunYomi": "かず・かぞえる",
-    "onYomi": "スウ・ス",
+    "kunYomi": "かず・かぞ-える",
+    "onYomi": "スウ",
     "example": "リンゴの **数**（かず）を かぞえます。"
   },
   {
@@ -1016,25 +1016,25 @@
   {
     "char": "声",
     "kunYomi": "こえ",
-    "onYomi": "セイ・ショウ",
+    "onYomi": "セイ",
     "example": "大きな **声**（こえ）で おはあいさつします。"
   },
   {
     "char": "星",
     "kunYomi": "ほし",
-    "onYomi": "セイ・ショウ",
+    "onYomi": "セイ",
     "example": "夜（よる）の 空（そら）に **星**（ほし）が ひかっています。"
   },
   {
     "char": "晴",
-    "kunYomi": "はれる",
+    "kunYomi": "は-れる・は-らす",
     "onYomi": "セイ",
     "example": "あした **晴**（は）れたら そとで あそびましょう。"
   },
   {
     "char": "切",
-    "kunYomi": "きる",
-    "onYomi": "セツ・サイ",
+    "kunYomi": "き-る・き-れる",
+    "onYomi": "セツ",
     "example": "はさみで かみを **切**（き）ります。"
   },
   {
@@ -1045,13 +1045,13 @@
   },
   {
     "char": "船",
-    "kunYomi": "ふね",
+    "kunYomi": "ふね・ふな",
     "onYomi": "セン",
     "example": "海（うみ）に 大きな **船**（ふね）が うかんでいます。"
   },
   {
     "char": "線",
-    "kunYomi": "せん",
+    "kunYomi": "—",
     "onYomi": "セン",
     "example": "じょうぎで まっすぐな **線**（せん）を ひきます。"
   },
@@ -1063,43 +1063,43 @@
   },
   {
     "char": "組",
-    "kunYomi": "くむ",
+    "kunYomi": "く-む・くみ",
     "onYomi": "ソ",
     "example": "わたしは 一（いち）年（ねん） 二**組**（くみ）です。"
   },
   {
     "char": "走",
-    "kunYomi": "はしる",
+    "kunYomi": "はし-る",
     "onYomi": "ソウ",
     "example": "かけっこで 一（いち）ばんを **走**（はし）ります。"
   },
   {
     "char": "多",
-    "kunYomi": "おおい",
+    "kunYomi": "おお-い",
     "onYomi": "タ",
     "example": "公園（こうえん）に 子（こ）どもが **多**（おお）いですね。"
   },
   {
     "char": "太",
-    "kunYomi": "ふとい",
+    "kunYomi": "ふと-い・ふと-る",
     "onYomi": "タイ・タ",
     "example": "とても **太**（ふと）い 木（き）を みつけました。"
   },
   {
     "char": "体",
     "kunYomi": "からだ",
-    "onYomi": "タイ・テイ",
+    "onYomi": "タイ",
     "example": "ごはんを たべて **体**（からだ）を じょうぶに します。"
   },
   {
     "char": "台",
-    "kunYomi": "うてな",
+    "kunYomi": "—",
     "onYomi": "ダイ・タイ",
     "example": "すべり**台**（だい）で たのしく あそびます。"
   },
   {
     "char": "地",
-    "kunYomi": "ち",
+    "kunYomi": "—",
     "onYomi": "チ・ジ",
     "example": "**地**（ち）めんを アリが あるいています。"
   },
@@ -1111,14 +1111,14 @@
   },
   {
     "char": "知",
-    "kunYomi": "しる",
+    "kunYomi": "し-る",
     "onYomi": "チ",
     "example": "その ニュースなら **知**（し）っています。"
   },
   {
     "char": "茶",
-    "kunYomi": "ちゃ",
-    "onYomi": "チャ・サ",
+    "kunYomi": "—",
+    "onYomi": "チャ",
     "example": "あたたかい お**茶**（ちゃ）を のみます。"
   },
   {
@@ -1129,38 +1129,38 @@
   },
   {
     "char": "長",
-    "kunYomi": "ながい",
+    "kunYomi": "なが-い",
     "onYomi": "チョウ",
     "example": "えんぴつを つかって **長**（なが）さを はかります。"
   },
   {
     "char": "鳥",
     "kunYomi": "とり",
-    "onYomi": "チョウ・ニョウ",
+    "onYomi": "チョウ",
     "example": "**鳥**（とり）が 空（そら）を とんでいます。"
   },
   {
     "char": "朝",
     "kunYomi": "あさ",
-    "onYomi": "チョウ・ジョウ",
+    "onYomi": "チョウ",
     "example": "**朝**（あさ） おきたら あいさつを します。"
   },
   {
     "char": "直",
-    "kunYomi": "なおす",
+    "kunYomi": "ただ-ちに・なお-す・なお-る",
     "onYomi": "チョク・ジキ",
     "example": "はなれた ラベルを **直**（なお）しました。"
   },
   {
     "char": "通",
-    "kunYomi": "とおる・かよう",
-    "onYomi": "ツウ・ツ",
+    "kunYomi": "とお-る・とお-す・かよ-う",
+    "onYomi": "ツウ",
     "example": "この みちを まっすぐ **通**（とお）ります。"
   },
   {
     "char": "弟",
     "kunYomi": "おとうと",
-    "onYomi": "テイ・ダイ",
+    "onYomi": "ダイ",
     "example": "**弟**（おとうと）と おもちゃで あそびます。"
   },
   {
@@ -1171,13 +1171,13 @@
   },
   {
     "char": "点",
-    "kunYomi": "てん",
+    "kunYomi": "—",
     "onYomi": "テン",
     "example": "ぶんの おわりに **点**（まる）を つけます。"
   },
   {
     "char": "電",
-    "kunYomi": "でん",
+    "kunYomi": "—",
     "onYomi": "デン",
     "example": "**電**しゃ（でんしゃ）に のって おでかけします。"
   },
@@ -1195,7 +1195,7 @@
   },
   {
     "char": "当",
-    "kunYomi": "あたる",
+    "kunYomi": "あ-たる・あ-てる",
     "onYomi": "トウ",
     "example": "ボールが まとに **当**（あ）たりました。"
   },
@@ -1207,7 +1207,7 @@
   },
   {
     "char": "答",
-    "kunYomi": "こたえる",
+    "kunYomi": "こた-える・こた-え",
     "onYomi": "トウ",
     "example": "もんだいに スラスラ **答**（こた）えます。"
   },
@@ -1219,73 +1219,73 @@
   },
   {
     "char": "同",
-    "kunYomi": "おなじ",
+    "kunYomi": "おな-じ",
     "onYomi": "ドウ",
     "example": "友（とも）だちと **同**（おな）じ 本（ほん）を もっています。"
   },
   {
     "char": "道",
     "kunYomi": "みち",
-    "onYomi": "ドウ・トウ",
+    "onYomi": "ドウ",
     "example": "車（くるま）に 気（き）をつけて **道**（みち）を あるきます。"
   },
   {
     "char": "読",
-    "kunYomi": "よむ",
-    "onYomi": "ドク・トク",
+    "kunYomi": "よ-む",
+    "onYomi": "ドク・トク・トウ",
     "example": "しずかな ところで 本（ほん）を **読**（よ）みます。"
   },
   {
     "char": "内",
     "kunYomi": "うち",
-    "onYomi": "ナイ・ダイ",
+    "onYomi": "ナイ",
     "example": "こうえんの **内**（うち）がわで あそびます。"
   },
   {
     "char": "南",
     "kunYomi": "みなみ",
-    "onYomi": "ナン・ナ",
+    "onYomi": "ナン",
     "example": "**南**（みなみ）の くには とても あついです。"
   },
   {
     "char": "肉",
-    "kunYomi": "にく",
+    "kunYomi": "—",
     "onYomi": "ニク",
     "example": "きょうの 夕（ゆう）はん（ごはん）は **肉**（にく）りょうりです。"
   },
   {
     "char": "馬",
-    "kunYomi": "うま",
+    "kunYomi": "うま・ま",
     "onYomi": "バ",
     "example": "**馬**（うま）が パカパカ はしっています。"
   },
   {
     "char": "売",
-    "kunYomi": "うる",
+    "kunYomi": "う-る・う-れる",
     "onYomi": "バイ",
     "example": "おもちゃ屋（や）さんで ミニカーを **売**（う）っています。"
   },
   {
     "char": "買",
-    "kunYomi": "かう",
+    "kunYomi": "か-う",
     "onYomi": "バイ",
     "example": "スーパーで おかしを **買**（か）いました。"
   },
   {
     "char": "麦",
     "kunYomi": "むぎ",
-    "onYomi": "バク",
+    "onYomi": "—",
     "example": "**麦**（むぎ）わら帽子（ぼうし）を かぶります。"
   },
   {
     "char": "半",
-    "kunYomi": "なかば",
+    "kunYomi": "なか-ば",
     "onYomi": "ハン",
     "example": "リンゴを **半**ぶん（はんぶん）に わけて たべます。"
   },
   {
     "char": "番",
-    "kunYomi": "つがい",
+    "kunYomi": "—",
     "onYomi": "バン",
     "example": "かけっこで 一**番**（ばん）に なりました。"
   },
@@ -1297,32 +1297,32 @@
   },
   {
     "char": "風",
-    "kunYomi": "かぜ",
-    "onYomi": "フウ・フ",
+    "kunYomi": "かぜ・かざ",
+    "onYomi": "フウ",
     "example": "そよ**風**（かぜ）が ふいて 気持ち（きもち）がいいです。"
   },
   {
     "char": "分",
-    "kunYomi": "わかる・わける",
+    "kunYomi": "わ-ける・わ-かれる・わ-かる・わ-かつ",
     "onYomi": "ブン・フン・ブ",
     "example": "じかんを **分**（わ）けて つかいます。"
   },
   {
     "char": "聞",
-    "kunYomi": "きく",
-    "onYomi": "ブン・モン",
+    "kunYomi": "き-く・き-こえる",
+    "onYomi": "ブン",
     "example": "先生（せんせい）の お話を よく **聞**（き）きます。"
   },
   {
     "char": "米",
     "kunYomi": "こめ",
-    "onYomi": "マイ・ベイ",
+    "onYomi": "ベイ・マイ",
     "example": "お**米**（こめ）を といで ごはんを たきます。"
   },
   {
     "char": "歩",
-    "kunYomi": "あるく",
-    "onYomi": "ホ・ブ・フ",
+    "kunYomi": "ある-く・あゆ-む",
+    "onYomi": "ホ",
     "example": "トボトボと みちを **歩**（ある）きます。"
   },
   {
@@ -1345,33 +1345,33 @@
   },
   {
     "char": "毎",
-    "kunYomi": "ごと",
+    "kunYomi": "—",
     "onYomi": "マイ",
     "example": "**毎**日（まいにち） はみがきを します。"
   },
   {
     "char": "妹",
     "kunYomi": "いもうと",
-    "onYomi": "マイ",
+    "onYomi": "—",
     "example": "**妹**（いもうと）の めんどうを みて あげます。"
   },
   {
     "char": "万",
-    "kunYomi": "よろず",
-    "onYomi": "マン・バン",
+    "kunYomi": "—",
+    "onYomi": "マン",
     "example": "一**万**（まん）円（えん）を ちょきんしました。"
   },
   {
     "char": "明",
-    "kunYomi": "あかるい",
+    "kunYomi": "あ-かり・あか-るい・あか-るむ・あか-らむ・あき-らか・あ-ける・あ-く・あ-くる・あ-かす",
     "onYomi": "メイ・ミョウ",
     "example": "**明**（あか）るい ところで 本（ほん）を よみましょう。"
   },
   {
     "char": "鳴",
-    "kunYomi": "なく",
-    "ofYomi": "メイ",
-    "example": "小鳥（ことり）が チチッ、チチッと **鳴**（な）いています。"
+    "kunYomi": "な-く・な-る・な-らす",
+    "example": "小鳥（ことり）が チチッ、チチッと **鳴**（な）いています。",
+    "onYomi": "メイ"
   },
   {
     "char": "毛",
@@ -1381,13 +1381,13 @@
   },
   {
     "char": "門",
-    "kunYomi": "かど",
+    "kunYomi": "—",
     "onYomi": "モン",
     "example": "学校（がっこう）の 正**門**（もん）を くぐります。"
   },
   {
     "char": "夜",
-    "kunYomi": "よる",
+    "kunYomi": "よ・よる",
     "onYomi": "ヤ",
     "example": "**夜**（よる）に なると 空（そら）が くらくなります。"
   },
@@ -1405,19 +1405,19 @@
   },
   {
     "char": "用",
-    "kunYomi": "もちいる",
+    "kunYomi": "もち-いる",
     "onYomi": "ヨウ",
     "example": "**用**（よう）じを すませてから あそびます。"
   },
   {
     "char": "曜",
-    "kunYomi": "よう",
+    "kunYomi": "—",
     "onYomi": "ヨウ",
     "example": "きょうは 何（なに）**曜**（よう）日（び）ですか？"
   },
   {
     "char": "来",
-    "kunYomi": "くる",
+    "kunYomi": "く-る",
     "onYomi": "ライ",
     "example": "あした 友（とも）だちが いえに **来**（く）ます。"
   },
@@ -1429,4730 +1429,4730 @@
   },
   {
     "char": "理",
-    "kunYomi": "ことわり",
+    "kunYomi": "—",
     "onYomi": "リ",
     "example": "り**理**（か）の じけんは おもしろいです。"
   },
   {
     "char": "話",
-    "kunYomi": "はなす",
+    "kunYomi": "はな-す・はなし",
     "onYomi": "ワ",
     "example": "みんなで たのしく お**話**（はなし）を します。"
   },
   {
     "char": "悪",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "わる-い",
+    "onYomi": "アク",
     "example": "**悪** をれんしゅうしましょう。"
   },
   {
     "char": "安",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "やす-い",
+    "onYomi": "アン",
     "example": "**安** をれんしゅうしましょう。"
   },
   {
     "char": "暗",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "くら-い",
+    "onYomi": "アン",
     "example": "**暗** をれんしゅうしましょう。"
   },
   {
     "char": "医",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "イ",
     "example": "**医** をれんしゅうしましょう。"
   },
   {
     "char": "委",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ゆだ-ねる",
+    "onYomi": "イ",
     "example": "**委** をれんしゅうしましょう。"
   },
   {
     "char": "意",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "イ",
     "example": "**意** をれんしゅうしましょう。"
   },
   {
     "char": "育",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "そだ-つ・そだ-てる・はぐく-む",
+    "onYomi": "イク",
     "example": "**育** をれんしゅうしましょう。"
   },
   {
     "char": "員",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "イン",
     "example": "**員** をれんしゅうしましょう。"
   },
   {
     "char": "院",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "イン",
     "example": "**院** をれんしゅうしましょう。"
   },
   {
     "char": "飲",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "の-む",
+    "onYomi": "イン",
     "example": "**飲** をれんしゅうしましょう。"
   },
   {
     "char": "運",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "はこ-ぶ",
+    "onYomi": "ウン",
     "example": "**運** をれんしゅうしましょう。"
   },
   {
     "char": "泳",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "およ-ぐ",
+    "onYomi": "エイ",
     "example": "**泳** をれんしゅうしましょう。"
   },
   {
     "char": "駅",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "エキ",
     "example": "**駅** をれんしゅうしましょう。"
   },
   {
     "char": "央",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "オウ",
     "example": "**央** をれんしゅうしましょう。"
   },
   {
     "char": "横",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "よこ",
+    "onYomi": "オウ",
     "example": "**横** をれんしゅうしましょう。"
   },
   {
     "char": "屋",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "や",
+    "onYomi": "オク",
     "example": "**屋** をれんしゅうしましょう。"
   },
   {
     "char": "温",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あたた-か・あたた-かい・あたた-まる・あたた-める",
+    "onYomi": "オン",
     "example": "**温** をれんしゅうしましょう。"
   },
   {
     "char": "化",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ば-ける・ば-かす",
+    "onYomi": "カ",
     "example": "**化** をれんしゅうしましょう。"
   },
   {
     "char": "荷",
-    "kunYomi": "—",
+    "kunYomi": "に",
     "onYomi": "—",
     "example": "**荷** をれんしゅうしましょう。"
   },
   {
     "char": "界",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カイ",
     "example": "**界** をれんしゅうしましょう。"
   },
   {
     "char": "開",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ひら-く・ひら-ける・あ-く・あ-ける",
+    "onYomi": "カイ",
     "example": "**開** をれんしゅうしましょう。"
   },
   {
     "char": "階",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カイ",
     "example": "**階** をれんしゅうしましょう。"
   },
   {
     "char": "寒",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "さむ-い",
+    "onYomi": "カン",
     "example": "**寒** をれんしゅうしましょう。"
   },
   {
     "char": "感",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カン",
     "example": "**感** をれんしゅうしましょう。"
   },
   {
     "char": "漢",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カン",
     "example": "**漢** をれんしゅうしましょう。"
   },
   {
     "char": "館",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "やかた",
+    "onYomi": "カン",
     "example": "**館** をれんしゅうしましょう。"
   },
   {
     "char": "岸",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "きし",
+    "onYomi": "ガン",
     "example": "**岸** をれんしゅうしましょう。"
   },
   {
     "char": "起",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "お-きる・お-こる・お-こす",
+    "onYomi": "キ",
     "example": "**起** をれんしゅうしましょう。"
   },
   {
     "char": "期",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キ",
     "example": "**期** をれんしゅうしましょう。"
   },
   {
     "char": "客",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キャク",
     "example": "**客** をれんしゅうしましょう。"
   },
   {
     "char": "究",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キュウ",
     "example": "**究** をれんしゅうしましょう。"
   },
   {
     "char": "急",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "いそ-ぐ",
+    "onYomi": "キュウ",
     "example": "**急** をれんしゅうしましょう。"
   },
   {
     "char": "級",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キュウ",
     "example": "**級** をれんしゅうしましょう。"
   },
   {
     "char": "宮",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "みや",
+    "onYomi": "キュウ",
     "example": "**宮** をれんしゅうしましょう。"
   },
   {
     "char": "球",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たま",
+    "onYomi": "キュウ",
     "example": "**球** をれんしゅうしましょう。"
   },
   {
     "char": "去",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "さ-る",
+    "onYomi": "キョ・コ",
     "example": "**去** をれんしゅうしましょう。"
   },
   {
     "char": "橋",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "はし",
+    "onYomi": "キョウ",
     "example": "**橋** をれんしゅうしましょう。"
   },
   {
     "char": "業",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ギョウ",
     "example": "**業** をれんしゅうしましょう。"
   },
   {
     "char": "曲",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ま-がる・ま-げる",
+    "onYomi": "キョク",
     "example": "**曲** をれんしゅうしましょう。"
   },
   {
     "char": "局",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キョク",
     "example": "**局** をれんしゅうしましょう。"
   },
   {
     "char": "銀",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ギン",
     "example": "**銀** をれんしゅうしましょう。"
   },
   {
     "char": "区",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ク",
     "example": "**区** をれんしゅうしましょう。"
   },
   {
     "char": "苦",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "くる-しい・くる-しむ・くる-しめる・にが-い・にが-る",
+    "onYomi": "ク",
     "example": "**苦** をれんしゅうしましょう。"
   },
   {
     "char": "具",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "グ",
     "example": "**具** をれんしゅうしましょう。"
   },
   {
     "char": "君",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "きみ",
+    "onYomi": "クン",
     "example": "**君** をれんしゅうしましょう。"
   },
   {
     "char": "係",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かか-る・かかり",
+    "onYomi": "ケイ",
     "example": "**係** をれんしゅうしましょう。"
   },
   {
     "char": "軽",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かる-い",
+    "onYomi": "ケイ",
     "example": "**軽** をれんしゅうしましょう。"
   },
   {
     "char": "血",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ち",
+    "onYomi": "ケツ",
     "example": "**血** をれんしゅうしましょう。"
   },
   {
     "char": "決",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "き-める・き-まる",
+    "onYomi": "ケツ",
     "example": "**決** をれんしゅうしましょう。"
   },
   {
     "char": "研",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ケン",
     "example": "**研** をれんしゅうしましょう。"
   },
   {
     "char": "県",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ケン",
     "example": "**県** をれんしゅうしましょう。"
   },
   {
     "char": "庫",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "コ",
     "example": "**庫** をれんしゅうしましょう。"
   },
   {
     "char": "湖",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "みずうみ",
+    "onYomi": "コ",
     "example": "**湖** をれんしゅうしましょう。"
   },
   {
     "char": "向",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "む-く・む-ける・む-かう・む-こう",
+    "onYomi": "コウ",
     "example": "**向** をれんしゅうしましょう。"
   },
   {
     "char": "幸",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "さいわ-い・しあわ-せ",
+    "onYomi": "コウ",
     "example": "**幸** をれんしゅうしましょう。"
   },
   {
     "char": "港",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "みなと",
+    "onYomi": "コウ",
     "example": "**港** をれんしゅうしましょう。"
   },
   {
     "char": "号",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ゴウ",
     "example": "**号** をれんしゅうしましょう。"
   },
   {
     "char": "根",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ね",
+    "onYomi": "コン",
     "example": "**根** をれんしゅうしましょう。"
   },
   {
     "char": "祭",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "まつ-る・まつ-り",
+    "onYomi": "サイ",
     "example": "**祭** をれんしゅうしましょう。"
   },
   {
     "char": "皿",
-    "kunYomi": "—",
+    "kunYomi": "さら",
     "onYomi": "—",
     "example": "**皿** をれんしゅうしましょう。"
   },
   {
     "char": "仕",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つか-える",
+    "onYomi": "シ",
     "example": "**仕** をれんしゅうしましょう。"
   },
   {
     "char": "死",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "し-ぬ",
+    "onYomi": "シ",
     "example": "**死** をれんしゅうしましょう。"
   },
   {
     "char": "使",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つか-う",
+    "onYomi": "シ",
     "example": "**使** をれんしゅうしましょう。"
   },
   {
     "char": "始",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "はじ-める・はじ-まる",
+    "onYomi": "シ",
     "example": "**始** をれんしゅうしましょう。"
   },
   {
     "char": "指",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ゆび・さ-す",
+    "onYomi": "シ",
     "example": "**指** をれんしゅうしましょう。"
   },
   {
     "char": "歯",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "は",
+    "onYomi": "シ",
     "example": "**歯** をれんしゅうしましょう。"
   },
   {
     "char": "詩",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シ",
     "example": "**詩** をれんしゅうしましょう。"
   },
   {
     "char": "次",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つ-ぐ・つぎ",
+    "onYomi": "ジ",
     "example": "**次** をれんしゅうしましょう。"
   },
   {
     "char": "事",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "こと",
+    "onYomi": "ジ",
     "example": "**事** をれんしゅうしましょう。"
   },
   {
     "char": "持",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "も-つ",
+    "onYomi": "ジ",
     "example": "**持** をれんしゅうしましょう。"
   },
   {
     "char": "式",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シキ",
     "example": "**式** をれんしゅうしましょう。"
   },
   {
     "char": "実",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "み・みの-る",
+    "onYomi": "ジツ",
     "example": "**実** をれんしゅうしましょう。"
   },
   {
     "char": "写",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "うつ-す・うつ-る",
+    "onYomi": "シャ",
     "example": "**写** をれんしゅうしましょう。"
   },
   {
     "char": "者",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "もの",
+    "onYomi": "シャ",
     "example": "**者** をれんしゅうしましょう。"
   },
   {
     "char": "主",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ぬし・おも",
+    "onYomi": "シュ",
     "example": "**主** をれんしゅうしましょう。"
   },
   {
     "char": "守",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "まも-る",
+    "onYomi": "シュ・ス",
     "example": "**守** をれんしゅうしましょう。"
   },
   {
     "char": "取",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "と-る",
+    "onYomi": "シュ",
     "example": "**取** をれんしゅうしましょう。"
   },
   {
     "char": "酒",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "さけ・さか",
+    "onYomi": "シュ",
     "example": "**酒** をれんしゅうしましょう。"
   },
   {
     "char": "受",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "う-ける・う-かる",
+    "onYomi": "ジュ",
     "example": "**受** をれんしゅうしましょう。"
   },
   {
     "char": "州",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シュウ",
     "example": "**州** をれんしゅうしましょう。"
   },
   {
     "char": "拾",
-    "kunYomi": "—",
+    "kunYomi": "ひろ-う",
     "onYomi": "—",
     "example": "**拾** をれんしゅうしましょう。"
   },
   {
     "char": "終",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "お-わる・お-える",
+    "onYomi": "シュウ",
     "example": "**終** をれんしゅうしましょう。"
   },
   {
     "char": "習",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "なら-う",
+    "onYomi": "シュウ",
     "example": "**習** をれんしゅうしましょう。"
   },
   {
     "char": "集",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あつ-まる・あつ-める",
+    "onYomi": "シュウ",
     "example": "**集** をれんしゅうしましょう。"
   },
   {
     "char": "住",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "す-む・す-まう",
+    "onYomi": "ジュウ",
     "example": "**住** をれんしゅうしましょう。"
   },
   {
     "char": "重",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "おも-い・かさ-ねる・かさ-なる・え",
+    "onYomi": "ジュウ・チョウ",
     "example": "**重** をれんしゅうしましょう。"
   },
   {
     "char": "宿",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "やど・やど-る・やど-す",
+    "onYomi": "シュク",
     "example": "**宿** をれんしゅうしましょう。"
   },
   {
     "char": "所",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ところ",
+    "onYomi": "ショ",
     "example": "**所** をれんしゅうしましょう。"
   },
   {
     "char": "暑",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あつ-い",
+    "onYomi": "ショ",
     "example": "**暑** をれんしゅうしましょう。"
   },
   {
     "char": "助",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たす-ける・たす-かる",
+    "onYomi": "ジョ",
     "example": "**助** をれんしゅうしましょう。"
   },
   {
     "char": "昭",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ショウ",
     "example": "**昭** をれんしゅうしましょう。"
   },
   {
     "char": "消",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "き-える・け-す",
+    "onYomi": "ショウ",
     "example": "**消** をれんしゅうしましょう。"
   },
   {
     "char": "商",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ショウ",
     "example": "**商** をれんしゅうしましょう。"
   },
   {
     "char": "章",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ショウ",
     "example": "**章** をれんしゅうしましょう。"
   },
   {
     "char": "勝",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "か-つ",
+    "onYomi": "ショウ",
     "example": "**勝** をれんしゅうしましょう。"
   },
   {
     "char": "乗",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "の-る・の-せる",
+    "onYomi": "ジョウ",
     "example": "**乗** をれんしゅうしましょう。"
   },
   {
     "char": "植",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "う-える・う-わる",
+    "onYomi": "ショク",
     "example": "**植** をれんしゅうしましょう。"
   },
   {
     "char": "申",
-    "kunYomi": "—",
+    "kunYomi": "もう-す",
     "onYomi": "—",
     "example": "**申** をれんしゅうしましょう。"
   },
   {
     "char": "身",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "み",
+    "onYomi": "シン",
     "example": "**身** をれんしゅうしましょう。"
   },
   {
     "char": "神",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かみ",
+    "onYomi": "シン・ジン",
     "example": "**神** をれんしゅうしましょう。"
   },
   {
     "char": "真",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ま",
+    "onYomi": "シン",
     "example": "**真** をれんしゅうしましょう。"
   },
   {
     "char": "深",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ふか-い・ふか-まる・ふか-める",
+    "onYomi": "シン",
     "example": "**深** をれんしゅうしましょう。"
   },
   {
     "char": "進",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "すす-む・すす-める",
+    "onYomi": "シン",
     "example": "**進** をれんしゅうしましょう。"
   },
   {
     "char": "世",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "よ",
+    "onYomi": "セイ・セ",
     "example": "**世** をれんしゅうしましょう。"
   },
   {
     "char": "整",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ととの-える・ととの-う",
+    "onYomi": "セイ",
     "example": "**整** をれんしゅうしましょう。"
   },
   {
     "char": "昔",
-    "kunYomi": "—",
+    "kunYomi": "むかし",
     "onYomi": "—",
     "example": "**昔** をれんしゅうしましょう。"
   },
   {
     "char": "全",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "まった-く・すべ-て",
+    "onYomi": "ゼン",
     "example": "**全** をれんしゅうしましょう。"
   },
   {
     "char": "相",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あい",
+    "onYomi": "ソウ",
     "example": "**相** をれんしゅうしましょう。"
   },
   {
     "char": "送",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "おく-る",
+    "onYomi": "ソウ",
     "example": "**送** をれんしゅうしましょう。"
   },
   {
     "char": "想",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ソウ",
     "example": "**想** をれんしゅうしましょう。"
   },
   {
     "char": "息",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "いき",
+    "onYomi": "ソク",
     "example": "**息** をれんしゅうしましょう。"
   },
   {
     "char": "速",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "はや-い・はや-める・はや-まる",
+    "onYomi": "ソク",
     "example": "**速** をれんしゅうしましょう。"
   },
   {
     "char": "族",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ゾク",
     "example": "**族** をれんしゅうしましょう。"
   },
   {
     "char": "他",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ほか",
+    "onYomi": "タ",
     "example": "**他** をれんしゅうしましょう。"
   },
   {
     "char": "打",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "う-つ",
+    "onYomi": "ダ",
     "example": "**打** をれんしゅうしましょう。"
   },
   {
     "char": "対",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "タイ",
     "example": "**対** をれんしゅうしましょう。"
   },
   {
     "char": "待",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ま-つ",
+    "onYomi": "タイ",
     "example": "**待** をれんしゅうしましょう。"
   },
   {
     "char": "代",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "か-わる・か-える・よ",
+    "onYomi": "ダイ・タイ",
     "example": "**代** をれんしゅうしましょう。"
   },
   {
     "char": "第",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ダイ",
     "example": "**第** をれんしゅうしましょう。"
   },
   {
     "char": "題",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ダイ",
     "example": "**題** をれんしゅうしましょう。"
   },
   {
     "char": "炭",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "すみ",
+    "onYomi": "タン",
     "example": "**炭** をれんしゅうしましょう。"
   },
   {
     "char": "短",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "みじか-い",
+    "onYomi": "タン",
     "example": "**短** をれんしゅうしましょう。"
   },
   {
     "char": "談",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ダン",
     "example": "**談** をれんしゅうしましょう。"
   },
   {
     "char": "着",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "き-る・き-せる・つ-く・つ-ける",
+    "onYomi": "チャク",
     "example": "**着** をれんしゅうしましょう。"
   },
   {
     "char": "注",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "そそ-ぐ",
+    "onYomi": "チュウ",
     "example": "**注** をれんしゅうしましょう。"
   },
   {
     "char": "柱",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "はしら",
+    "onYomi": "チュウ",
     "example": "**柱** をれんしゅうしましょう。"
   },
   {
     "char": "丁",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "チョウ",
     "example": "**丁** をれんしゅうしましょう。"
   },
   {
     "char": "帳",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "チョウ",
     "example": "**帳** をれんしゅうしましょう。"
   },
   {
     "char": "調",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "しら-べる",
+    "onYomi": "チョウ",
     "example": "**調** をれんしゅうしましょう。"
   },
   {
     "char": "追",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "お-う",
+    "onYomi": "ツイ",
     "example": "**追** をれんしゅうしましょう。"
   },
   {
     "char": "定",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "さだ-める・さだ-まる",
+    "onYomi": "テイ・ジョウ",
     "example": "**定** をれんしゅうしましょう。"
   },
   {
     "char": "庭",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "にわ",
+    "onYomi": "テイ",
     "example": "**庭** をれんしゅうしましょう。"
   },
   {
     "char": "笛",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ふえ",
+    "onYomi": "テキ",
     "example": "**笛** をれんしゅうしましょう。"
   },
   {
     "char": "鉄",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "テツ",
     "example": "**鉄** をれんしゅうしましょう。"
   },
   {
     "char": "転",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ころ-がる・ころ-げる・ころ-がす・ころ-ぶ",
+    "onYomi": "テン",
     "example": "**転** をれんしゅうしましょう。"
   },
   {
     "char": "都",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "みやこ",
+    "onYomi": "ト・ツ",
     "example": "**都** をれんしゅうしましょう。"
   },
   {
     "char": "度",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ド",
     "example": "**度** をれんしゅうしましょう。"
   },
   {
     "char": "投",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "な-げる",
+    "onYomi": "トウ",
     "example": "**投** をれんしゅうしましょう。"
   },
   {
     "char": "豆",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "まめ",
+    "onYomi": "トウ・ズ",
     "example": "**豆** をれんしゅうしましょう。"
   },
   {
     "char": "島",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "しま",
+    "onYomi": "トウ",
     "example": "**島** をれんしゅうしましょう。"
   },
   {
     "char": "湯",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ゆ",
+    "onYomi": "トウ",
     "example": "**湯** をれんしゅうしましょう。"
   },
   {
     "char": "登",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "のぼ-る",
+    "onYomi": "トウ・ト",
     "example": "**登** をれんしゅうしましょう。"
   },
   {
     "char": "等",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ひと-しい",
+    "onYomi": "トウ",
     "example": "**等** をれんしゅうしましょう。"
   },
   {
     "char": "動",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "うご-く・うご-かす",
+    "onYomi": "ドウ",
     "example": "**動** をれんしゅうしましょう。"
   },
   {
     "char": "童",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ドウ",
     "example": "**童** をれんしゅうしましょう。"
   },
   {
     "char": "農",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ノウ",
     "example": "**農** をれんしゅうしましょう。"
   },
   {
     "char": "波",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "なみ",
+    "onYomi": "ハ",
     "example": "**波** をれんしゅうしましょう。"
   },
   {
     "char": "配",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "くば-る",
+    "onYomi": "ハイ",
     "example": "**配** をれんしゅうしましょう。"
   },
   {
     "char": "倍",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "バイ",
     "example": "**倍** をれんしゅうしましょう。"
   },
   {
     "char": "箱",
-    "kunYomi": "—",
+    "kunYomi": "はこ",
     "onYomi": "—",
     "example": "**箱** をれんしゅうしましょう。"
   },
   {
     "char": "畑",
-    "kunYomi": "—",
+    "kunYomi": "はた・はたけ",
     "onYomi": "—",
     "example": "**畑** をれんしゅうしましょう。"
   },
   {
     "char": "発",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ハツ",
     "example": "**発** をれんしゅうしましょう。"
   },
   {
     "char": "反",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "そ-る・そ-らす",
+    "onYomi": "ハン",
     "example": "**反** をれんしゅうしましょう。"
   },
   {
     "char": "坂",
-    "kunYomi": "—",
+    "kunYomi": "さか",
     "onYomi": "—",
     "example": "**坂** をれんしゅうしましょう。"
   },
   {
     "char": "板",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "いた",
+    "onYomi": "ハン・バン",
     "example": "**板** をれんしゅうしましょう。"
   },
   {
     "char": "皮",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かわ",
+    "onYomi": "ヒ",
     "example": "**皮** をれんしゅうしましょう。"
   },
   {
     "char": "悲",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かな-しい・かな-しむ",
+    "onYomi": "ヒ",
     "example": "**悲** をれんしゅうしましょう。"
   },
   {
     "char": "美",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "うつく-しい",
+    "onYomi": "ビ",
     "example": "**美** をれんしゅうしましょう。"
   },
   {
     "char": "鼻",
-    "kunYomi": "—",
+    "kunYomi": "はな",
     "onYomi": "—",
     "example": "**鼻** をれんしゅうしましょう。"
   },
   {
     "char": "筆",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ふで",
+    "onYomi": "ヒツ",
     "example": "**筆** をれんしゅうしましょう。"
   },
   {
     "char": "氷",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "こおり",
+    "onYomi": "ヒョウ",
     "example": "**氷** をれんしゅうしましょう。"
   },
   {
     "char": "表",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "おもて・あらわ-す・あらわ-れる",
+    "onYomi": "ヒョウ",
     "example": "**表** をれんしゅうしましょう。"
   },
   {
     "char": "秒",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ビョウ",
     "example": "**秒** をれんしゅうしましょう。"
   },
   {
     "char": "病",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "やまい",
+    "onYomi": "ビョウ",
     "example": "**病** をれんしゅうしましょう。"
   },
   {
     "char": "品",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "しな",
+    "onYomi": "ヒン",
     "example": "**品** をれんしゅうしましょう。"
   },
   {
     "char": "負",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ま-ける・ま-かす・お-う",
+    "onYomi": "フ",
     "example": "**負** をれんしゅうしましょう。"
   },
   {
     "char": "部",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ブ",
     "example": "**部** をれんしゅうしましょう。"
   },
   {
     "char": "服",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "フク",
     "example": "**服** をれんしゅうしましょう。"
   },
   {
     "char": "福",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "フク",
     "example": "**福** をれんしゅうしましょう。"
   },
   {
     "char": "物",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "もの",
+    "onYomi": "ブツ・モツ",
     "example": "**物** をれんしゅうしましょう。"
   },
   {
     "char": "平",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たい-ら・ひら",
+    "onYomi": "ヘイ・ビョウ",
     "example": "**平** をれんしゅうしましょう。"
   },
   {
     "char": "返",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かえ-す・かえ-る",
+    "onYomi": "ヘン",
     "example": "**返** をれんしゅうしましょう。"
   },
   {
     "char": "勉",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ベン",
     "example": "**勉** をれんしゅうしましょう。"
   },
   {
     "char": "放",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "はな-す・はな-つ・はな-れる・ほう-る",
+    "onYomi": "ホウ",
     "example": "**放** をれんしゅうしましょう。"
   },
   {
     "char": "味",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あじ・あじ-わう",
+    "onYomi": "ミ",
     "example": "**味** をれんしゅうしましょう。"
   },
   {
     "char": "命",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "いのち",
+    "onYomi": "メイ",
     "example": "**命** をれんしゅうしましょう。"
   },
   {
     "char": "面",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "メン",
     "example": "**面** をれんしゅうしましょう。"
   },
   {
     "char": "問",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "と-う・と-い・とん",
+    "onYomi": "モン",
     "example": "**問** をれんしゅうしましょう。"
   },
   {
     "char": "役",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヤク",
     "example": "**役** をれんしゅうしましょう。"
   },
   {
     "char": "薬",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "くすり",
+    "onYomi": "ヤク",
     "example": "**薬** をれんしゅうしましょう。"
   },
   {
     "char": "由",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ユ・ユウ",
     "example": "**由** をれんしゅうしましょう。"
   },
   {
     "char": "油",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あぶら",
+    "onYomi": "ユ",
     "example": "**油** をれんしゅうしましょう。"
   },
   {
     "char": "有",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あ-る",
+    "onYomi": "ユウ",
     "example": "**有** をれんしゅうしましょう。"
   },
   {
     "char": "遊",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あそ-ぶ",
+    "onYomi": "ユウ",
     "example": "**遊** をれんしゅうしましょう。"
   },
   {
     "char": "予",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヨ",
     "example": "**予** をれんしゅうしましょう。"
   },
   {
     "char": "羊",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ひつじ",
+    "onYomi": "ヨウ",
     "example": "**羊** をれんしゅうしましょう。"
   },
   {
     "char": "洋",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヨウ",
     "example": "**洋** をれんしゅうしましょう。"
   },
   {
     "char": "葉",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "は",
+    "onYomi": "ヨウ",
     "example": "**葉** をれんしゅうしましょう。"
   },
   {
     "char": "陽",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヨウ",
     "example": "**陽** をれんしゅうしましょう。"
   },
   {
     "char": "様",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "さま",
+    "onYomi": "ヨウ",
     "example": "**様** をれんしゅうしましょう。"
   },
   {
     "char": "落",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "お-ちる・お-とす",
+    "onYomi": "ラク",
     "example": "**落** をれんしゅうしましょう。"
   },
   {
     "char": "流",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "なが-れる・なが-す",
+    "onYomi": "リュウ",
     "example": "**流** をれんしゅうしましょう。"
   },
   {
     "char": "旅",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たび",
+    "onYomi": "リョ",
     "example": "**旅** をれんしゅうしましょう。"
   },
   {
     "char": "両",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "リョウ",
     "example": "**両** をれんしゅうしましょう。"
   },
   {
     "char": "緑",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "みどり",
+    "onYomi": "リョク",
     "example": "**緑** をれんしゅうしましょう。"
   },
   {
     "char": "礼",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "レイ",
     "example": "**礼** をれんしゅうしましょう。"
   },
   {
     "char": "列",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "レツ",
     "example": "**列** をれんしゅうしましょう。"
   },
   {
     "char": "練",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ね-る",
+    "onYomi": "レン",
     "example": "**練** をれんしゅうしましょう。"
   },
   {
     "char": "路",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "じ",
+    "onYomi": "ロ",
     "example": "**路** をれんしゅうしましょう。"
   },
   {
     "char": "和",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ワ",
     "example": "**和** をれんしゅうしましょう。"
   },
   {
     "char": "愛",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "アイ",
     "example": "**愛** をれんしゅうしましょう。"
   },
   {
     "char": "案",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "アン",
     "example": "**案** をれんしゅうしましょう。"
   },
   {
     "char": "以",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "イ",
     "example": "**以** をれんしゅうしましょう。"
   },
   {
     "char": "衣",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "イ",
     "example": "**衣** をれんしゅうしましょう。"
   },
   {
     "char": "位",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "くらい",
+    "onYomi": "イ",
     "example": "**位** をれんしゅうしましょう。"
   },
   {
     "char": "茨",
-    "kunYomi": "—",
+    "kunYomi": "いばら",
     "onYomi": "—",
     "example": "**茨** をれんしゅうしましょう。"
   },
   {
     "char": "印",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "しるし",
+    "onYomi": "イン",
     "example": "**印** をれんしゅうしましょう。"
   },
   {
     "char": "英",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "エイ",
     "example": "**英** をれんしゅうしましょう。"
   },
   {
     "char": "栄",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "さか-える",
+    "onYomi": "エイ",
     "example": "**栄** をれんしゅうしましょう。"
   },
   {
     "char": "媛",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "エン",
     "example": "**媛** をれんしゅうしましょう。"
   },
   {
     "char": "塩",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "しお",
+    "onYomi": "エン",
     "example": "**塩** をれんしゅうしましょう。"
   },
   {
     "char": "岡",
-    "kunYomi": "—",
+    "kunYomi": "おか",
     "onYomi": "—",
     "example": "**岡** をれんしゅうしましょう。"
   },
   {
     "char": "億",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "オク",
     "example": "**億** をれんしゅうしましょう。"
   },
   {
     "char": "加",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "くわ-える・くわ-わる",
+    "onYomi": "カ",
     "example": "**加** をれんしゅうしましょう。"
   },
   {
     "char": "果",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "は-たす・は-てる・は-て",
+    "onYomi": "カ",
     "example": "**果** をれんしゅうしましょう。"
   },
   {
     "char": "貨",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カ",
     "example": "**貨** をれんしゅうしましょう。"
   },
   {
     "char": "課",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カ",
     "example": "**課** をれんしゅうしましょう。"
   },
   {
     "char": "芽",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "め",
+    "onYomi": "ガ",
     "example": "**芽** をれんしゅうしましょう。"
   },
   {
     "char": "賀",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ガ",
     "example": "**賀** をれんしゅうしましょう。"
   },
   {
     "char": "改",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あらた-める・あらた-まる",
+    "onYomi": "カイ",
     "example": "**改** をれんしゅうしましょう。"
   },
   {
     "char": "械",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カイ",
     "example": "**械** をれんしゅうしましょう。"
   },
   {
     "char": "害",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ガイ",
     "example": "**害** をれんしゅうしましょう。"
   },
   {
     "char": "街",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "まち",
+    "onYomi": "ガイ",
     "example": "**街** をれんしゅうしましょう。"
   },
   {
     "char": "各",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カク",
     "example": "**各** をれんしゅうしましょう。"
   },
   {
     "char": "覚",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "おぼ-える・さ-ます・さ-める",
+    "onYomi": "カク",
     "example": "**覚** をれんしゅうしましょう。"
   },
   {
     "char": "潟",
-    "kunYomi": "—",
+    "kunYomi": "かた",
     "onYomi": "—",
     "example": "**潟** をれんしゅうしましょう。"
   },
   {
     "char": "完",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カン",
     "example": "**完** をれんしゅうしましょう。"
   },
   {
     "char": "官",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カン",
     "example": "**官** をれんしゅうしましょう。"
   },
   {
     "char": "管",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "くだ",
+    "onYomi": "カン",
     "example": "**管** をれんしゅうしましょう。"
   },
   {
     "char": "関",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "せき・かか-わる",
+    "onYomi": "カン",
     "example": "**関** をれんしゅうしましょう。"
   },
   {
     "char": "観",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カン",
     "example": "**観** をれんしゅうしましょう。"
   },
   {
     "char": "願",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ねが-う",
+    "onYomi": "ガン",
     "example": "**願** をれんしゅうしましょう。"
   },
   {
     "char": "岐",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キ",
     "example": "**岐** をれんしゅうしましょう。"
   },
   {
     "char": "希",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キ",
     "example": "**希** をれんしゅうしましょう。"
   },
   {
     "char": "季",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キ",
     "example": "**季** をれんしゅうしましょう。"
   },
   {
     "char": "旗",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "はた",
+    "onYomi": "キ",
     "example": "**旗** をれんしゅうしましょう。"
   },
   {
     "char": "器",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キ",
     "example": "**器** をれんしゅうしましょう。"
   },
   {
     "char": "機",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キ",
     "example": "**機** をれんしゅうしましょう。"
   },
   {
     "char": "議",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ギ",
     "example": "**議** をれんしゅうしましょう。"
   },
   {
     "char": "求",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "もと-める",
+    "onYomi": "キュウ",
     "example": "**求** をれんしゅうしましょう。"
   },
   {
     "char": "泣",
-    "kunYomi": "—",
+    "kunYomi": "な-く",
     "onYomi": "—",
     "example": "**泣** をれんしゅうしましょう。"
   },
   {
     "char": "給",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キュウ",
     "example": "**給** をれんしゅうしましょう。"
   },
   {
     "char": "挙",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あ-げる・あ-がる",
+    "onYomi": "キョ",
     "example": "**挙** をれんしゅうしましょう。"
   },
   {
     "char": "漁",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ギョ・リョウ",
     "example": "**漁** をれんしゅうしましょう。"
   },
   {
     "char": "共",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "とも",
+    "onYomi": "キョウ",
     "example": "**共** をれんしゅうしましょう。"
   },
   {
     "char": "協",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キョウ",
     "example": "**協** をれんしゅうしましょう。"
   },
   {
     "char": "鏡",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かがみ",
+    "onYomi": "キョウ",
     "example": "**鏡** をれんしゅうしましょう。"
   },
   {
     "char": "競",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キョウ・ケイ",
     "example": "**競** をれんしゅうしましょう。"
   },
   {
     "char": "極",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キョク",
     "example": "**極** をれんしゅうしましょう。"
   },
   {
     "char": "熊",
-    "kunYomi": "—",
+    "kunYomi": "くま",
     "onYomi": "—",
     "example": "**熊** をれんしゅうしましょう。"
   },
   {
     "char": "訓",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "クン",
     "example": "**訓** をれんしゅうしましょう。"
   },
   {
     "char": "軍",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "グン",
     "example": "**軍** をれんしゅうしましょう。"
   },
   {
     "char": "郡",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "グン",
     "example": "**郡** をれんしゅうしましょう。"
   },
   {
     "char": "群",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "む-れる・む-れ・むら",
+    "onYomi": "グン",
     "example": "**群** をれんしゅうしましょう。"
   },
   {
     "char": "径",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ケイ",
     "example": "**径** をれんしゅうしましょう。"
   },
   {
     "char": "景",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ケイ",
     "example": "**景** をれんしゅうしましょう。"
   },
   {
     "char": "芸",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ゲイ",
     "example": "**芸** をれんしゅうしましょう。"
   },
   {
     "char": "欠",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "か-ける・か-く",
+    "onYomi": "ケツ",
     "example": "**欠** をれんしゅうしましょう。"
   },
   {
     "char": "結",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "むす-ぶ",
+    "onYomi": "ケツ",
     "example": "**結** をれんしゅうしましょう。"
   },
   {
     "char": "建",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "た-てる・た-つ",
+    "onYomi": "ケン",
     "example": "**建** をれんしゅうしましょう。"
   },
   {
     "char": "健",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ケン",
     "example": "**健** をれんしゅうしましょう。"
   },
   {
     "char": "験",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ケン",
     "example": "**験** をれんしゅうしましょう。"
   },
   {
     "char": "固",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かた-める・かた-まる・かた-い",
+    "onYomi": "コ",
     "example": "**固** をれんしゅうしましょう。"
   },
   {
     "char": "功",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "コウ",
     "example": "**功** をれんしゅうしましょう。"
   },
   {
     "char": "好",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "この-む・す-く",
+    "onYomi": "コウ",
     "example": "**好** をれんしゅうしましょう。"
   },
   {
     "char": "香",
-    "kunYomi": "—",
+    "kunYomi": "か・かお-り・かお-る",
     "onYomi": "—",
     "example": "**香** をれんしゅうしましょう。"
   },
   {
     "char": "候",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "コウ",
     "example": "**候** をれんしゅうしましょう。"
   },
   {
     "char": "康",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "コウ",
     "example": "**康** をれんしゅうしましょう。"
   },
   {
     "char": "佐",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "サ",
     "example": "**佐** をれんしゅうしましょう。"
   },
   {
     "char": "差",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "さ-す",
+    "onYomi": "サ",
     "example": "**差** をれんしゅうしましょう。"
   },
   {
     "char": "菜",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "な",
+    "onYomi": "サイ",
     "example": "**菜** をれんしゅうしましょう。"
   },
   {
     "char": "最",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "もっと-も",
+    "onYomi": "サイ",
     "example": "**最** をれんしゅうしましょう。"
   },
   {
     "char": "埼",
-    "kunYomi": "—",
+    "kunYomi": "さい",
     "onYomi": "—",
     "example": "**埼** をれんしゅうしましょう。"
   },
   {
     "char": "材",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ザイ",
     "example": "**材** をれんしゅうしましょう。"
   },
   {
     "char": "崎",
-    "kunYomi": "—",
+    "kunYomi": "さき",
     "onYomi": "—",
     "example": "**崎** をれんしゅうしましょう。"
   },
   {
     "char": "昨",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "サク",
     "example": "**昨** をれんしゅうしましょう。"
   },
   {
     "char": "札",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ふだ",
+    "onYomi": "サツ",
     "example": "**札** をれんしゅうしましょう。"
   },
   {
     "char": "刷",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "す-る",
+    "onYomi": "サツ",
     "example": "**刷** をれんしゅうしましょう。"
   },
   {
     "char": "察",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "サツ",
     "example": "**察** をれんしゅうしましょう。"
   },
   {
     "char": "参",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "まい-る",
+    "onYomi": "サン",
     "example": "**参** をれんしゅうしましょう。"
   },
   {
     "char": "産",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "う-む・う-まれる",
+    "onYomi": "サン",
     "example": "**産** をれんしゅうしましょう。"
   },
   {
     "char": "散",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ち-る・ち-らす・ち-らかす・ち-らかる",
+    "onYomi": "サン",
     "example": "**散** をれんしゅうしましょう。"
   },
   {
     "char": "残",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "のこ-る・のこ-す",
+    "onYomi": "ザン",
     "example": "**残** をれんしゅうしましょう。"
   },
   {
     "char": "氏",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シ",
     "example": "**氏** をれんしゅうしましょう。"
   },
   {
     "char": "司",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シ",
     "example": "**司** をれんしゅうしましょう。"
   },
   {
     "char": "試",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "こころ-みる",
+    "onYomi": "シ",
     "example": "**試** をれんしゅうしましょう。"
   },
   {
     "char": "児",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ジ",
     "example": "**児** をれんしゅうしましょう。"
   },
   {
     "char": "治",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "おさ-める・おさ-まる・なお-る・なお-す",
+    "onYomi": "ジ・チ",
     "example": "**治** をれんしゅうしましょう。"
   },
   {
     "char": "滋",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ジ",
     "example": "**滋** をれんしゅうしましょう。"
   },
   {
     "char": "辞",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ジ",
     "example": "**辞** をれんしゅうしましょう。"
   },
   {
     "char": "鹿",
-    "kunYomi": "—",
+    "kunYomi": "しか・か",
     "onYomi": "—",
     "example": "**鹿** をれんしゅうしましょう。"
   },
   {
     "char": "失",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "うしな-う",
+    "onYomi": "シツ",
     "example": "**失** をれんしゅうしましょう。"
   },
   {
     "char": "借",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "か-りる",
+    "onYomi": "シャク",
     "example": "**借** をれんしゅうしましょう。"
   },
   {
     "char": "種",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たね",
+    "onYomi": "シュ",
     "example": "**種** をれんしゅうしましょう。"
   },
   {
     "char": "周",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "まわ-り",
+    "onYomi": "シュウ",
     "example": "**周** をれんしゅうしましょう。"
   },
   {
     "char": "祝",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "いわ-う",
+    "onYomi": "シュク",
     "example": "**祝** をれんしゅうしましょう。"
   },
   {
     "char": "順",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ジュン",
     "example": "**順** をれんしゅうしましょう。"
   },
   {
     "char": "初",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "はじ-め・はじ-めて・はつ",
+    "onYomi": "ショ",
     "example": "**初** をれんしゅうしましょう。"
   },
   {
     "char": "松",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "まつ",
+    "onYomi": "ショウ",
     "example": "**松** をれんしゅうしましょう。"
   },
   {
     "char": "笑",
-    "kunYomi": "—",
+    "kunYomi": "わら-う",
     "onYomi": "—",
     "example": "**笑** をれんしゅうしましょう。"
   },
   {
     "char": "唱",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "とな-える",
+    "onYomi": "ショウ",
     "example": "**唱** をれんしゅうしましょう。"
   },
   {
     "char": "焼",
-    "kunYomi": "—",
+    "kunYomi": "や-く・や-ける",
     "onYomi": "—",
     "example": "**焼** をれんしゅうしましょう。"
   },
   {
     "char": "照",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "て-る・て-らす・て-れる",
+    "onYomi": "ショウ",
     "example": "**照** をれんしゅうしましょう。"
   },
   {
     "char": "城",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "しろ",
+    "onYomi": "ジョウ",
     "example": "**城** をれんしゅうしましょう。"
   },
   {
     "char": "縄",
-    "kunYomi": "—",
+    "kunYomi": "なわ",
     "onYomi": "—",
     "example": "**縄** をれんしゅうしましょう。"
   },
   {
     "char": "臣",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シン・ジン",
     "example": "**臣** をれんしゅうしましょう。"
   },
   {
     "char": "信",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シン",
     "example": "**信** をれんしゅうしましょう。"
   },
   {
     "char": "井",
-    "kunYomi": "—",
+    "kunYomi": "い",
     "onYomi": "—",
     "example": "**井** をれんしゅうしましょう。"
   },
   {
     "char": "成",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "な-る・な-す",
+    "onYomi": "セイ",
     "example": "**成** をれんしゅうしましょう。"
   },
   {
     "char": "省",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "はぶ-く",
+    "onYomi": "セイ・ショウ",
     "example": "**省** をれんしゅうしましょう。"
   },
   {
     "char": "清",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "きよ-い・きよ-まる・きよ-める",
+    "onYomi": "セイ",
     "example": "**清** をれんしゅうしましょう。"
   },
   {
     "char": "静",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "しず・しず-か・しず-まる・しず-める",
+    "onYomi": "セイ",
     "example": "**静** をれんしゅうしましょう。"
   },
   {
     "char": "席",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "セキ",
     "example": "**席** をれんしゅうしましょう。"
   },
   {
     "char": "積",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つ-む・つ-もる",
+    "onYomi": "セキ",
     "example": "**積** をれんしゅうしましょう。"
   },
   {
     "char": "折",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "お-る・おり・お-れる",
+    "onYomi": "セツ",
     "example": "**折** をれんしゅうしましょう。"
   },
   {
     "char": "節",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ふし",
+    "onYomi": "セツ",
     "example": "**節** をれんしゅうしましょう。"
   },
   {
     "char": "説",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "と-く",
+    "onYomi": "セツ",
     "example": "**説** をれんしゅうしましょう。"
   },
   {
     "char": "浅",
-    "kunYomi": "—",
+    "kunYomi": "あさ-い",
     "onYomi": "—",
     "example": "**浅** をれんしゅうしましょう。"
   },
   {
     "char": "戦",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たたか-う",
+    "onYomi": "セン",
     "example": "**戦** をれんしゅうしましょう。"
   },
   {
     "char": "選",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "えら-ぶ",
+    "onYomi": "セン",
     "example": "**選** をれんしゅうしましょう。"
   },
   {
     "char": "然",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ゼン・ネン",
     "example": "**然** をれんしゅうしましょう。"
   },
   {
     "char": "争",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あらそ-う",
+    "onYomi": "ソウ",
     "example": "**争** をれんしゅうしましょう。"
   },
   {
     "char": "倉",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "くら",
+    "onYomi": "ソウ",
     "example": "**倉** をれんしゅうしましょう。"
   },
   {
     "char": "巣",
-    "kunYomi": "—",
+    "kunYomi": "す",
     "onYomi": "—",
     "example": "**巣** をれんしゅうしましょう。"
   },
   {
     "char": "束",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たば",
+    "onYomi": "ソク",
     "example": "**束** をれんしゅうしましょう。"
   },
   {
     "char": "側",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "がわ",
+    "onYomi": "ソク",
     "example": "**側** をれんしゅうしましょう。"
   },
   {
     "char": "続",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つづ-く・つづ-ける",
+    "onYomi": "ゾク",
     "example": "**続** をれんしゅうしましょう。"
   },
   {
     "char": "卒",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ソツ",
     "example": "**卒** をれんしゅうしましょう。"
   },
   {
     "char": "孫",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "まご",
+    "onYomi": "ソン",
     "example": "**孫** をれんしゅうしましょう。"
   },
   {
     "char": "帯",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "お-びる・おび",
+    "onYomi": "タイ",
     "example": "**帯** をれんしゅうしましょう。"
   },
   {
     "char": "隊",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "タイ",
     "example": "**隊** をれんしゅうしましょう。"
   },
   {
     "char": "達",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "タツ",
     "example": "**達** をれんしゅうしましょう。"
   },
   {
     "char": "単",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "タン",
     "example": "**単** をれんしゅうしましょう。"
   },
   {
     "char": "置",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "お-く",
+    "onYomi": "チ",
     "example": "**置** をれんしゅうしましょう。"
   },
   {
     "char": "仲",
-    "kunYomi": "—",
+    "kunYomi": "なか",
     "onYomi": "—",
     "example": "**仲** をれんしゅうしましょう。"
   },
   {
     "char": "沖",
-    "kunYomi": "—",
+    "kunYomi": "おき",
     "onYomi": "—",
     "example": "**沖** をれんしゅうしましょう。"
   },
   {
     "char": "兆",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "チョウ",
     "example": "**兆** をれんしゅうしましょう。"
   },
   {
     "char": "低",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ひく-い・ひく-める・ひく-まる",
+    "onYomi": "テイ",
     "example": "**低** をれんしゅうしましょう。"
   },
   {
     "char": "底",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "そこ",
+    "onYomi": "テイ",
     "example": "**底** をれんしゅうしましょう。"
   },
   {
     "char": "的",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "まと",
+    "onYomi": "テキ",
     "example": "**的** をれんしゅうしましょう。"
   },
   {
     "char": "典",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "テン",
     "example": "**典** をれんしゅうしましょう。"
   },
   {
     "char": "伝",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つた-わる・つた-える・つた-う",
+    "onYomi": "デン",
     "example": "**伝** をれんしゅうしましょう。"
   },
   {
     "char": "徒",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ト",
     "example": "**徒** をれんしゅうしましょう。"
   },
   {
     "char": "努",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つと-める",
+    "onYomi": "ド",
     "example": "**努** をれんしゅうしましょう。"
   },
   {
     "char": "灯",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "トウ",
     "example": "**灯** をれんしゅうしましょう。"
   },
   {
     "char": "働",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "はたら-く",
+    "onYomi": "ドウ",
     "example": "**働** をれんしゅうしましょう。"
   },
   {
     "char": "特",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "トク",
     "example": "**特** をれんしゅうしましょう。"
   },
   {
     "char": "徳",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "トク",
     "example": "**徳** をれんしゅうしましょう。"
   },
   {
     "char": "栃",
-    "kunYomi": "—",
+    "kunYomi": "とち",
     "onYomi": "—",
     "example": "**栃** をれんしゅうしましょう。"
   },
   {
     "char": "奈",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ナ",
     "example": "**奈** をれんしゅうしましょう。"
   },
   {
     "char": "梨",
-    "kunYomi": "—",
+    "kunYomi": "なし",
     "onYomi": "—",
     "example": "**梨** をれんしゅうしましょう。"
   },
   {
     "char": "熱",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あつ-い",
+    "onYomi": "ネツ",
     "example": "**熱** をれんしゅうしましょう。"
   },
   {
     "char": "念",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ネン",
     "example": "**念** をれんしゅうしましょう。"
   },
   {
     "char": "敗",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "やぶ-れる",
+    "onYomi": "ハイ",
     "example": "**敗** をれんしゅうしましょう。"
   },
   {
     "char": "梅",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "うめ",
+    "onYomi": "バイ",
     "example": "**梅** をれんしゅうしましょう。"
   },
   {
     "char": "博",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ハク",
     "example": "**博** をれんしゅうしましょう。"
   },
   {
     "char": "阪",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ハン",
     "example": "**阪** をれんしゅうしましょう。"
   },
   {
     "char": "飯",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "めし",
+    "onYomi": "ハン",
     "example": "**飯** をれんしゅうしましょう。"
   },
   {
     "char": "飛",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "と-ぶ・と-ばす",
+    "onYomi": "ヒ",
     "example": "**飛** をれんしゅうしましょう。"
   },
   {
     "char": "必",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かなら-ず",
+    "onYomi": "ヒツ",
     "example": "**必** をれんしゅうしましょう。"
   },
   {
     "char": "票",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヒョウ",
     "example": "**票** をれんしゅうしましょう。"
   },
   {
     "char": "標",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヒョウ",
     "example": "**標** をれんしゅうしましょう。"
   },
   {
     "char": "不",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "フ・ブ",
     "example": "**不** をれんしゅうしましょう。"
   },
   {
     "char": "夫",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "おっと",
+    "onYomi": "フ",
     "example": "**夫** をれんしゅうしましょう。"
   },
   {
     "char": "付",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つ-ける・つ-く",
+    "onYomi": "フ",
     "example": "**付** をれんしゅうしましょう。"
   },
   {
     "char": "府",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "フ",
     "example": "**府** をれんしゅうしましょう。"
   },
   {
     "char": "阜",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "フ",
     "example": "**阜** をれんしゅうしましょう。"
   },
   {
     "char": "富",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "と-む・とみ",
+    "onYomi": "フ",
     "example": "**富** をれんしゅうしましょう。"
   },
   {
     "char": "副",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "フク",
     "example": "**副** をれんしゅうしましょう。"
   },
   {
     "char": "兵",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヘイ・ヒョウ",
     "example": "**兵** をれんしゅうしましょう。"
   },
   {
     "char": "別",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "わか-れる",
+    "onYomi": "ベツ",
     "example": "**別** をれんしゅうしましょう。"
   },
   {
     "char": "辺",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あた-り・べ",
+    "onYomi": "ヘン",
     "example": "**辺** をれんしゅうしましょう。"
   },
   {
     "char": "変",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "か-わる・か-える",
+    "onYomi": "ヘン",
     "example": "**変** をれんしゅうしましょう。"
   },
   {
     "char": "便",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たよ-り",
+    "onYomi": "ベン・ビン",
     "example": "**便** をれんしゅうしましょう。"
   },
   {
     "char": "包",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つつ-む",
+    "onYomi": "ホウ",
     "example": "**包** をれんしゅうしましょう。"
   },
   {
     "char": "法",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ホウ",
     "example": "**法** をれんしゅうしましょう。"
   },
   {
     "char": "望",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "のぞ-む",
+    "onYomi": "ボウ",
     "example": "**望** をれんしゅうしましょう。"
   },
   {
     "char": "牧",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ボク",
     "example": "**牧** をれんしゅうしましょう。"
   },
   {
     "char": "末",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "すえ",
+    "onYomi": "マツ",
     "example": "**末** をれんしゅうしましょう。"
   },
   {
     "char": "満",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "み-ちる・み-たす",
+    "onYomi": "マン",
     "example": "**満** をれんしゅうしましょう。"
   },
   {
     "char": "未",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ミ",
     "example": "**未** をれんしゅうしましょう。"
   },
   {
     "char": "民",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ミン",
     "example": "**民** をれんしゅうしましょう。"
   },
   {
     "char": "無",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "な-い",
+    "onYomi": "ム・ブ",
     "example": "**無** をれんしゅうしましょう。"
   },
   {
     "char": "約",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヤク",
     "example": "**約** をれんしゅうしましょう。"
   },
   {
     "char": "勇",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "いさ-む",
+    "onYomi": "ユウ",
     "example": "**勇** をれんしゅうしましょう。"
   },
   {
     "char": "要",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かなめ",
+    "onYomi": "ヨウ",
     "example": "**要** をれんしゅうしましょう。"
   },
   {
     "char": "養",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "やしな-う",
+    "onYomi": "ヨウ",
     "example": "**養** をれんしゅうしましょう。"
   },
   {
     "char": "浴",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あ-びる・あ-びせる",
+    "onYomi": "ヨク",
     "example": "**浴** をれんしゅうしましょう。"
   },
   {
     "char": "利",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "リ",
     "example": "**利** をれんしゅうしましょう。"
   },
   {
     "char": "陸",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "リク",
     "example": "**陸** をれんしゅうしましょう。"
   },
   {
     "char": "良",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "よ-い",
+    "onYomi": "リョウ",
     "example": "**良** をれんしゅうしましょう。"
   },
   {
     "char": "料",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "リョウ",
     "example": "**料** をれんしゅうしましょう。"
   },
   {
     "char": "量",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "はか-る",
+    "onYomi": "リョウ",
     "example": "**量** をれんしゅうしましょう。"
   },
   {
     "char": "輪",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "わ",
+    "onYomi": "リン",
     "example": "**輪** をれんしゅうしましょう。"
   },
   {
     "char": "類",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たぐ-い",
+    "onYomi": "ルイ",
     "example": "**類** をれんしゅうしましょう。"
   },
   {
     "char": "令",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "レイ",
     "example": "**令** をれんしゅうしましょう。"
   },
   {
     "char": "冷",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つめ-たい・ひ-える・ひ-や・ひ-やす・ひ-やかす・さ-める・さ-ます",
+    "onYomi": "レイ",
     "example": "**冷** をれんしゅうしましょう。"
   },
   {
     "char": "例",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たと-える",
+    "onYomi": "レイ",
     "example": "**例** をれんしゅうしましょう。"
   },
   {
     "char": "連",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つら-なる・つら-ねる・つ-れる",
+    "onYomi": "レン",
     "example": "**連** をれんしゅうしましょう。"
   },
   {
     "char": "老",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "お-いる",
+    "onYomi": "ロウ",
     "example": "**老** をれんしゅうしましょう。"
   },
   {
     "char": "労",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ロウ",
     "example": "**労** をれんしゅうしましょう。"
   },
   {
     "char": "録",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ロク",
     "example": "**録** をれんしゅうしましょう。"
   },
   {
     "char": "圧",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "アツ",
     "example": "**圧** をれんしゅうしましょう。"
   },
   {
     "char": "囲",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かこ-む・かこ-う",
+    "onYomi": "イ",
     "example": "**囲** をれんしゅうしましょう。"
   },
   {
     "char": "移",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "うつ-る・うつ-す",
+    "onYomi": "イ",
     "example": "**移** をれんしゅうしましょう。"
   },
   {
     "char": "因",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "イン",
     "example": "**因** をれんしゅうしましょう。"
   },
   {
     "char": "永",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "なが-い",
+    "onYomi": "エイ",
     "example": "**永** をれんしゅうしましょう。"
   },
   {
     "char": "営",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "いとな-む",
+    "onYomi": "エイ",
     "example": "**営** をれんしゅうしましょう。"
   },
   {
     "char": "衛",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "エイ",
     "example": "**衛** をれんしゅうしましょう。"
   },
   {
     "char": "易",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "やさ-しい",
+    "onYomi": "エキ・イ",
     "example": "**易** をれんしゅうしましょう。"
   },
   {
     "char": "益",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "エキ",
     "example": "**益** をれんしゅうしましょう。"
   },
   {
     "char": "液",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "エキ",
     "example": "**液** をれんしゅうしましょう。"
   },
   {
     "char": "演",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "エン",
     "example": "**演** をれんしゅうしましょう。"
   },
   {
     "char": "応",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "こた-える",
+    "onYomi": "オウ",
     "example": "**応** をれんしゅうしましょう。"
   },
   {
     "char": "往",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "オウ",
     "example": "**往** をれんしゅうしましょう。"
   },
   {
     "char": "桜",
-    "kunYomi": "—",
+    "kunYomi": "さくら",
     "onYomi": "—",
     "example": "**桜** をれんしゅうしましょう。"
   },
   {
     "char": "可",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カ",
     "example": "**可** をれんしゅうしましょう。"
   },
   {
     "char": "仮",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かり",
+    "onYomi": "カ",
     "example": "**仮** をれんしゅうしましょう。"
   },
   {
     "char": "価",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カ",
     "example": "**価** をれんしゅうしましょう。"
   },
   {
     "char": "河",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かわ",
+    "onYomi": "カ",
     "example": "**河** をれんしゅうしましょう。"
   },
   {
     "char": "過",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "す-ぎる・す-ごす",
+    "onYomi": "カ",
     "example": "**過** をれんしゅうしましょう。"
   },
   {
     "char": "快",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "こころよ-い",
+    "onYomi": "カイ",
     "example": "**快** をれんしゅうしましょう。"
   },
   {
     "char": "解",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "と-く・と-かす・と-ける",
+    "onYomi": "カイ",
     "example": "**解** をれんしゅうしましょう。"
   },
   {
     "char": "格",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カク",
     "example": "**格** をれんしゅうしましょう。"
   },
   {
     "char": "確",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たし-か・たし-かめる",
+    "onYomi": "カク",
     "example": "**確** をれんしゅうしましょう。"
   },
   {
     "char": "額",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ひたい",
+    "onYomi": "ガク",
     "example": "**額** をれんしゅうしましょう。"
   },
   {
     "char": "刊",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カン",
     "example": "**刊** をれんしゅうしましょう。"
   },
   {
     "char": "幹",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "みき",
+    "onYomi": "カン",
     "example": "**幹** をれんしゅうしましょう。"
   },
   {
     "char": "慣",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "な-れる・な-らす",
+    "onYomi": "カン",
     "example": "**慣** をれんしゅうしましょう。"
   },
   {
     "char": "眼",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ガン",
     "example": "**眼** をれんしゅうしましょう。"
   },
   {
     "char": "紀",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キ",
     "example": "**紀** をれんしゅうしましょう。"
   },
   {
     "char": "基",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キ",
     "example": "**基** をれんしゅうしましょう。"
   },
   {
     "char": "寄",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "よ-る・よ-せる",
+    "onYomi": "キ",
     "example": "**寄** をれんしゅうしましょう。"
   },
   {
     "char": "規",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キ",
     "example": "**規** をれんしゅうしましょう。"
   },
   {
     "char": "喜",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "よろこ-ぶ",
+    "onYomi": "キ",
     "example": "**喜** をれんしゅうしましょう。"
   },
   {
     "char": "技",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ギ",
     "example": "**技** をれんしゅうしましょう。"
   },
   {
     "char": "義",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ギ",
     "example": "**義** をれんしゅうしましょう。"
   },
   {
     "char": "逆",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "さか・さか-らう",
+    "onYomi": "ギャク",
     "example": "**逆** をれんしゅうしましょう。"
   },
   {
     "char": "久",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ひさ-しい",
+    "onYomi": "キュウ",
     "example": "**久** をれんしゅうしましょう。"
   },
   {
     "char": "旧",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キュウ",
     "example": "**旧** をれんしゅうしましょう。"
   },
   {
     "char": "救",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "すく-う",
+    "onYomi": "キュウ",
     "example": "**救** をれんしゅうしましょう。"
   },
   {
     "char": "居",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "い-る",
+    "onYomi": "キョ",
     "example": "**居** をれんしゅうしましょう。"
   },
   {
     "char": "許",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ゆる-す",
+    "onYomi": "キョ",
     "example": "**許** をれんしゅうしましょう。"
   },
   {
     "char": "境",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "さかい",
+    "onYomi": "キョウ",
     "example": "**境** をれんしゅうしましょう。"
   },
   {
     "char": "均",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キン",
     "example": "**均** をれんしゅうしましょう。"
   },
   {
     "char": "禁",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キン",
     "example": "**禁** をれんしゅうしましょう。"
   },
   {
     "char": "句",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ク",
     "example": "**句** をれんしゅうしましょう。"
   },
   {
     "char": "型",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かた",
+    "onYomi": "ケイ",
     "example": "**型** をれんしゅうしましょう。"
   },
   {
     "char": "経",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "へ-る",
+    "onYomi": "ケイ",
     "example": "**経** をれんしゅうしましょう。"
   },
   {
     "char": "潔",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ケツ",
     "example": "**潔** をれんしゅうしましょう。"
   },
   {
     "char": "件",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ケン",
     "example": "**件** をれんしゅうしましょう。"
   },
   {
     "char": "険",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "けわ-しい",
+    "onYomi": "ケン",
     "example": "**険** をれんしゅうしましょう。"
   },
   {
     "char": "検",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ケン",
     "example": "**検** をれんしゅうしましょう。"
   },
   {
     "char": "限",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かぎ-る",
+    "onYomi": "ゲン",
     "example": "**限** をれんしゅうしましょう。"
   },
   {
     "char": "現",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あらわ-れる・あらわ-す",
+    "onYomi": "ゲン",
     "example": "**現** をれんしゅうしましょう。"
   },
   {
     "char": "減",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "へ-る・へ-らす",
+    "onYomi": "ゲン",
     "example": "**減** をれんしゅうしましょう。"
   },
   {
     "char": "故",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "コ",
     "example": "**故** をれんしゅうしましょう。"
   },
   {
     "char": "個",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "コ",
     "example": "**個** をれんしゅうしましょう。"
   },
   {
     "char": "護",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ゴ",
     "example": "**護** をれんしゅうしましょう。"
   },
   {
     "char": "効",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "き-く",
+    "onYomi": "コウ",
     "example": "**効** をれんしゅうしましょう。"
   },
   {
     "char": "厚",
-    "kunYomi": "—",
+    "kunYomi": "あつ-い",
     "onYomi": "—",
     "example": "**厚** をれんしゅうしましょう。"
   },
   {
     "char": "耕",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たがや-す",
+    "onYomi": "コウ",
     "example": "**耕** をれんしゅうしましょう。"
   },
   {
     "char": "航",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "コウ",
     "example": "**航** をれんしゅうしましょう。"
   },
   {
     "char": "鉱",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "コウ",
     "example": "**鉱** をれんしゅうしましょう。"
   },
   {
     "char": "構",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かま-える・かま-う",
+    "onYomi": "コウ",
     "example": "**構** をれんしゅうしましょう。"
   },
   {
     "char": "興",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "コウ・キョウ",
     "example": "**興** をれんしゅうしましょう。"
   },
   {
     "char": "講",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "コウ",
     "example": "**講** をれんしゅうしましょう。"
   },
   {
     "char": "告",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つ-げる",
+    "onYomi": "コク",
     "example": "**告** をれんしゅうしましょう。"
   },
   {
     "char": "混",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ま-じる・ま-ざる・ま-ぜる・こ-む",
+    "onYomi": "コン",
     "example": "**混** をれんしゅうしましょう。"
   },
   {
     "char": "査",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "サ",
     "example": "**査** をれんしゅうしましょう。"
   },
   {
     "char": "再",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ふたた-び",
+    "onYomi": "サイ・サ",
     "example": "**再** をれんしゅうしましょう。"
   },
   {
     "char": "災",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "サイ",
     "example": "**災** をれんしゅうしましょう。"
   },
   {
     "char": "妻",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つま",
+    "onYomi": "サイ",
     "example": "**妻** をれんしゅうしましょう。"
   },
   {
     "char": "採",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "と-る",
+    "onYomi": "サイ",
     "example": "**採** をれんしゅうしましょう。"
   },
   {
     "char": "際",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "サイ",
     "example": "**際** をれんしゅうしましょう。"
   },
   {
     "char": "在",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あ-る",
+    "onYomi": "ザイ",
     "example": "**在** をれんしゅうしましょう。"
   },
   {
     "char": "財",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ザイ",
     "example": "**財** をれんしゅうしましょう。"
   },
   {
     "char": "罪",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つみ",
+    "onYomi": "ザイ",
     "example": "**罪** をれんしゅうしましょう。"
   },
   {
     "char": "殺",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ころ-す",
+    "onYomi": "サツ",
     "example": "**殺** をれんしゅうしましょう。"
   },
   {
     "char": "雑",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ザツ・ゾウ",
     "example": "**雑** をれんしゅうしましょう。"
   },
   {
     "char": "酸",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "サン",
     "example": "**酸** をれんしゅうしましょう。"
   },
   {
     "char": "賛",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "サン",
     "example": "**賛** をれんしゅうしましょう。"
   },
   {
     "char": "士",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シ",
     "example": "**士** をれんしゅうしましょう。"
   },
   {
     "char": "支",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ささ-える",
+    "onYomi": "シ",
     "example": "**支** をれんしゅうしましょう。"
   },
   {
     "char": "史",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シ",
     "example": "**史** をれんしゅうしましょう。"
   },
   {
     "char": "志",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "こころざ-す・こころざし",
+    "onYomi": "シ",
     "example": "**志** をれんしゅうしましょう。"
   },
   {
     "char": "枝",
-    "kunYomi": "—",
+    "kunYomi": "えだ",
     "onYomi": "—",
     "example": "**枝** をれんしゅうしましょう。"
   },
   {
     "char": "師",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シ",
     "example": "**師** をれんしゅうしましょう。"
   },
   {
     "char": "資",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シ",
     "example": "**資** をれんしゅうしましょう。"
   },
   {
     "char": "飼",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "か-う",
+    "onYomi": "シ",
     "example": "**飼** をれんしゅうしましょう。"
   },
   {
     "char": "示",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "しめ-す",
+    "onYomi": "ジ",
     "example": "**示** をれんしゅうしましょう。"
   },
   {
     "char": "似",
-    "kunYomi": "—",
+    "kunYomi": "に-る",
     "onYomi": "—",
     "example": "**似** をれんしゅうしましょう。"
   },
   {
     "char": "識",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シキ",
     "example": "**識** をれんしゅうしましょう。"
   },
   {
     "char": "質",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シツ",
     "example": "**質** をれんしゅうしましょう。"
   },
   {
     "char": "舎",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シャ",
     "example": "**舎** をれんしゅうしましょう。"
   },
   {
     "char": "謝",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シャ",
     "example": "**謝** をれんしゅうしましょう。"
   },
   {
     "char": "授",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ジュ",
     "example": "**授** をれんしゅうしましょう。"
   },
   {
     "char": "修",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "おさ-める・おさ-まる",
+    "onYomi": "シュウ",
     "example": "**修** をれんしゅうしましょう。"
   },
   {
     "char": "述",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "の-べる",
+    "onYomi": "ジュツ",
     "example": "**述** をれんしゅうしましょう。"
   },
   {
     "char": "術",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ジュツ",
     "example": "**術** をれんしゅうしましょう。"
   },
   {
     "char": "準",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ジュン",
     "example": "**準** をれんしゅうしましょう。"
   },
   {
     "char": "序",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ジョ",
     "example": "**序** をれんしゅうしましょう。"
   },
   {
     "char": "招",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "まね-く",
+    "onYomi": "ショウ",
     "example": "**招** をれんしゅうしましょう。"
   },
   {
     "char": "証",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ショウ",
     "example": "**証** をれんしゅうしましょう。"
   },
   {
     "char": "象",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ショウ・ゾウ",
     "example": "**象** をれんしゅうしましょう。"
   },
   {
     "char": "賞",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ショウ",
     "example": "**賞** をれんしゅうしましょう。"
   },
   {
     "char": "条",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ジョウ",
     "example": "**条** をれんしゅうしましょう。"
   },
   {
     "char": "状",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ジョウ",
     "example": "**状** をれんしゅうしましょう。"
   },
   {
     "char": "常",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つね",
+    "onYomi": "ジョウ",
     "example": "**常** をれんしゅうしましょう。"
   },
   {
     "char": "情",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "なさ-け",
+    "onYomi": "ジョウ",
     "example": "**情** をれんしゅうしましょう。"
   },
   {
     "char": "織",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "お-る",
+    "onYomi": "シキ",
     "example": "**織** をれんしゅうしましょう。"
   },
   {
     "char": "職",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ショク",
     "example": "**職** をれんしゅうしましょう。"
   },
   {
     "char": "制",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "セイ",
     "example": "**制** をれんしゅうしましょう。"
   },
   {
     "char": "性",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "セイ",
     "example": "**性** をれんしゅうしましょう。"
   },
   {
     "char": "政",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "セイ",
     "example": "**政** をれんしゅうしましょう。"
   },
   {
     "char": "勢",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "いきお-い",
+    "onYomi": "セイ",
     "example": "**勢** をれんしゅうしましょう。"
   },
   {
     "char": "精",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "セイ",
     "example": "**精** をれんしゅうしましょう。"
   },
   {
     "char": "製",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "セイ",
     "example": "**製** をれんしゅうしましょう。"
   },
   {
     "char": "税",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ゼイ",
     "example": "**税** をれんしゅうしましょう。"
   },
   {
     "char": "責",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "せ-める",
+    "onYomi": "セキ",
     "example": "**責** をれんしゅうしましょう。"
   },
   {
     "char": "績",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "セキ",
     "example": "**績** をれんしゅうしましょう。"
   },
   {
     "char": "接",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "セツ",
     "example": "**接** をれんしゅうしましょう。"
   },
   {
     "char": "設",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "もう-ける",
+    "onYomi": "セツ",
     "example": "**設** をれんしゅうしましょう。"
   },
   {
     "char": "絶",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "た-える・た-やす・た-つ",
+    "onYomi": "ゼツ",
     "example": "**絶** をれんしゅうしましょう。"
   },
   {
     "char": "祖",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ソ",
     "example": "**祖** をれんしゅうしましょう。"
   },
   {
     "char": "素",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ソ",
     "example": "**素** をれんしゅうしましょう。"
   },
   {
     "char": "総",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ソウ",
     "example": "**総** をれんしゅうしましょう。"
   },
   {
     "char": "造",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つく-る",
+    "onYomi": "ゾウ",
     "example": "**造** をれんしゅうしましょう。"
   },
   {
     "char": "像",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ゾウ",
     "example": "**像** をれんしゅうしましょう。"
   },
   {
     "char": "増",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ま-す・ふ-える・ふ-やす",
+    "onYomi": "ゾウ",
     "example": "**増** をれんしゅうしましょう。"
   },
   {
     "char": "則",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ソク",
     "example": "**則** をれんしゅうしましょう。"
   },
   {
     "char": "測",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "はか-る",
+    "onYomi": "ソク",
     "example": "**測** をれんしゅうしましょう。"
   },
   {
     "char": "属",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ゾク",
     "example": "**属** をれんしゅうしましょう。"
   },
   {
     "char": "率",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ひき-いる",
+    "onYomi": "リツ",
     "example": "**率** をれんしゅうしましょう。"
   },
   {
     "char": "損",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ソン",
     "example": "**損** をれんしゅうしましょう。"
   },
   {
     "char": "貸",
-    "kunYomi": "—",
+    "kunYomi": "か-す",
     "onYomi": "—",
     "example": "**貸** をれんしゅうしましょう。"
   },
   {
     "char": "態",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "タイ",
     "example": "**態** をれんしゅうしましょう。"
   },
   {
     "char": "団",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ダン",
     "example": "**団** をれんしゅうしましょう。"
   },
   {
     "char": "断",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ことわ-る",
+    "onYomi": "ダン",
     "example": "**断** をれんしゅうしましょう。"
   },
   {
     "char": "築",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "きず-く",
+    "onYomi": "チク",
     "example": "**築** をれんしゅうしましょう。"
   },
   {
     "char": "貯",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "チョ",
     "example": "**貯** をれんしゅうしましょう。"
   },
   {
     "char": "張",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "は-る",
+    "onYomi": "チョウ",
     "example": "**張** をれんしゅうしましょう。"
   },
   {
     "char": "停",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "テイ",
     "example": "**停** をれんしゅうしましょう。"
   },
   {
     "char": "提",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "テイ",
     "example": "**提** をれんしゅうしましょう。"
   },
   {
     "char": "程",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "テイ",
     "example": "**程** をれんしゅうしましょう。"
   },
   {
     "char": "適",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "テキ",
     "example": "**適** をれんしゅうしましょう。"
   },
   {
     "char": "統",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "トウ",
     "example": "**統** をれんしゅうしましょう。"
   },
   {
     "char": "堂",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ドウ",
     "example": "**堂** をれんしゅうしましょう。"
   },
   {
     "char": "銅",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ドウ",
     "example": "**銅** をれんしゅうしましょう。"
   },
   {
     "char": "導",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "みちび-く",
+    "onYomi": "ドウ",
     "example": "**導** をれんしゅうしましょう。"
   },
   {
     "char": "得",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "え-る",
+    "onYomi": "トク",
     "example": "**得** をれんしゅうしましょう。"
   },
   {
     "char": "毒",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ドク",
     "example": "**毒** をれんしゅうしましょう。"
   },
   {
     "char": "独",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ひと-り",
+    "onYomi": "ドク",
     "example": "**独** をれんしゅうしましょう。"
   },
   {
     "char": "任",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "まか-せる・まか-す",
+    "onYomi": "ニン",
     "example": "**任** をれんしゅうしましょう。"
   },
   {
     "char": "燃",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "も-える・も-やす・も-す",
+    "onYomi": "ネン",
     "example": "**燃** をれんしゅうしましょう。"
   },
   {
     "char": "能",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ノウ",
     "example": "**能** をれんしゅうしましょう。"
   },
   {
     "char": "破",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "やぶ-る・やぶ-れる",
+    "onYomi": "ハ",
     "example": "**破** をれんしゅうしましょう。"
   },
   {
     "char": "犯",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ハン",
     "example": "**犯** をれんしゅうしましょう。"
   },
   {
     "char": "判",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ハン・バン",
     "example": "**判** をれんしゅうしましょう。"
   },
   {
     "char": "版",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ハン",
     "example": "**版** をれんしゅうしましょう。"
   },
   {
     "char": "比",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "くら-べる",
+    "onYomi": "ヒ",
     "example": "**比** をれんしゅうしましょう。"
   },
   {
     "char": "肥",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "こ-える・こえ・こ-やす・こ-やし",
+    "onYomi": "ヒ",
     "example": "**肥** をれんしゅうしましょう。"
   },
   {
     "char": "非",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヒ",
     "example": "**非** をれんしゅうしましょう。"
   },
   {
     "char": "費",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヒ",
     "example": "**費** をれんしゅうしましょう。"
   },
   {
     "char": "備",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "そな-える・そな-わる",
+    "onYomi": "ビ",
     "example": "**備** をれんしゅうしましょう。"
   },
   {
     "char": "評",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヒョウ",
     "example": "**評** をれんしゅうしましょう。"
   },
   {
     "char": "貧",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "まず-しい",
+    "onYomi": "ビン",
     "example": "**貧** をれんしゅうしましょう。"
   },
   {
     "char": "布",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ぬの",
+    "onYomi": "フ",
     "example": "**布** をれんしゅうしましょう。"
   },
   {
     "char": "婦",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "フ",
     "example": "**婦** をれんしゅうしましょう。"
   },
   {
     "char": "武",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ブ・ム",
     "example": "**武** をれんしゅうしましょう。"
   },
   {
     "char": "復",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "フク",
     "example": "**復** をれんしゅうしましょう。"
   },
   {
     "char": "複",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "フク",
     "example": "**複** をれんしゅうしましょう。"
   },
   {
     "char": "仏",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ほとけ",
+    "onYomi": "ブツ",
     "example": "**仏** をれんしゅうしましょう。"
   },
   {
     "char": "粉",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "こ・こな",
+    "onYomi": "フン",
     "example": "**粉** をれんしゅうしましょう。"
   },
   {
     "char": "編",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あ-む",
+    "onYomi": "ヘン",
     "example": "**編** をれんしゅうしましょう。"
   },
   {
     "char": "弁",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ベン",
     "example": "**弁** をれんしゅうしましょう。"
   },
   {
     "char": "保",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たも-つ",
+    "onYomi": "ホ",
     "example": "**保** をれんしゅうしましょう。"
   },
   {
     "char": "墓",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "はか",
+    "onYomi": "ボ",
     "example": "**墓** をれんしゅうしましょう。"
   },
   {
     "char": "報",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ホウ",
     "example": "**報** をれんしゅうしましょう。"
   },
   {
     "char": "豊",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ゆた-か",
+    "onYomi": "ホウ",
     "example": "**豊** をれんしゅうしましょう。"
   },
   {
     "char": "防",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ふせ-ぐ",
+    "onYomi": "ボウ",
     "example": "**防** をれんしゅうしましょう。"
   },
   {
     "char": "貿",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ボウ",
     "example": "**貿** をれんしゅうしましょう。"
   },
   {
     "char": "暴",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あば-れる",
+    "onYomi": "ボウ",
     "example": "**暴** をれんしゅうしましょう。"
   },
   {
     "char": "脈",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ミャク",
     "example": "**脈** をれんしゅうしましょう。"
   },
   {
     "char": "務",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つと-める・つと-まる",
+    "onYomi": "ム",
     "example": "**務** をれんしゅうしましょう。"
   },
   {
     "char": "夢",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ゆめ",
+    "onYomi": "ム",
     "example": "**夢** をれんしゅうしましょう。"
   },
   {
     "char": "迷",
-    "kunYomi": "—",
+    "kunYomi": "まよ-う",
     "onYomi": "—",
     "example": "**迷** をれんしゅうしましょう。"
   },
   {
     "char": "綿",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "わた",
+    "onYomi": "メン",
     "example": "**綿** をれんしゅうしましょう。"
   },
   {
     "char": "輸",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ユ",
     "example": "**輸** をれんしゅうしましょう。"
   },
   {
     "char": "余",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あま-る・あま-す",
+    "onYomi": "ヨ",
     "example": "**余** をれんしゅうしましょう。"
   },
   {
     "char": "容",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヨウ",
     "example": "**容** をれんしゅうしましょう。"
   },
   {
     "char": "略",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "リャク",
     "example": "**略** をれんしゅうしましょう。"
   },
   {
     "char": "留",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "と-める・と-まる",
+    "onYomi": "リュウ・ル",
     "example": "**留** をれんしゅうしましょう。"
   },
   {
     "char": "領",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "リョウ",
     "example": "**領** をれんしゅうしましょう。"
   },
   {
     "char": "歴",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "レキ",
     "example": "**歴** をれんしゅうしましょう。"
   },
   {
     "char": "胃",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "イ",
     "example": "**胃** をれんしゅうしましょう。"
   },
   {
     "char": "異",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "こと",
+    "onYomi": "イ",
     "example": "**異** をれんしゅうしましょう。"
   },
   {
     "char": "遺",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "イ",
     "example": "**遺** をれんしゅうしましょう。"
   },
   {
     "char": "域",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "イキ",
     "example": "**域** をれんしゅうしましょう。"
   },
   {
     "char": "宇",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ウ",
     "example": "**宇** をれんしゅうしましょう。"
   },
   {
     "char": "映",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "うつ-る・うつ-す",
+    "onYomi": "エイ",
     "example": "**映** をれんしゅうしましょう。"
   },
   {
     "char": "延",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "の-びる・の-べる・の-ばす",
+    "onYomi": "エン",
     "example": "**延** をれんしゅうしましょう。"
   },
   {
     "char": "沿",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "そ-う",
+    "onYomi": "エン",
     "example": "**沿** をれんしゅうしましょう。"
   },
   {
     "char": "恩",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "オン",
     "example": "**恩** をれんしゅうしましょう。"
   },
   {
     "char": "我",
-    "kunYomi": "—",
+    "kunYomi": "われ",
     "onYomi": "—",
     "example": "**我** をれんしゅうしましょう。"
   },
   {
     "char": "灰",
-    "kunYomi": "—",
+    "kunYomi": "はい",
     "onYomi": "—",
     "example": "**灰** をれんしゅうしましょう。"
   },
   {
     "char": "拡",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カク",
     "example": "**拡** をれんしゅうしましょう。"
   },
   {
     "char": "革",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カク",
     "example": "**革** をれんしゅうしましょう。"
   },
   {
     "char": "閣",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カク",
     "example": "**閣** をれんしゅうしましょう。"
   },
   {
     "char": "割",
-    "kunYomi": "—",
+    "kunYomi": "わ-る・わり・わ-れる",
     "onYomi": "—",
     "example": "**割** をれんしゅうしましょう。"
   },
   {
     "char": "株",
-    "kunYomi": "—",
+    "kunYomi": "かぶ",
     "onYomi": "—",
     "example": "**株** をれんしゅうしましょう。"
   },
   {
     "char": "干",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ほ-す",
+    "onYomi": "カン",
     "example": "**干** をれんしゅうしましょう。"
   },
   {
     "char": "巻",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ま-く・まき",
+    "onYomi": "カン",
     "example": "**巻** をれんしゅうしましょう。"
   },
   {
     "char": "看",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カン",
     "example": "**看** をれんしゅうしましょう。"
   },
   {
     "char": "簡",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "カン",
     "example": "**簡** をれんしゅうしましょう。"
   },
   {
     "char": "危",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あぶ-ない",
+    "onYomi": "キ",
     "example": "**危** をれんしゅうしましょう。"
   },
   {
     "char": "机",
-    "kunYomi": "—",
+    "kunYomi": "つくえ",
     "onYomi": "—",
     "example": "**机** をれんしゅうしましょう。"
   },
   {
     "char": "揮",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キ",
     "example": "**揮** をれんしゅうしましょう。"
   },
   {
     "char": "貴",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キ",
     "example": "**貴** をれんしゅうしましょう。"
   },
   {
     "char": "疑",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "うたが-う",
+    "onYomi": "ギ",
     "example": "**疑** をれんしゅうしましょう。"
   },
   {
     "char": "吸",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "す-う",
+    "onYomi": "キュウ",
     "example": "**吸** をれんしゅうしましょう。"
   },
   {
     "char": "供",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "そな-える・とも",
+    "onYomi": "キョウ",
     "example": "**供** をれんしゅうしましょう。"
   },
   {
     "char": "胸",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "むね",
+    "onYomi": "キョウ",
     "example": "**胸** をれんしゅうしましょう。"
   },
   {
     "char": "郷",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "キョウ",
     "example": "**郷** をれんしゅうしましょう。"
   },
   {
     "char": "勤",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つと-める・つと-まる",
+    "onYomi": "キン",
     "example": "**勤** をれんしゅうしましょう。"
   },
   {
     "char": "筋",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "すじ",
+    "onYomi": "キン",
     "example": "**筋** をれんしゅうしましょう。"
   },
   {
     "char": "系",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ケイ",
     "example": "**系** をれんしゅうしましょう。"
   },
   {
     "char": "敬",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "うやま-う",
+    "onYomi": "ケイ",
     "example": "**敬** をれんしゅうしましょう。"
   },
   {
     "char": "警",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ケイ",
     "example": "**警** をれんしゅうしましょう。"
   },
   {
     "char": "劇",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ゲキ",
     "example": "**劇** をれんしゅうしましょう。"
   },
   {
     "char": "激",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "はげ-しい",
+    "onYomi": "ゲキ",
     "example": "**激** をれんしゅうしましょう。"
   },
   {
     "char": "穴",
-    "kunYomi": "—",
+    "kunYomi": "あな",
     "onYomi": "—",
     "example": "**穴** をれんしゅうしましょう。"
   },
   {
     "char": "券",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ケン",
     "example": "**券** をれんしゅうしましょう。"
   },
   {
     "char": "絹",
-    "kunYomi": "—",
+    "kunYomi": "きぬ",
     "onYomi": "—",
     "example": "**絹** をれんしゅうしましょう。"
   },
   {
     "char": "権",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ケン",
     "example": "**権** をれんしゅうしましょう。"
   },
   {
     "char": "憲",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ケン",
     "example": "**憲** をれんしゅうしましょう。"
   },
   {
     "char": "源",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "みなもと",
+    "onYomi": "ゲン",
     "example": "**源** をれんしゅうしましょう。"
   },
   {
     "char": "厳",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "きび-しい",
+    "onYomi": "ゲン",
     "example": "**厳** をれんしゅうしましょう。"
   },
   {
     "char": "己",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "コ",
     "example": "**己** をれんしゅうしましょう。"
   },
   {
     "char": "呼",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "よ-ぶ",
+    "onYomi": "コ",
     "example": "**呼** をれんしゅうしましょう。"
   },
   {
     "char": "誤",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あやま-る",
+    "onYomi": "ゴ",
     "example": "**誤** をれんしゅうしましょう。"
   },
   {
     "char": "后",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "コウ",
     "example": "**后** をれんしゅうしましょう。"
   },
   {
     "char": "孝",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "コウ",
     "example": "**孝** をれんしゅうしましょう。"
   },
   {
     "char": "皇",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "コウ・オウ",
     "example": "**皇** をれんしゅうしましょう。"
   },
   {
     "char": "紅",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "べに",
+    "onYomi": "コウ",
     "example": "**紅** をれんしゅうしましょう。"
   },
   {
     "char": "降",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "お-りる・お-ろす・ふ-る",
+    "onYomi": "コウ",
     "example": "**降** をれんしゅうしましょう。"
   },
   {
     "char": "鋼",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "コウ",
     "example": "**鋼** をれんしゅうしましょう。"
   },
   {
     "char": "刻",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "きざ-む",
+    "onYomi": "コク",
     "example": "**刻** をれんしゅうしましょう。"
   },
   {
     "char": "穀",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "コク",
     "example": "**穀** をれんしゅうしましょう。"
   },
   {
     "char": "骨",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ほね",
+    "onYomi": "コツ",
     "example": "**骨** をれんしゅうしましょう。"
   },
   {
     "char": "困",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "こま-る",
+    "onYomi": "コン",
     "example": "**困** をれんしゅうしましょう。"
   },
   {
     "char": "砂",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "すな",
+    "onYomi": "サ",
     "example": "**砂** をれんしゅうしましょう。"
   },
   {
     "char": "座",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ザ",
     "example": "**座** をれんしゅうしましょう。"
   },
   {
     "char": "済",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "す-む・す-ます",
+    "onYomi": "サイ",
     "example": "**済** をれんしゅうしましょう。"
   },
   {
     "char": "裁",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "さば-く",
+    "onYomi": "サイ",
     "example": "**裁** をれんしゅうしましょう。"
   },
   {
     "char": "策",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "サク",
     "example": "**策** をれんしゅうしましょう。"
   },
   {
     "char": "冊",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "サツ",
     "example": "**冊** をれんしゅうしましょう。"
   },
   {
     "char": "蚕",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "かいこ",
+    "onYomi": "サン",
     "example": "**蚕** をれんしゅうしましょう。"
   },
   {
     "char": "至",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "いた-る",
+    "onYomi": "シ",
     "example": "**至** をれんしゅうしましょう。"
   },
   {
     "char": "私",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "わたくし・わたし",
+    "onYomi": "シ",
     "example": "**私** をれんしゅうしましょう。"
   },
   {
     "char": "姿",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "すがた",
+    "onYomi": "シ",
     "example": "**姿** をれんしゅうしましょう。"
   },
   {
     "char": "視",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シ",
     "example": "**視** をれんしゅうしましょう。"
   },
   {
     "char": "詞",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シ",
     "example": "**詞** をれんしゅうしましょう。"
   },
   {
     "char": "誌",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シ",
     "example": "**誌** をれんしゅうしましょう。"
   },
   {
     "char": "磁",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ジ",
     "example": "**磁** をれんしゅうしましょう。"
   },
   {
     "char": "射",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "い-る",
+    "onYomi": "シャ",
     "example": "**射** をれんしゅうしましょう。"
   },
   {
     "char": "捨",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "す-てる",
+    "onYomi": "シャ",
     "example": "**捨** をれんしゅうしましょう。"
   },
   {
     "char": "尺",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シャク",
     "example": "**尺** をれんしゅうしましょう。"
   },
   {
     "char": "若",
-    "kunYomi": "—",
+    "kunYomi": "わか-い",
     "onYomi": "—",
     "example": "**若** をれんしゅうしましょう。"
   },
   {
     "char": "樹",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ジュ",
     "example": "**樹** をれんしゅうしましょう。"
   },
   {
     "char": "収",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "おさ-める・おさ-まる",
+    "onYomi": "シュウ",
     "example": "**収** をれんしゅうしましょう。"
   },
   {
     "char": "宗",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シュウ",
     "example": "**宗** をれんしゅうしましょう。"
   },
   {
     "char": "就",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シュウ",
     "example": "**就** をれんしゅうしましょう。"
   },
   {
     "char": "衆",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "シュウ",
     "example": "**衆** をれんしゅうしましょう。"
   },
   {
     "char": "従",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "したが-う・したが-える",
+    "onYomi": "ジュウ",
     "example": "**従** をれんしゅうしましょう。"
   },
   {
     "char": "縦",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たて",
+    "onYomi": "ジュウ",
     "example": "**縦** をれんしゅうしましょう。"
   },
   {
     "char": "縮",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ちぢ-む・ちぢ-まる・ちぢ-める・ちぢ-れる・ちぢ-らす",
+    "onYomi": "シュク",
     "example": "**縮** をれんしゅうしましょう。"
   },
   {
     "char": "熟",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ジュク",
     "example": "**熟** をれんしゅうしましょう。"
   },
   {
     "char": "純",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ジュン",
     "example": "**純** をれんしゅうしましょう。"
   },
   {
     "char": "処",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ショ",
     "example": "**処** をれんしゅうしましょう。"
   },
   {
     "char": "署",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ショ",
     "example": "**署** をれんしゅうしましょう。"
   },
   {
     "char": "諸",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ショ",
     "example": "**諸** をれんしゅうしましょう。"
   },
   {
     "char": "除",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "のぞ-く",
+    "onYomi": "ジョ",
     "example": "**除** をれんしゅうしましょう。"
   },
   {
     "char": "承",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ショウ",
     "example": "**承** をれんしゅうしましょう。"
   },
   {
     "char": "将",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ショウ",
     "example": "**将** をれんしゅうしましょう。"
   },
   {
     "char": "傷",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "きず",
+    "onYomi": "ショウ",
     "example": "**傷** をれんしゅうしましょう。"
   },
   {
     "char": "障",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ショウ",
     "example": "**障** をれんしゅうしましょう。"
   },
   {
     "char": "蒸",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ジョウ",
     "example": "**蒸** をれんしゅうしましょう。"
   },
   {
     "char": "針",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "はり",
+    "onYomi": "シン",
     "example": "**針** をれんしゅうしましょう。"
   },
   {
     "char": "仁",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ジン",
     "example": "**仁** をれんしゅうしましょう。"
   },
   {
     "char": "垂",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "た-れる・た-らす",
+    "onYomi": "スイ",
     "example": "**垂** をれんしゅうしましょう。"
   },
   {
     "char": "推",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "スイ",
     "example": "**推** をれんしゅうしましょう。"
   },
   {
     "char": "寸",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "スン",
     "example": "**寸** をれんしゅうしましょう。"
   },
   {
     "char": "盛",
-    "kunYomi": "—",
+    "kunYomi": "も-る",
     "onYomi": "—",
     "example": "**盛** をれんしゅうしましょう。"
   },
   {
     "char": "聖",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "セイ",
     "example": "**聖** をれんしゅうしましょう。"
   },
   {
     "char": "誠",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "セイ",
     "example": "**誠** をれんしゅうしましょう。"
   },
   {
     "char": "舌",
-    "kunYomi": "—",
+    "kunYomi": "した",
     "onYomi": "—",
     "example": "**舌** をれんしゅうしましょう。"
   },
   {
     "char": "宣",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "セン",
     "example": "**宣** をれんしゅうしましょう。"
   },
   {
     "char": "専",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "セン",
     "example": "**専** をれんしゅうしましょう。"
   },
   {
     "char": "泉",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "いずみ",
+    "onYomi": "セン",
     "example": "**泉** をれんしゅうしましょう。"
   },
   {
     "char": "洗",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あら-う",
+    "onYomi": "セン",
     "example": "**洗** をれんしゅうしましょう。"
   },
   {
     "char": "染",
-    "kunYomi": "—",
+    "kunYomi": "そ-める・そ-まる",
     "onYomi": "—",
     "example": "**染** をれんしゅうしましょう。"
   },
   {
     "char": "銭",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "セン",
     "example": "**銭** をれんしゅうしましょう。"
   },
   {
     "char": "善",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "よ-い",
+    "onYomi": "ゼン",
     "example": "**善** をれんしゅうしましょう。"
   },
   {
     "char": "奏",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ソウ",
     "example": "**奏** をれんしゅうしましょう。"
   },
   {
     "char": "窓",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "まど",
+    "onYomi": "ソウ",
     "example": "**窓** をれんしゅうしましょう。"
   },
   {
     "char": "創",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "つく-る",
+    "onYomi": "ソウ",
     "example": "**創** をれんしゅうしましょう。"
   },
   {
     "char": "装",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ソウ",
     "example": "**装** をれんしゅうしましょう。"
   },
   {
     "char": "層",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ソウ",
     "example": "**層** をれんしゅうしましょう。"
   },
   {
     "char": "操",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ソウ",
     "example": "**操** をれんしゅうしましょう。"
   },
   {
     "char": "蔵",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ゾウ",
     "example": "**蔵** をれんしゅうしましょう。"
   },
   {
     "char": "臓",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ゾウ",
     "example": "**臓** をれんしゅうしましょう。"
   },
   {
     "char": "存",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ソン・ゾン",
     "example": "**存** をれんしゅうしましょう。"
   },
   {
     "char": "尊",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たっと-い・とうと-い・たっと-ぶ・とうと-ぶ",
+    "onYomi": "ソン",
     "example": "**尊** をれんしゅうしましょう。"
   },
   {
     "char": "退",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "しりぞ-く・しりぞ-ける",
+    "onYomi": "タイ",
     "example": "**退** をれんしゅうしましょう。"
   },
   {
     "char": "宅",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "タク",
     "example": "**宅** をれんしゅうしましょう。"
   },
   {
     "char": "担",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "タン",
     "example": "**担** をれんしゅうしましょう。"
   },
   {
     "char": "探",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "さが-す",
+    "onYomi": "タン",
     "example": "**探** をれんしゅうしましょう。"
   },
   {
     "char": "誕",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "タン",
     "example": "**誕** をれんしゅうしましょう。"
   },
   {
     "char": "段",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ダン",
     "example": "**段** をれんしゅうしましょう。"
   },
   {
     "char": "暖",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あたた-か・あたた-かい・あたた-まる・あたた-める",
+    "onYomi": "ダン",
     "example": "**暖** をれんしゅうしましょう。"
   },
   {
     "char": "値",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ね",
+    "onYomi": "チ",
     "example": "**値** をれんしゅうしましょう。"
   },
   {
     "char": "宙",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "チュウ",
     "example": "**宙** をれんしゅうしましょう。"
   },
   {
     "char": "忠",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "チュウ",
     "example": "**忠** をれんしゅうしましょう。"
   },
   {
     "char": "著",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "チョ",
     "example": "**著** をれんしゅうしましょう。"
   },
   {
     "char": "庁",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "チョウ",
     "example": "**庁** をれんしゅうしましょう。"
   },
   {
     "char": "頂",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "いただ-く・いただき",
+    "onYomi": "チョウ",
     "example": "**頂** をれんしゅうしましょう。"
   },
   {
     "char": "腸",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "チョウ",
     "example": "**腸** をれんしゅうしましょう。"
   },
   {
     "char": "潮",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "しお",
+    "onYomi": "チョウ",
     "example": "**潮** をれんしゅうしましょう。"
   },
   {
     "char": "賃",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "チン",
     "example": "**賃** をれんしゅうしましょう。"
   },
   {
     "char": "痛",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "いた-い・いた-む・いた-める",
+    "onYomi": "ツウ",
     "example": "**痛** をれんしゅうしましょう。"
   },
   {
     "char": "敵",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "テキ",
     "example": "**敵** をれんしゅうしましょう。"
   },
   {
     "char": "展",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "テン",
     "example": "**展** をれんしゅうしましょう。"
   },
   {
     "char": "討",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "トウ",
     "example": "**討** をれんしゅうしましょう。"
   },
   {
     "char": "党",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "トウ",
     "example": "**党** をれんしゅうしましょう。"
   },
   {
     "char": "糖",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "トウ",
     "example": "**糖** をれんしゅうしましょう。"
   },
   {
     "char": "届",
-    "kunYomi": "—",
+    "kunYomi": "とど-ける・とど-く",
     "onYomi": "—",
     "example": "**届** をれんしゅうしましょう。"
   },
   {
     "char": "難",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "むずか-しい",
+    "onYomi": "ナン",
     "example": "**難** をれんしゅうしましょう。"
   },
   {
     "char": "乳",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ちち",
+    "onYomi": "ニュウ",
     "example": "**乳** をれんしゅうしましょう。"
   },
   {
     "char": "認",
-    "kunYomi": "—",
+    "kunYomi": "みと-める",
     "onYomi": "—",
     "example": "**認** をれんしゅうしましょう。"
   },
   {
     "char": "納",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "おさ-める・おさ-まる",
+    "onYomi": "ノウ",
     "example": "**納** をれんしゅうしましょう。"
   },
   {
     "char": "脳",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ノウ",
     "example": "**脳** をれんしゅうしましょう。"
   },
   {
     "char": "派",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ハ",
     "example": "**派** をれんしゅうしましょう。"
   },
   {
     "char": "拝",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "おが-む",
+    "onYomi": "ハイ",
     "example": "**拝** をれんしゅうしましょう。"
   },
   {
     "char": "背",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "せ・せい",
+    "onYomi": "ハイ",
     "example": "**背** をれんしゅうしましょう。"
   },
   {
     "char": "肺",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ハイ",
     "example": "**肺** をれんしゅうしましょう。"
   },
   {
     "char": "俳",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ハイ",
     "example": "**俳** をれんしゅうしましょう。"
   },
   {
     "char": "班",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ハン",
     "example": "**班** をれんしゅうしましょう。"
   },
   {
     "char": "晩",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "バン",
     "example": "**晩** をれんしゅうしましょう。"
   },
   {
     "char": "否",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヒ",
     "example": "**否** をれんしゅうしましょう。"
   },
   {
     "char": "批",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヒ",
     "example": "**批** をれんしゅうしましょう。"
   },
   {
     "char": "秘",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヒ",
     "example": "**秘** をれんしゅうしましょう。"
   },
   {
     "char": "俵",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たわら",
+    "onYomi": "ヒョウ",
     "example": "**俵** をれんしゅうしましょう。"
   },
   {
     "char": "腹",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "はら",
+    "onYomi": "フク",
     "example": "**腹** をれんしゅうしましょう。"
   },
   {
     "char": "奮",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "ふる-う",
+    "onYomi": "フン",
     "example": "**奮** をれんしゅうしましょう。"
   },
   {
     "char": "並",
-    "kunYomi": "—",
+    "kunYomi": "なみ・なら-べる・なら-ぶ・なら-びに",
     "onYomi": "—",
     "example": "**並** をれんしゅうしましょう。"
   },
   {
     "char": "陛",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヘイ",
     "example": "**陛** をれんしゅうしましょう。"
   },
   {
     "char": "閉",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "と-じる・し-める・し-まる",
+    "onYomi": "ヘイ",
     "example": "**閉** をれんしゅうしましょう。"
   },
   {
     "char": "片",
-    "kunYomi": "—",
+    "kunYomi": "かた",
     "onYomi": "—",
     "example": "**片** をれんしゅうしましょう。"
   },
   {
     "char": "補",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "おぎな-う",
+    "onYomi": "ホ",
     "example": "**補** をれんしゅうしましょう。"
   },
   {
     "char": "暮",
-    "kunYomi": "—",
+    "kunYomi": "く-れる・く-らす",
     "onYomi": "—",
     "example": "**暮** をれんしゅうしましょう。"
   },
   {
     "char": "宝",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たから",
+    "onYomi": "ホウ",
     "example": "**宝** をれんしゅうしましょう。"
   },
   {
     "char": "訪",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "たず-ねる",
+    "onYomi": "ホウ",
     "example": "**訪** をれんしゅうしましょう。"
   },
   {
     "char": "亡",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ボウ",
     "example": "**亡** をれんしゅうしましょう。"
   },
   {
     "char": "忘",
-    "kunYomi": "—",
+    "kunYomi": "わす-れる",
     "onYomi": "—",
     "example": "**忘** をれんしゅうしましょう。"
   },
   {
     "char": "棒",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ボウ",
     "example": "**棒** をれんしゅうしましょう。"
   },
   {
     "char": "枚",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "マイ",
     "example": "**枚** をれんしゅうしましょう。"
   },
   {
     "char": "幕",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "マク・バク",
     "example": "**幕** をれんしゅうしましょう。"
   },
   {
     "char": "密",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ミツ",
     "example": "**密** をれんしゅうしましょう。"
   },
   {
     "char": "盟",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "メイ",
     "example": "**盟** をれんしゅうしましょう。"
   },
   {
     "char": "模",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "モ・ボ",
     "example": "**模** をれんしゅうしましょう。"
   },
   {
     "char": "訳",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "わけ",
+    "onYomi": "ヤク",
     "example": "**訳** をれんしゅうしましょう。"
   },
   {
     "char": "郵",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ユウ",
     "example": "**郵** をれんしゅうしましょう。"
   },
   {
     "char": "優",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ユウ",
     "example": "**優** をれんしゅうしましょう。"
   },
   {
     "char": "預",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "あず-ける・あず-かる",
+    "onYomi": "ヨ",
     "example": "**預** をれんしゅうしましょう。"
   },
   {
     "char": "幼",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "おさな-い",
+    "onYomi": "ヨウ",
     "example": "**幼** をれんしゅうしましょう。"
   },
   {
     "char": "欲",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヨク",
     "example": "**欲** をれんしゅうしましょう。"
   },
   {
     "char": "翌",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ヨク",
     "example": "**翌** をれんしゅうしましょう。"
   },
   {
     "char": "乱",
-    "kunYomi": "—",
-    "onYomi": "—",
+    "kunYomi": "みだ-れる・みだ-す",
+    "onYomi": "ラン",
     "example": "**乱** をれんしゅうしましょう。"
   },
   {
     "char": "卵",
-    "kunYomi": "—",
+    "kunYomi": "たまご",
     "onYomi": "—",
     "example": "**卵** をれんしゅうしましょう。"
   },
   {
     "char": "覧",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ラン",
     "example": "**覧** をれんしゅうしましょう。"
   },
   {
     "char": "裏",
-    "kunYomi": "—",
+    "kunYomi": "うら",
     "onYomi": "—",
     "example": "**裏** をれんしゅうしましょう。"
   },
   {
     "char": "律",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "リツ",
     "example": "**律** をれんしゅうしましょう。"
   },
   {
     "char": "臨",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "リン",
     "example": "**臨** をれんしゅうしましょう。"
   },
   {
     "char": "朗",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ロウ",
     "example": "**朗** をれんしゅうしましょう。"
   },
   {
     "char": "論",
     "kunYomi": "—",
-    "onYomi": "—",
+    "onYomi": "ロン",
     "example": "**論** をれんしゅうしましょう。"
   }
 ]
