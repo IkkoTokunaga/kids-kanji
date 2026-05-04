@@ -37,7 +37,7 @@ function strokeWidthForCanvas(canvas: HTMLCanvasElement): number {
   const cssFontPx = Math.min(cw * 1.1, vmin * 0.42, 16 * rootRem);
   const scale = canvas.width / rw;
   /* 太字の縦画に見える程度（ガイド opacity とは別に、幾何の太さ合わせ） */
-  const w = cssFontPx * 0.11 * scale;
+  const w = cssFontPx * 0.095 * scale;
   return Math.min(58, Math.max(9, w));
 }
 
